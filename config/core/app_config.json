@@ -1,0 +1,19 @@
+{
+  "device_id": "TN2022051822224321",
+  "serves": [
+    {
+        "serve_name": "BaseContext",
+        "serve_queue": null,
+        "serve_config_name": "base_context_config.json",
+        "serve_log_name": "base_context_log.txt",
+        "serve_queue_size": 500
+    },
+    {
+      "serve_name": "Gui",
+      "serve_queue": null,
+      "serve_config_name": "gui_context_config.json",
+      "serve_log_name": "gui_context_log.txt",
+      "serve_queue_size": 500
+    }
+  ]
+}
