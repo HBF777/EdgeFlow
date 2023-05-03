@@ -5,6 +5,8 @@
 # @FileName: context.py
 # @Software: PyCharm
 import os.path
+import time
+from core.constant import *
 from .constant import *
 from ..serves import BaseServerAbstract
 from core.tools import Logger
@@ -21,6 +23,9 @@ class BaseContext(BaseServerAbstract):
         global logger
         self.base_path = os.path.abspath(".")
         logger = Logger(filename=self.base_path + LOG_FILE_PATH, level="debug")
+        while True:
+            self.send_queue.put(TestMessage())
+            time.sleep(1)
         pass
 
     def keep_alive(self):

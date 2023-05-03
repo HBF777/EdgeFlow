@@ -7,6 +7,7 @@
 import abc
 import platform
 import os
+import time
 import traceback
 import sys
 from multiprocessing import Process, Queue, freeze_support
@@ -31,6 +32,9 @@ class ProcessBaseServe(Process):
 
     def put_message(self):
         pass
+
+    def run(self):
+        self.service.run()
 
     def __create_service_impl(self, *args, **kwargs):
         try:
@@ -102,8 +106,8 @@ class App:
             recv_queue = Queue(SERVE_QUEUE_SIZE)
             send_queue = Queue(SERVE_QUEUE_SIZE)
             # 对于core来说，其发送队列，在服务的角度看是接收队列
-            serve_impl = eval("App.{serveImpl}(device_id=ServerConstant.DEVICE_ID,send_queue=send_queue,"
-                              "recv_queue=recv_queue) "
+            serve_impl = eval("App.{serveImpl}(device_id=ServerConstant.DEVICE_ID,send_queue=recv_queue,"
+                              "recv_queue=send_queue) "
                               .format(serveImpl=serve['serve_name']))
             self.serves[serve_name] = {
                 "serve": serve_impl,
@@ -121,6 +125,8 @@ class App:
             self.logger.info("启动" + serve_name + "服务")
             serve['serve'].start()
         self.logger.info("服务启动完成")
+        time.sleep(1)
+        self.logger.info("启动服务监听")
         self.listen_serves()
 
     def listen_serves(self):
@@ -131,8 +137,56 @@ class App:
                     self.logger.error(serve_name + "服务异常退出")
                     if serve_name == ServerConstant.BASE_CONTEXT_NAME:
                         self.logger.error("基础服务异常退出，尝试重启")
-                        self.deal_base_context_exception()
-                        sys.exit(1)
+                        sys.exit(1) if self.deal_base_context_exception() else None
+                    else:
+                        self.logger.error(serve_name + "服务异常退出，尝试重启")
+                        serve['serve'].terminate()
+                        recv_queue = Queue(SERVE_QUEUE_SIZE)
+                        send_queue = Queue(SERVE_QUEUE_SIZE)
+                        serve['serve'] = eval("App.{serveImpl}(device_id=ServerConstant.DEVICE_ID,"
+                                              "send_queue=send_queue, "
+                                              "recv_queue=recv_queue) "
+                                              .format(serveImpl=serve_name))
+                        serve['serve'].start()
+                        serve['send_queue'] = send_queue
+                        serve['recv_queue'] = recv_queue
+                        self.serves[serve_name] = serve
+                    continue
+                if serve['recv_queue'].empty():
+                    continue
+                self.message_handler(serve['recv_queue'].get())
+
+    def message_handler(self, message: ServeMessage):
+        if message.is_op():
+            pass
+        elif message.message_to in self.serves:
+            self.serves.get(message.message_to).get("send_queue").put(DataServeMessage(message))
+        else:
+            self.logger.error("接收消息不存在，消息来源为" + message.message_from + "消息目标为" + message.message_to)
+            self.serves.get(message.message_from).get('send_queue').put(NotFoundServeMessage(
+                                                                                    message.message_id,
+                                                                                    message.CORE_CONTEXT_MESSAGE,
+                                                                                    message.message_from))
 
     def deal_base_context_exception(self):
-        pass
+        times = 3
+        while times > 0:
+            self.logger.info("正在重启基础服务")
+            self.serves[ServerConstant.BASE_CONTEXT_NAME]['serve'].terminate()
+            recv_queue = Queue(SERVE_QUEUE_SIZE)
+            send_queue = Queue(SERVE_QUEUE_SIZE)
+            self.serves[ServerConstant.BASE_CONTEXT_NAME]['serve'] = App.BaseContext(device_id=ServerConstant.DEVICE_ID,
+                                                                                     send_queue=recv_queue,
+                                                                                     recv_queue=send_queue)
+            self.serves[ServerConstant.BASE_CONTEXT_NAME] = {
+                "serve": self.serves[ServerConstant.BASE_CONTEXT_NAME]['serve'],
+                "send_queue": send_queue,
+                "recv_queue": recv_queue
+            }
+            self.serves[ServerConstant.BASE_CONTEXT_NAME]['serve'].start()
+            if self.serves[ServerConstant.BASE_CONTEXT_NAME]['serve'].is_alive():
+                self.logger.info("基础服务重启成功")
+                break
+            else:
+                self.logger.error("基础服务重启失败")
+                times -= 1

@@ -9,7 +9,8 @@ import abc
 
 class BaseServerAbstract:
     def __init__(self, *args, **kwargs):
-        pass
+        self.send_queue = kwargs['send_queue']
+        self.recv_queue = kwargs['recv_queue']
 
     @abc.abstractmethod
     def keep_alive(self):
@@ -25,4 +26,8 @@ class BaseServerAbstract:
 
     @staticmethod
     def parse_serve_message(message):
+        pass
+
+    @abc.abstractmethod
+    def run(self):
         pass

@@ -8,8 +8,11 @@ from ..serves import BaseServerAbstract
 
 
 class EdgeComputingContext(BaseServerAbstract):
-    def __init__(self):
+    def run(self):
         pass
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
 
     def keep_alive(self):
         pass
