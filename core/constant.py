@@ -24,7 +24,7 @@ class ServerConstant:
     EDGE_COMPUTING_CONTEXT_NAME = 'EdgeComputing'
 
 
-class ServeMessage:
+class Message:
     # 基础服务消息
     BASE_CONTEXT_MESSAGE = ServerConstant.BASE_CONTEXT_NAME
     # GUI服务消息
@@ -35,11 +35,16 @@ class ServeMessage:
     EDGE_COMPUTING_CONTEXT_MESSAGE = ServerConstant.EDGE_COMPUTING_CONTEXT_NAME
     # APP 控制消息
     CORE_CONTEXT_MESSAGE = "app_core"
+    # 云端消息
+    CLOUD_CONTEXT_MESSAGE = "cloud"
+    # 硬件消息
+    HARDWARE_CONTEXT_MESSAGE = "hardware"
     # 服务消息类型
     MESSAGE_TYPE_DATA = 'data'
     MESSAGE_TYPE_OP = 'op'
     MESSAGE_TYPE_NOTICE_NOT_SERVE = "NOT_SERVE"
-
+    # 服务指令内容
+    MESSAGE_OP_LAMP = 'lamp'
     # 服务消息内容
 
     def __init__(self, *args, **kwargs):
@@ -51,7 +56,7 @@ class ServeMessage:
         self.message_data = kwargs.get('message_data')
 
     def is_op(self) -> bool:
-        if self.message_type == ServeMessage.MESSAGE_TYPE_OP:
+        if self.message_type == Message.MESSAGE_TYPE_OP:
             return True
         return False
 
@@ -66,17 +71,17 @@ class ServeMessage:
         })
 
 
-def NotFoundServeMessage(message_id, message_form, message_to) -> ServeMessage:
-    return ServeMessage(message_id=message_id, message_type=ServeMessage.MESSAGE_TYPE_NOTICE_NOT_SERVE,
-                        message_from=message_form, message_to=message_to)
+def NotFoundMessage(message_id, message_form, message_to) -> Message:
+    return Message(message_id=message_id, message_type=Message.MESSAGE_TYPE_NOTICE_NOT_SERVE,
+                   message_from=message_form, message_to=message_to)
 
 
-def DataServeMessage(message: ServeMessage) -> ServeMessage:
+def DataMessage(message: Message) -> Message:
     return message
 
 
-def TestMessage() -> ServeMessage:
-    return ServeMessage(message_from=ServeMessage.BASE_CONTEXT_MESSAGE,
-                        message_to=ServeMessage.GUI_CONTEXT_MESSAGE,
-                        message_op=ServeMessage.MESSAGE_TYPE_DATA,
-                        message_data="ssss")
+def TestMessage() -> Message:
+    return Message(message_from=Message.BASE_CONTEXT_MESSAGE,
+                   message_to=Message.GUI_CONTEXT_MESSAGE,
+                   message_op=Message.MESSAGE_TYPE_DATA,
+                   message_data="ssss")

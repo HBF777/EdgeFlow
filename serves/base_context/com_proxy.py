@@ -5,15 +5,18 @@
 # @FileName: com_proxy.py
 # @Software: PyCharm
 import abc
+import uuid
 
-from paho import mqtt
-
+from paho.mqtt import client as mqtt
+from core.constant import Message
+from core.tools import Logger
 from .constant import *
 
 
 class CommunicationClient(metaclass=abc.ABCMeta):
-    def __init__(self, config):
-        self.logger = config['logger']
+    def __init__(self, logger=None, message_queue=None):
+        self.logger = logger
+        self.message_queue = message_queue
         pass
 
     @abc.abstractmethod
@@ -21,7 +24,7 @@ class CommunicationClient(metaclass=abc.ABCMeta):
         pass
 
     @abc.abstractmethod
-    def send_message(self):
+    def send_message(self, message):
         pass
 
     @abc.abstractmethod
@@ -34,14 +37,11 @@ class CommunicationClient(metaclass=abc.ABCMeta):
 
 
 class MqttClient(CommunicationClient):
-    def recv_message(self):
-        self.client.subscribe(self.sub_topics)
-        self.client.loop_forever()
 
     def disconnect(self):
         pass
 
-    def __init__(self, conf):
+    def __init__(self, config, logger=None, message_queue=None):
         """
         profile: {
                   "host_ip": "",
@@ -53,17 +53,16 @@ class MqttClient(CommunicationClient):
               }
         :param conf:
         """
-        super().__init__(conf)
-        self.target_host = conf['host']
-        self.target_port = conf['port']
-        self.account = conf['account']
-        self.password = conf['passwd']
-        self.message_queue = conf['message_queue']
+        super().__init__(logger, message_queue)
+        self.target_host = config['host']
+        self.target_port = config['port']
+        self.account = config['account']
+        self.password = config['passwd']
         self.client = mqtt.Client()
         self.client.username_pw_set(self.account, self.password)
         self.client.on_message = self.__on_message
         self.client.reconnect_delay_set(min_delay=1, max_delay=2000)
-        self.sub_topics = conf['sub_topics']
+        self.sub_topics = config['sub_topics']
 
     def __on_message(self, client, userdata, msg):
         """
@@ -73,31 +72,44 @@ class MqttClient(CommunicationClient):
         :return:
         """
         # print("收到消息: 主题: %s,消息: %s" % (msg.topic, msg.payload.decode('utf-8')))
-        self.logger.logger.info("收到消息: 主题: %s,消息: %s" % (msg.topic, msg.payload.decode('utf-8')))
-        message_type = parse_msg_type_by_topic(msg.topic)
-        message = Message(message_type=message_type, data=msg.payload.decode('utf-8'))
-        self.message_queue.put(message)
+        self.logger.info("收到消息: 主题: %s,消息: %s" % (msg.topic, msg.payload.decode('utf-8')))
+        try:
+            message = parse_msg_type_by_topic(msg.topic)
+            message.message_data = msg.payload.decode('utf-8')
+            self.message_queue.put(message)
+        except ValueError:
+            self.logger.error("消息格式错误: %s" % msg.payload.decode('utf-8'))
+        except Exception as e:
+            self.logger.error("消息接收错误: %s" % e)
         # self.message_queue.put((CONTEXT_SENSOR_MESSAGE, orin_message))
 
     def connect(self):
         try:
             self.client.connect(host=self.target_host, port=self.target_port, keepalive=60)
-            self.logger.logger.info("成功连接MQTT服务器")
+            self.logger.info("成功连接MQTT服务器")
         except Exception as e:
             raise e
 
     def subscribe(self):
         self.client.subscribe(self.sub_topics)
 
-    def send_message(self):
-        pass
+    def recv_message(self):
+        self.client.subscribe(self.sub_topics)
+        self.client.loop_forever()
+
+    def send_message(self, message):
+        self.client.publish(message.get_topic, message.get_message_data)
 
 
 class SerialClient(CommunicationClient):
+    def __init__(self, config, logger=None, message_queue=None):
+        super(SerialClient, self).__init__(logger, message_queue)
+        pass
+
     def connect(self):
         pass
 
-    def send_message(self):
+    def send_message(self, message):
         pass
 
     def recv_message(self):
@@ -107,14 +119,21 @@ class SerialClient(CommunicationClient):
         pass
 
 
-class Message:
-    def __init__(self, data: dict, message_type: str):
-        self.data = data
-        self.message_type = message_type
-        self.channel = None
-
-
 class ComProxy:
+    def __init__(self, config, mqtt_message_queue, serial_message_queue, logger=None):
+        self.logger = logger
+        self.mqtt_client = MqttClient(config['mqtt'], logger, mqtt_message_queue)
+        self.serial_client = SerialClient(config['serial'], logger, serial_message_queue)
+
+    def start(self):
+        self.logger.info("启动通信代理")
+        self.mqtt_client.connect()
+        self.mqtt_client.recv_message()
+        self.serial_client.connect()
+
+    def get_message_wait(self):
+        pass
+
     class ComProxyMessageQueue:
         def __init__(self):
             self.lamp_message = []
@@ -173,10 +192,8 @@ class ComProxy:
         def __len__(self):
             return len(self.lamp_message) + len(self.serve_message) + len(self.sensor_message)
 
-    pass
 
-
-def parse_msg_type_by_topic(topic):
+def parse_msg_type_by_topic(topic) -> Message:
     """
     解析MQTT Topic并返回消息类型。
     :param topic: MQTT Topic，格式为/serve/{device_id}/{serve_type}/#
@@ -186,14 +203,30 @@ def parse_msg_type_by_topic(topic):
     if len(parts) < 4 or parts[0] != "server":
         raise ValueError("Invalid MQTT topic format.")
     serve_type = parts[2]
+    message = Message()
+    message.message_from = Message.CLOUD_CONTEXT_MESSAGE
     if serve_type == "base_context":
+        message.message_type = Message.MESSAGE_TYPE_OP
+        message.message_to = Message.BASE_CONTEXT_MESSAGE
         if parts[3] == "lamp":
-            return ComProxy_MESSAGE_LAMP
-        return ComProxy_MESSAGE_SENSOR
+            message.message_op = Message.MESSAGE_OP_LAMP
+            return message
+        # parts[4] == "gps" /"humTemp" /"light" /"smoke" /"sound"
+        message.message_op = parts[4]
+        return message
     elif serve_type == "gui":
-        return ComProxy_MESSAGE_GUI
+        message.message_type = Message.MESSAGE_TYPE_OP
+        message.message_to = Message.GUI_CONTEXT_MESSAGE
+        message.message_op = parts[3]
+        return message
     elif serve_type == "webcam":
-        return ComProxy_MESSAGE_WEBCAM
+        message.message_type = Message.MESSAGE_TYPE_OP
+        message.message_to = Message.WEBCAM_CONTEXT_MESSAGE
+        message.message_op = parts[3]
+        return message
     elif serve_type == "edge_computing":
-        return ComProxy_MESSAGE_EDGE_COMPUTING
+        message.message_type = Message.MESSAGE_TYPE_OP
+        message.message_to = Message.EDGE_COMPUTING_CONTEXT_MESSAGE
+        message.message_op = parts[3]
+        return message
     raise ValueError("Invalid MQTT topic format.")

@@ -14,7 +14,7 @@ import yaml
 
 
 class RedisHelper:
-    def __init__(self, host, password, port):
+    def __init__(self, host="121.37.108.178", password="huba20020402", port=6739):
         # 连接redis
         self.__redis = redis.StrictRedis(host=host, password=password, port=port)
 

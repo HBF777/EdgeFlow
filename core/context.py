@@ -82,6 +82,7 @@ class App:
         base_path = os.path.abspath(".")
         # 初始化日志
         self.logger = Logger(filename=base_path + LOGGER_FILE_PATH, level=LOGGER_LEVEL).logger
+        self.last_start_time = time.time()
         # 初始化配置文件
         self.logger.info("初始化配置文件")
         self.config = ConfigParser.parse_json(file_path=base_path + CONFIG_FILE_PATH)
@@ -156,17 +157,17 @@ class App:
                     continue
                 self.message_handler(serve['recv_queue'].get())
 
-    def message_handler(self, message: ServeMessage):
+    def message_handler(self, message: Message):
         if message.is_op():
             pass
         elif message.message_to in self.serves:
-            self.serves.get(message.message_to).get("send_queue").put(DataServeMessage(message))
+            self.serves.get(message.message_to).get("send_queue").put(DataMessage(message))
         else:
             self.logger.error("接收消息不存在，消息来源为" + message.message_from + "消息目标为" + message.message_to)
-            self.serves.get(message.message_from).get('send_queue').put(NotFoundServeMessage(
-                                                                                    message.message_id,
-                                                                                    message.CORE_CONTEXT_MESSAGE,
-                                                                                    message.message_from))
+            self.serves.get(message.message_from).get('send_queue').put(NotFoundMessage(
+                message.message_id,
+                message.CORE_CONTEXT_MESSAGE,
+                message.message_from))
 
     def deal_base_context_exception(self):
         times = 3
@@ -186,7 +187,12 @@ class App:
             self.serves[ServerConstant.BASE_CONTEXT_NAME]['serve'].start()
             if self.serves[ServerConstant.BASE_CONTEXT_NAME]['serve'].is_alive():
                 self.logger.info("基础服务重启成功")
-                break
+                if time.time() - self.last_start_time < 10:
+                    self.logger.error("基础服务重启频繁，退出")
+                    sys.exit(-1)
+                return
             else:
                 self.logger.error("基础服务重启失败")
                 times -= 1
+            time.sleep(3)
+        exit(-1)

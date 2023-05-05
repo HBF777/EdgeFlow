@@ -9,6 +9,7 @@ import abc
 
 class BaseServerAbstract:
     def __init__(self, *args, **kwargs):
+        self.device_id = kwargs['device_id']
         self.send_queue = kwargs['send_queue']
         self.recv_queue = kwargs['recv_queue']
 
