@@ -158,7 +158,7 @@ class App:
                 self.message_handler(serve['recv_queue'].get())
 
     def message_handler(self, message: Message):
-        if message.is_op():
+        if message.is_op_self():
             pass
         elif message.message_to in self.serves:
             self.serves.get(message.message_to).get("send_queue").put(DataMessage(message))

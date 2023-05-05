@@ -5,6 +5,7 @@
 # @FileName: com_proxy.py
 # @Software: PyCharm
 import abc
+import threading
 import uuid
 
 from paho.mqtt import client as mqtt
@@ -128,7 +129,7 @@ class ComProxy:
     def start(self):
         self.logger.info("启动通信代理")
         self.mqtt_client.connect()
-        self.mqtt_client.recv_message()
+        threading.Thread(target=self.mqtt_client.recv_message).start()
         self.serial_client.connect()
 
     def get_message_wait(self):

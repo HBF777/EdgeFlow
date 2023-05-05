@@ -55,8 +55,8 @@ class Message:
         self.message_op = kwargs.get('message_op')
         self.message_data = kwargs.get('message_data')
 
-    def is_op(self) -> bool:
-        if self.message_type == Message.MESSAGE_TYPE_OP:
+    def is_op_self(self) -> bool:
+        if self.message_to == Message.CORE_CONTEXT_MESSAGE:
             return True
         return False
 

@@ -12,7 +12,7 @@ class ComponentProxy:
         self.logger = logger
         self.sensors = {}
         self.lamps = {}
-        __import__(config['impl'])
+        exec("from {impl} import *".format(impl=config['impl']))
         for item in config['sensor']:
             sensor = None
             try:

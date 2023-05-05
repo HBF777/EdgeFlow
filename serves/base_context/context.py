@@ -40,7 +40,7 @@ class MessageManager(object):
             :param message:
             :return:
             """
-            MessageManager.MessagePool.message_pool[message.id] = message
+            MessageManager.MessagePool.message_pool[message.message_id] = message
 
         @staticmethod
         def times_up():
@@ -51,7 +51,7 @@ class MessageManager(object):
             for message in MessageManager.MessagePool.message_pool.items():
                 m = message.wait()
                 if m:
-                    MessageManager.MessagePool.message_pool.pop(m.id)
+                    MessageManager.MessagePool.message_pool.pop(m.message_id)
                     MessageManager.MessagePool.message_time_out(m)
 
         @staticmethod
@@ -92,12 +92,25 @@ class MessageManager(object):
     def __init__(self):
         self.mqtt_queue = self.MessageQueue()
         self.serial_queue = self.MessageQueue()
+        self.serve_send_queue = None
+        self.serve_recv_queue = None
+
+    def init(self, serve_queue_send, serve_queue_recv):
+        self.serve_send_queue = serve_queue_send
+        self.serve_recv_queue = serve_queue_recv
 
     def get_message(self):
         pass
 
     def listen_message_cloud(self):
-        pass
+        while True:
+            message = self.mqtt_queue.wait_get()
+            if message.message_type == Message.MESSAGE_TYPE_OP:
+                self.MessagePool.put_message(message)
+            if message.message_to == Message.BASE_CONTEXT_MESSAGE:
+                pass
+            else:
+                self.serve_send_queue.put(message)
 
     # 云端消息
     def put_message_cloud(self):
@@ -112,14 +125,14 @@ class MessageManager(object):
         pass
 
     def start(self):
-        pass
+        threading.Thread(target=self.listen_message_cloud).start()
 
 
 class HardManager(object):
-    def __init__(self, Logger, components_config=None):
+    def __init__(self, _Logger=None, components_config=None):
         self.component_proxy = None
         self.component_config = components_config
-        self.logger = Logger
+        self.logger = _Logger
 
     def init(self):
         # 创建硬件代理
@@ -133,10 +146,10 @@ hard_manager = HardManager()
 
 
 def init_context() -> dict:
-    global message_manager, task_manager, component_config, com_config, hard_manager
+    global message_manager, task_manager, component_config, com_config, hard_manager, logger
     com_config = ConfigParser.parse_json(file_path=os.path.abspath(COM_CONFIG_FILE_PATH))
     component_config = ConfigParser.parse_json(file_path=os.path.abspath(COMPONENT_CONFIG_FILE_PATH))
-    hard_manager = HardManager(components_config=component_config)
+    hard_manager = HardManager(components_config=component_config, _Logger=logger)
     hard_manager.init()
     return {
         MESSAGE_MANAGER: message_manager,
@@ -172,6 +185,7 @@ class BaseContext(BaseServerAbstract):
         logger.info("BaseContext init-ing")
         managers = init_context()
         self.message_manager = managers[MESSAGE_MANAGER]
+        self.message_manager.init(self.send_queue, self.recv_queue)
         self.task_manager = managers[TASK_MANAGER]
         # 通讯服务启动
         self.com_thread = threading.Thread(target=start_com_proxy)

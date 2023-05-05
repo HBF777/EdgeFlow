@@ -12,10 +12,10 @@ class Lamp(LampBase):
         super().__init__(config, logger)
 
     def init(self):
-        self.logger.info("Lamp", self.get_name(), " init")
+        self.logger.info("Lamp"+self.get_name()+" init")
 
     def set_light(self, light):
-        self.logger.info("Lamp", self.get_name(), " set_light:", light)
+        self.logger.info("Lamp"+self.get_name()+" set_light:"+light)
         pass
 
 
@@ -24,7 +24,7 @@ class TempHumSensor(SensorBase):
         super().__init__(config, logger)
 
     def init(self):
-        self.logger.info("TempHumSensor", self.get_name(), " init")
+        self.logger.info("TempHumSensor"+self.get_name()+" init")
 
     def get_data(self):
         data_frame = self.config['data_format']

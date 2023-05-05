@@ -60,3 +60,329 @@
 2023-05-05 11:20:43,638 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:178] - INFO: BaseContext 初始化消息服务
 2023-05-05 11:20:43,638 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:180] - INFO: BaseContext 初始化心跳服务
 2023-05-05 11:20:43,727 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:89] - INFO: 成功连接MQTT服务器
+2023-05-05 14:25:01,053 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:172] - INFO: BaseContext init-ing
+2023-05-05 14:25:02,085 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:172] - INFO: BaseContext init-ing
+2023-05-05 14:25:11,777 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:172] - INFO: BaseContext init-ing
+2023-05-05 14:25:12,712 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:172] - INFO: BaseContext init-ing
+2023-05-05 14:28:06,729 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:172] - INFO: BaseContext init-ing
+2023-05-05 14:28:07,791 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:172] - INFO: BaseContext init-ing
+2023-05-05 14:31:38,618 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:172] - INFO: BaseContext init-ing
+2023-05-05 14:31:38,665 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:24] - INFO: sensor ExtTempHumSensor init success
+2023-05-05 14:31:38,665 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:24] - INFO: sensor ExtLightSensor init success
+2023-05-05 14:31:38,682 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:37] - INFO: lamp MasterLight init success
+2023-05-05 14:31:38,698 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:37] - INFO: lamp SlaveLight init success
+2023-05-05 14:31:38,698 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:37] - INFO: lamp BlinkLight init success
+2023-05-05 14:31:38,714 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:182] - INFO: BaseContext 初始化通讯服务
+2023-05-05 14:31:38,722 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:129] - INFO: 启动通信代理
+2023-05-05 14:31:38,722 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:184] - INFO: BaseContext 初始化消息服务
+2023-05-05 14:31:38,724 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:186] - INFO: BaseContext 初始化心跳服务
+2023-05-05 14:31:38,803 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:89] - INFO: 成功连接MQTT服务器
+2023-05-05 14:33:54,739 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:172] - INFO: BaseContext init-ing
+2023-05-05 14:33:54,748 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:24] - INFO: sensor ExtTempHumSensor init success
+2023-05-05 14:33:54,748 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:24] - INFO: sensor ExtLightSensor init success
+2023-05-05 14:33:54,748 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-05 14:33:54,748 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:37] - INFO: lamp MasterLight init success
+2023-05-05 14:33:54,748 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampSlaveLight init
+2023-05-05 14:33:54,748 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:37] - INFO: lamp SlaveLight init success
+2023-05-05 14:33:54,749 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBlinkLight init
+2023-05-05 14:33:54,749 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:37] - INFO: lamp BlinkLight init success
+2023-05-05 14:33:54,749 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:182] - INFO: BaseContext 初始化通讯服务
+2023-05-05 14:33:54,750 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:129] - INFO: 启动通信代理
+2023-05-05 14:33:54,750 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:184] - INFO: BaseContext 初始化消息服务
+2023-05-05 14:33:54,750 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:186] - INFO: BaseContext 初始化心跳服务
+2023-05-05 14:33:54,796 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:89] - INFO: 成功连接MQTT服务器
+2023-05-05 14:34:14,904 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:172] - INFO: BaseContext init-ing
+2023-05-05 14:34:14,914 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\non_separation\raspberry.py[line:27] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-05 14:34:14,914 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:24] - INFO: sensor ExtTempHumSensor init success
+2023-05-05 14:34:14,914 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:24] - INFO: sensor ExtLightSensor init success
+2023-05-05 14:34:14,914 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-05 14:34:14,914 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:37] - INFO: lamp MasterLight init success
+2023-05-05 14:34:14,914 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampSlaveLight init
+2023-05-05 14:34:14,914 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:37] - INFO: lamp SlaveLight init success
+2023-05-05 14:34:14,914 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBlinkLight init
+2023-05-05 14:34:14,914 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:37] - INFO: lamp BlinkLight init success
+2023-05-05 14:34:14,914 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:182] - INFO: BaseContext 初始化通讯服务
+2023-05-05 14:34:14,921 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:129] - INFO: 启动通信代理
+2023-05-05 14:34:14,921 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:184] - INFO: BaseContext 初始化消息服务
+2023-05-05 14:34:14,921 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:186] - INFO: BaseContext 初始化心跳服务
+2023-05-05 14:34:14,969 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:89] - INFO: 成功连接MQTT服务器
+2023-05-05 15:20:13,501 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:172] - INFO: BaseContext init-ing
+2023-05-05 15:20:13,517 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\non_separation\raspberry.py[line:27] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-05 15:20:13,517 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:24] - INFO: sensor ExtTempHumSensor init success
+2023-05-05 15:20:13,517 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:24] - INFO: sensor ExtLightSensor init success
+2023-05-05 15:20:13,517 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-05 15:20:13,517 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:37] - INFO: lamp MasterLight init success
+2023-05-05 15:20:13,517 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampSlaveLight init
+2023-05-05 15:20:13,517 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:37] - INFO: lamp SlaveLight init success
+2023-05-05 15:20:13,517 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBlinkLight init
+2023-05-05 15:20:13,517 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:37] - INFO: lamp BlinkLight init success
+2023-05-05 15:20:13,517 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:182] - INFO: BaseContext 初始化通讯服务
+2023-05-05 15:20:13,517 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:129] - INFO: 启动通信代理
+2023-05-05 15:20:13,517 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:184] - INFO: BaseContext 初始化消息服务
+2023-05-05 15:20:13,517 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:186] - INFO: BaseContext 初始化心跳服务
+2023-05-05 15:20:13,598 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:89] - INFO: 成功连接MQTT服务器
+2023-05-05 15:20:17,191 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:75] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 15:20:27,209 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:75] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 15:49:24,476 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:183] - INFO: BaseContext init-ing
+2023-05-05 15:49:24,477 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\non_separation\raspberry.py[line:27] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-05 15:49:24,480 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:24] - INFO: sensor ExtTempHumSensor init success
+2023-05-05 15:49:24,480 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:24] - INFO: sensor ExtLightSensor init success
+2023-05-05 15:49:24,480 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-05 15:49:24,481 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:37] - INFO: lamp MasterLight init success
+2023-05-05 15:49:24,481 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampSlaveLight init
+2023-05-05 15:49:24,481 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:37] - INFO: lamp SlaveLight init success
+2023-05-05 15:49:24,481 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBlinkLight init
+2023-05-05 15:49:24,481 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:37] - INFO: lamp BlinkLight init success
+2023-05-05 15:49:24,481 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:194] - INFO: BaseContext 初始化通讯服务
+2023-05-05 15:49:24,484 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:129] - INFO: 启动通信代理
+2023-05-05 15:49:24,484 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:196] - INFO: BaseContext 初始化消息服务
+2023-05-05 15:49:24,485 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:198] - INFO: BaseContext 初始化心跳服务
+2023-05-05 15:49:24,529 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:89] - INFO: 成功连接MQTT服务器
+2023-05-05 15:49:41,233 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:75] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 15:51:42,791 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:185] - INFO: BaseContext init-ing
+2023-05-05 15:51:42,791 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\non_separation\raspberry.py[line:27] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-05 15:51:42,791 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:24] - INFO: sensor ExtTempHumSensor init success
+2023-05-05 15:51:42,791 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:24] - INFO: sensor ExtLightSensor init success
+2023-05-05 15:51:42,791 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-05 15:51:42,791 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:37] - INFO: lamp MasterLight init success
+2023-05-05 15:51:42,791 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampSlaveLight init
+2023-05-05 15:51:42,791 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:37] - INFO: lamp SlaveLight init success
+2023-05-05 15:51:42,791 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBlinkLight init
+2023-05-05 15:51:42,791 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:37] - INFO: lamp BlinkLight init success
+2023-05-05 15:51:42,791 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:196] - INFO: BaseContext 初始化通讯服务
+2023-05-05 15:51:42,799 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:129] - INFO: 启动通信代理
+2023-05-05 15:51:42,799 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:198] - INFO: BaseContext 初始化消息服务
+2023-05-05 15:51:42,799 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:200] - INFO: BaseContext 初始化心跳服务
+2023-05-05 15:51:42,848 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:89] - INFO: 成功连接MQTT服务器
+2023-05-05 15:51:46,314 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:75] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 15:52:40,497 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:185] - INFO: BaseContext init-ing
+2023-05-05 15:52:40,505 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\non_separation\raspberry.py[line:27] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-05 15:52:40,505 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:24] - INFO: sensor ExtTempHumSensor init success
+2023-05-05 15:52:40,505 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:24] - INFO: sensor ExtLightSensor init success
+2023-05-05 15:52:40,505 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-05 15:52:40,505 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:37] - INFO: lamp MasterLight init success
+2023-05-05 15:52:40,505 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampSlaveLight init
+2023-05-05 15:52:40,505 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:37] - INFO: lamp SlaveLight init success
+2023-05-05 15:52:40,505 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBlinkLight init
+2023-05-05 15:52:40,505 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:37] - INFO: lamp BlinkLight init success
+2023-05-05 15:52:40,505 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:196] - INFO: BaseContext 初始化通讯服务
+2023-05-05 15:52:40,513 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:198] - INFO: BaseContext 初始化消息服务
+2023-05-05 15:52:40,513 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:200] - INFO: BaseContext 初始化心跳服务
+2023-05-05 15:52:40,593 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:129] - INFO: 启动通信代理
+2023-05-05 15:52:40,657 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:89] - INFO: 成功连接MQTT服务器
+2023-05-05 15:52:49,275 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:75] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 15:53:26,467 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:75] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 15:54:38,312 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:75] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 16:02:59,283 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:185] - INFO: BaseContext init-ing
+2023-05-05 16:02:59,283 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\non_separation\raspberry.py[line:27] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-05 16:02:59,283 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:24] - INFO: sensor ExtTempHumSensor init success
+2023-05-05 16:02:59,283 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:24] - INFO: sensor ExtLightSensor init success
+2023-05-05 16:02:59,283 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-05 16:02:59,283 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:37] - INFO: lamp MasterLight init success
+2023-05-05 16:02:59,283 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampSlaveLight init
+2023-05-05 16:02:59,283 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:37] - INFO: lamp SlaveLight init success
+2023-05-05 16:02:59,283 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBlinkLight init
+2023-05-05 16:02:59,283 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:37] - INFO: lamp BlinkLight init success
+2023-05-05 16:02:59,283 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:196] - INFO: BaseContext 初始化通讯服务
+2023-05-05 16:02:59,289 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:198] - INFO: BaseContext 初始化消息服务
+2023-05-05 16:02:59,289 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:129] - INFO: 启动通信代理
+2023-05-05 16:02:59,289 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:200] - INFO: BaseContext 初始化心跳服务
+2023-05-05 16:02:59,346 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:89] - INFO: 成功连接MQTT服务器
+2023-05-05 16:03:07,418 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:75] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 16:04:49,726 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:185] - INFO: BaseContext init-ing
+2023-05-05 16:04:49,726 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\non_separation\raspberry.py[line:27] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-05 16:04:49,726 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:24] - INFO: sensor ExtTempHumSensor init success
+2023-05-05 16:04:49,726 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:24] - INFO: sensor ExtLightSensor init success
+2023-05-05 16:04:49,731 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-05 16:04:49,731 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:37] - INFO: lamp MasterLight init success
+2023-05-05 16:04:49,731 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampSlaveLight init
+2023-05-05 16:04:49,731 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:37] - INFO: lamp SlaveLight init success
+2023-05-05 16:04:49,731 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBlinkLight init
+2023-05-05 16:04:49,731 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:37] - INFO: lamp BlinkLight init success
+2023-05-05 16:04:49,731 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:196] - INFO: BaseContext 初始化通讯服务
+2023-05-05 16:04:49,731 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:198] - INFO: BaseContext 初始化消息服务
+2023-05-05 16:04:49,735 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:200] - INFO: BaseContext 初始化心跳服务
+2023-05-05 16:04:49,775 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:129] - INFO: 启动通信代理
+2023-05-05 16:04:49,824 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:89] - INFO: 成功连接MQTT服务器
+2023-05-05 16:04:55,201 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:75] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 16:07:17,054 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:185] - INFO: BaseContext init-ing
+2023-05-05 16:07:17,061 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\non_separation\raspberry.py[line:27] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-05 16:07:17,061 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:24] - INFO: sensor ExtTempHumSensor init success
+2023-05-05 16:07:17,061 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:24] - INFO: sensor ExtLightSensor init success
+2023-05-05 16:07:17,061 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-05 16:07:17,061 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:37] - INFO: lamp MasterLight init success
+2023-05-05 16:07:17,061 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampSlaveLight init
+2023-05-05 16:07:17,061 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:37] - INFO: lamp SlaveLight init success
+2023-05-05 16:07:17,061 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBlinkLight init
+2023-05-05 16:07:17,061 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:37] - INFO: lamp BlinkLight init success
+2023-05-05 16:07:17,061 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:196] - INFO: BaseContext 初始化通讯服务
+2023-05-05 16:07:17,061 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:130] - INFO: 启动通信代理
+2023-05-05 16:07:17,061 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:198] - INFO: BaseContext 初始化消息服务
+2023-05-05 16:07:17,061 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:200] - INFO: BaseContext 初始化心跳服务
+2023-05-05 16:07:17,111 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:90] - INFO: 成功连接MQTT服务器
+2023-05-05 16:07:21,301 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 17:22:21,590 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:185] - INFO: BaseContext init-ing
+2023-05-05 17:22:21,592 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\non_separation\raspberry.py[line:27] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-05 17:22:21,592 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:24] - INFO: sensor ExtTempHumSensor init success
+2023-05-05 17:22:21,592 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:24] - INFO: sensor ExtLightSensor init success
+2023-05-05 17:22:21,592 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-05 17:22:21,592 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:37] - INFO: lamp MasterLight init success
+2023-05-05 17:22:21,592 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampSlaveLight init
+2023-05-05 17:22:21,592 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:37] - INFO: lamp SlaveLight init success
+2023-05-05 17:22:21,592 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBlinkLight init
+2023-05-05 17:22:21,592 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\components\component_proxy.py[line:37] - INFO: lamp BlinkLight init success
+2023-05-05 17:22:21,592 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:196] - INFO: BaseContext 初始化通讯服务
+2023-05-05 17:22:21,592 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:130] - INFO: 启动通信代理
+2023-05-05 17:22:21,592 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:198] - INFO: BaseContext 初始化消息服务
+2023-05-05 17:22:21,600 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:200] - INFO: BaseContext 初始化心跳服务
+2023-05-05 17:22:21,649 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:90] - INFO: 成功连接MQTT服务器
+2023-05-05 17:22:24,347 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/lamp,消息: {
+  "msg": "hello"
+}
+2023-05-05 17:22:27,622 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/lamp,消息: {
+  "msg": "hello"
+}
+2023-05-05 17:22:32,744 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/lamp,消息: {
+  "msg": "hello"
+}
+2023-05-05 17:22:36,220 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/lamp,消息: {
+  "msg": "hello"
+}
+2023-05-05 17:22:37,655 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/lamp,消息: {
+  "msg": "hello"
+}
+2023-05-05 17:22:38,474 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/lamp,消息: {
+  "msg": "hello"
+}
+2023-05-05 17:22:38,988 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/lamp,消息: {
+  "msg": "hello"
+}
+2023-05-05 17:22:39,188 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/lamp,消息: {
+  "msg": "hello"
+}
+2023-05-05 17:22:39,501 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/lamp,消息: {
+  "msg": "hello"
+}
+2023-05-05 17:22:39,589 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/lamp,消息: {
+  "msg": "hello"
+}
+2023-05-05 17:22:39,807 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/lamp,消息: {
+  "msg": "hello"
+}
+2023-05-05 17:22:40,012 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/lamp,消息: {
+  "msg": "hello"
+}
+2023-05-05 17:22:40,216 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/lamp,消息: {
+  "msg": "hello"
+}
+2023-05-05 17:22:40,417 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/lamp,消息: {
+  "msg": "hello"
+}
+2023-05-05 17:22:40,625 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/lamp,消息: {
+  "msg": "hello"
+}
+2023-05-05 17:22:40,747 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/lamp,消息: {
+  "msg": "hello"
+}
+2023-05-05 17:22:41,037 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/lamp,消息: {
+  "msg": "hello"
+}
+2023-05-05 17:22:41,141 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/lamp,消息: {
+  "msg": "hello"
+}
+2023-05-05 17:22:41,445 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/lamp,消息: {
+  "msg": "hello"
+}
+2023-05-05 17:22:41,518 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/lamp,消息: {
+  "msg": "hello"
+}
+2023-05-05 17:22:41,754 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/lamp,消息: {
+  "msg": "hello"
+}
+2023-05-05 17:22:41,952 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/lamp,消息: {
+  "msg": "hello"
+}
+2023-05-05 17:22:48,743 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 17:22:49,291 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 17:22:49,556 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 17:22:49,829 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 17:22:50,131 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 17:22:50,332 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 17:22:50,519 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 17:22:50,696 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 17:22:50,882 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 17:22:51,087 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 17:22:51,274 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 17:22:51,433 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 17:22:51,627 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 17:22:51,783 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 17:22:51,978 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 17:22:52,196 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 17:22:52,373 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 17:22:52,583 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 17:22:53,244 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/lamp,消息: {
+  "msg": "hello"
+}
+2023-05-05 17:22:53,286 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 17:22:53,454 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 17:22:53,478 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/lamp,消息: {
+  "msg": "hello"
+}
+2023-05-05 17:22:53,678 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 17:22:53,711 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/lamp,消息: {
+  "msg": "hello"
+}
+2023-05-05 17:22:53,890 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 17:22:54,092 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 17:22:54,182 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/lamp,消息: {
+  "msg": "hello"
+}
+2023-05-05 17:22:54,256 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 17:22:54,473 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 17:22:54,521 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/lamp,消息: {
+  "msg": "hello"
+}
+2023-05-05 17:22:54,650 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 17:22:54,756 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/lamp,消息: {
+  "msg": "hello"
+}
+2023-05-05 17:22:54,876 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 17:22:55,021 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/lamp,消息: {
+  "msg": "hello"
+}
+2023-05-05 17:22:55,102 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 17:22:55,225 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/lamp,消息: {
+  "msg": "hello"
+}
+2023-05-05 17:22:55,257 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 17:22:55,443 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/lamp,消息: {
+  "msg": "hello"
+}
+2023-05-05 17:22:55,468 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 17:22:55,645 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/lamp,消息: {
+  "msg": "hello"
+}
+2023-05-05 17:22:55,669 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 17:22:55,826 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/lamp,消息: {
+  "msg": "hello"
+}
+2023-05-05 17:22:55,839 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 17:22:56,025 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 17:22:56,027 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/lamp,消息: {
+  "msg": "hello"
+}
+2023-05-05 17:22:56,228 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 17:22:56,311 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/lamp,消息: {
+  "msg": "hello"
+}
+2023-05-05 17:22:56,359 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 17:22:56,599 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 17:22:56,624 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/lamp,消息: {
+  "msg": "hello"
+}
+2023-05-05 17:22:56,753 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 17:22:56,794 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/lamp,消息: {
+  "msg": "hello"
+}
+2023-05-05 17:22:56,957 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 17:22:57,173 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:76] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
