@@ -1,0 +1,15 @@
+{
+  "mqtt": {
+    "host": "121.37.108.178",
+    "port": 1883,
+    "account": "admin",
+    "passwd": "admin",
+    "client_id": "raspberry_test_1",
+    "sub_topics": "server/{id}/#",
+    "config_name": "mqtt_config.json"
+  },
+  "serial": {
+    "port": "/dev/ttyUSB0",
+    "baudrate": 115200
+  }
+}

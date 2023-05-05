@@ -1,0 +1,60 @@
+{
+  "impl": ".non_separation.raspberry",
+  "sensor": [
+    {
+      "name": "ExtTempHumSensor",
+      "object": "TempHumSensor",
+      "pin": {
+        "temp": "A0",
+        "hum": "A1"
+      },
+      "publish": "edge/sensor/ExtTempHumSensor/{device_id}",
+      "data_format": {
+        "temperature": "float",
+        "humidity": "float"
+      }
+    },
+    {
+      "name": "ExtLightSensor",
+      "object": "LightSensor",
+      "pin": "A2",
+      "publish": "edge/sensor/ExtLightSensor/{device_id}",
+      "data_format": {
+        "brightness": "float"
+      }
+
+    }
+  ],
+  "lamp": [
+    {
+        "id": "LAMP{device_id}M",
+        "name": "MasterLight",
+        "object": "Lamp",
+        "pin": "D2",
+        "subscribe": "edge/lamp/Light/{lamp_id}",
+        "data_format": {
+          "brightness": "float"
+        }
+    },
+    {
+        "id": "LAMP{device_id}F",
+        "name": "SlaveLight",
+        "object": "Lamp",
+        "pin": "D3",
+        "subscribe": "edge/lamp/Light/{lamp_id}",
+        "data_format": {
+          "brightness": "float"
+        }
+    },
+    {
+        "id": "LAMP{device_id}B",
+        "name": "BlinkLight",
+        "object": "Lamp",
+        "pin": "D4",
+        "subscribe": "edge/lamp/Light/{lamp_id}",
+        "data_format": {
+          "brightness": "float"
+        }
+    }
+  ]
+}

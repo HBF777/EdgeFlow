@@ -1,0 +1,62 @@
+2023-05-04 16:37:47,222 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:106] - INFO: BaseContext init-ing
+2023-05-04 16:37:47,223 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:116] - INFO: BaseContext 初始化通讯服务
+2023-05-04 16:37:47,223 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:140] - INFO: 启动通信代理
+2023-05-04 16:37:47,224 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:118] - INFO: BaseContext 初始化消息服务
+2023-05-04 16:37:47,225 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:120] - INFO: BaseContext 初始化心跳服务
+2023-05-04 16:37:47,275 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:87] - INFO: 成功连接MQTT服务器
+2023-05-04 16:45:19,062 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:108] - INFO: BaseContext init-ing
+2023-05-04 16:45:19,063 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:118] - INFO: BaseContext 初始化通讯服务
+2023-05-04 16:45:19,066 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:120] - INFO: BaseContext 初始化消息服务
+2023-05-04 16:45:19,066 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:122] - INFO: BaseContext 初始化心跳服务
+2023-05-04 16:45:35,845 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:108] - INFO: BaseContext init-ing
+2023-05-04 16:45:35,845 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:118] - INFO: BaseContext 初始化通讯服务
+2023-05-04 16:45:35,846 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:140] - INFO: 启动通信代理
+2023-05-04 16:45:35,846 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:120] - INFO: BaseContext 初始化消息服务
+2023-05-04 16:45:35,847 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:122] - INFO: BaseContext 初始化心跳服务
+2023-05-04 16:45:35,901 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:87] - INFO: 成功连接MQTT服务器
+2023-05-04 16:46:27,652 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:108] - INFO: BaseContext init-ing
+2023-05-04 16:46:27,653 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:118] - INFO: BaseContext 初始化通讯服务
+2023-05-04 16:46:27,653 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:120] - INFO: BaseContext 初始化消息服务
+2023-05-04 16:46:27,654 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:122] - INFO: BaseContext 初始化心跳服务
+2023-05-04 16:47:01,225 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:140] - INFO: 启动通信代理
+2023-05-04 16:47:30,606 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:108] - INFO: BaseContext init-ing
+2023-05-04 16:47:30,606 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:118] - INFO: BaseContext 初始化通讯服务
+2023-05-04 16:47:30,607 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:141] - INFO: 启动通信代理
+2023-05-04 16:47:30,607 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:120] - INFO: BaseContext 初始化消息服务
+2023-05-04 16:47:30,608 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:122] - INFO: BaseContext 初始化心跳服务
+2023-05-04 16:47:30,817 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:88] - INFO: 成功连接MQTT服务器
+2023-05-04 16:48:05,657 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:108] - INFO: BaseContext init-ing
+2023-05-04 16:48:05,659 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:118] - INFO: BaseContext 初始化通讯服务
+2023-05-04 16:48:05,659 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:120] - INFO: BaseContext 初始化消息服务
+2023-05-04 16:48:05,660 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:122] - INFO: BaseContext 初始化心跳服务
+2023-05-04 16:48:17,904 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:141] - INFO: 启动通信代理
+2023-05-04 16:48:23,339 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:88] - INFO: 成功连接MQTT服务器
+2023-05-04 16:52:48,035 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:108] - INFO: BaseContext init-ing
+2023-05-04 16:52:48,035 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:118] - INFO: BaseContext 初始化通讯服务
+2023-05-04 16:52:48,036 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:141] - INFO: 启动通信代理
+2023-05-04 16:52:48,036 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:120] - INFO: BaseContext 初始化消息服务
+2023-05-04 16:52:48,036 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:122] - INFO: BaseContext 初始化心跳服务
+2023-05-04 16:52:48,103 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:84] - INFO: 成功连接MQTT服务器
+2023-05-04 16:52:51,687 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:75] - INFO: 收到消息: 主题: server/TN2022051822224321/2,消息: 8882
+2023-05-04 17:01:00,840 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:108] - INFO: BaseContext init-ing
+2023-05-04 17:01:00,841 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:118] - INFO: BaseContext 初始化通讯服务
+2023-05-04 17:01:00,842 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:146] - INFO: 启动通信代理
+2023-05-04 17:01:00,842 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:120] - INFO: BaseContext 初始化消息服务
+2023-05-04 17:01:00,843 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:122] - INFO: BaseContext 初始化心跳服务
+2023-05-04 17:01:00,895 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:89] - INFO: 成功连接MQTT服务器
+2023-05-04 17:01:05,076 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:75] - INFO: 收到消息: 主题: server/TN2022051822224321/2,消息: 8882
+2023-05-04 17:01:05,077 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:81] - ERROR: 消息格式错误: 8882
+2023-05-04 17:01:15,155 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:75] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-04 19:47:14,808 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:161] - INFO: BaseContext init-ing
+2023-05-04 19:47:14,819 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:171] - INFO: BaseContext 初始化通讯服务
+2023-05-04 19:47:14,819 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:129] - INFO: 启动通信代理
+2023-05-04 19:47:14,819 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:173] - INFO: BaseContext 初始化消息服务
+2023-05-04 19:47:14,819 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:175] - INFO: BaseContext 初始化心跳服务
+2023-05-04 19:47:14,878 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:89] - INFO: 成功连接MQTT服务器
+2023-05-04 19:47:32,528 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:75] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
+2023-05-05 11:20:43,615 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:166] - INFO: BaseContext init-ing
+2023-05-05 11:20:43,630 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:176] - INFO: BaseContext 初始化通讯服务
+2023-05-05 11:20:43,638 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:129] - INFO: 启动通信代理
+2023-05-05 11:20:43,638 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:178] - INFO: BaseContext 初始化消息服务
+2023-05-05 11:20:43,638 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\context.py[line:180] - INFO: BaseContext 初始化心跳服务
+2023-05-05 11:20:43,727 - C:\Users\李帅兵\PycharmProjects\EdgeFlowⅡ\serves\base_context\com_proxy.py[line:89] - INFO: 成功连接MQTT服务器
