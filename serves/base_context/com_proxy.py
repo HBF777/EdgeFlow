@@ -6,6 +6,7 @@
 # @Software: PyCharm
 import abc
 import threading
+import time
 import uuid
 
 from paho.mqtt import client as mqtt
@@ -131,6 +132,8 @@ class ComProxy:
         self.mqtt_client.connect()
         threading.Thread(target=self.mqtt_client.recv_message).start()
         self.serial_client.connect()
+        while True:
+            time.sleep(1)
 
     def get_message_wait(self):
         pass
@@ -194,7 +197,7 @@ class ComProxy:
             return len(self.lamp_message) + len(self.serve_message) + len(self.sensor_message)
 
 
-def parse_msg_type_by_topic(topic) -> Message:
+def parse_msg_type_by_topic(topic):
     """
     解析MQTT Topic并返回消息类型。
     :param topic: MQTT Topic，格式为/serve/{device_id}/{serve_type}/#
@@ -207,26 +210,26 @@ def parse_msg_type_by_topic(topic) -> Message:
     message = Message()
     message.message_from = Message.CLOUD_CONTEXT_MESSAGE
     if serve_type == "base_context":
-        message.message_type = Message.MESSAGE_TYPE_OP
+        message.message_type = Message.MESSAGE_TYPE_REQ_DATA
         message.message_to = Message.BASE_CONTEXT_MESSAGE
+        message.message_op = Message.MESSAGE_OP_SENSOR
         if parts[3] == "lamp":
+            message.message_type = Message.MESSAGE_TYPE_CONTROL
             message.message_op = Message.MESSAGE_OP_LAMP
-            return message
-        # parts[4] == "gps" /"humTemp" /"light" /"smoke" /"sound"
-        message.message_op = parts[4]
+        message.message_target_obj = parts[4]
         return message
     elif serve_type == "gui":
-        message.message_type = Message.MESSAGE_TYPE_OP
+        message.message_type = Message.MESSAGE_TYPE_CONTROL
         message.message_to = Message.GUI_CONTEXT_MESSAGE
         message.message_op = parts[3]
         return message
     elif serve_type == "webcam":
-        message.message_type = Message.MESSAGE_TYPE_OP
+        message.message_type = Message.MESSAGE_TYPE_CONTROL
         message.message_to = Message.WEBCAM_CONTEXT_MESSAGE
         message.message_op = parts[3]
         return message
     elif serve_type == "edge_computing":
-        message.message_type = Message.MESSAGE_TYPE_OP
+        message.message_type = Message.MESSAGE_TYPE_CONTROL
         message.message_to = Message.EDGE_COMPUTING_CONTEXT_MESSAGE
         message.message_op = parts[3]
         return message

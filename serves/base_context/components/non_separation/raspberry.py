@@ -41,4 +41,6 @@ class LightSensor(SensorBase):
         pass
 
     def get_data(self):
-        pass
+        data_frame = self.config['data_format']
+        data_frame['brightness'] = 20
+        return data_frame

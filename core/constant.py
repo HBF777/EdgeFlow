@@ -41,21 +41,28 @@ class Message:
     HARDWARE_CONTEXT_MESSAGE = "hardware"
     # 服务消息类型
     MESSAGE_TYPE_DATA = 'data'
-    MESSAGE_TYPE_OP = 'op'
+    MESSAGE_TYPE_CONTROL = 'control'
     MESSAGE_TYPE_NOTICE_NOT_SERVE = "NOT_SERVE"
+    MESSAGE_TYPE_REQ_DATA = "req_data"
     # 服务指令内容
     MESSAGE_OP_LAMP = 'lamp'
+    MESSAGE_OP_SENSOR = 'sensor'
+
     # 服务消息内容
 
     def __init__(self, *args, **kwargs):
-        self.message_id = kwargs.get("message_id") if kwargs.get('message_id') else uuid.uuid4()
+        if kwargs.get('message_id', None) is None:
+            self.message_id = str(uuid.uuid1())
+        else:
+            self.message_id = kwargs.get("message_id")
         self.message_type = kwargs.get('message_type')
         self.message_from = kwargs.get('message_from')
         self.message_to = kwargs.get('message_to')
+        self.message_target_obj = kwargs.get('obj')
         self.message_op = kwargs.get('message_op')
         self.message_data = kwargs.get('message_data')
 
-    def is_op_self(self) -> bool:
+    def is_to_core_control_self(self) -> bool:
         if self.message_to == Message.CORE_CONTEXT_MESSAGE:
             return True
         return False
@@ -76,8 +83,11 @@ def NotFoundMessage(message_id, message_form, message_to) -> Message:
                    message_from=message_form, message_to=message_to)
 
 
-def DataMessage(message: Message) -> Message:
-    return message
+def DataMessage(message_from, message_to, message_data) -> Message:
+    return Message(message_type=Message.MESSAGE_TYPE_DATA,
+                   message_from=message_from,
+                   message_to=message_to,
+                   message_data=message_data)
 
 
 def TestMessage() -> Message:

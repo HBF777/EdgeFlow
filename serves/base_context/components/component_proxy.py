@@ -42,7 +42,7 @@ class ComponentProxy:
                 self.logger.warning(e)
 
     def get_data(self, name):
-        return self.sensors[name]
+        return self.sensors[name].get_data()
 
     def handle_lamp_light(self, name, data):
         self.lamps[name].set_light(data)

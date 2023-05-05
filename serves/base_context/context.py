@@ -11,21 +11,16 @@ from core.constant import *
 from .components.component_proxy import ComponentProxy
 from .constant import *
 from ..serves import BaseServerAbstract
-from core.tools import Logger, ConfigParser
+from core.tools import Logger, ConfigParser, singleton
 from .com_proxy import ComProxy, Message
 
 logger = None
 device_id = str()
 com_proxy = None
-com_config = dict()
 component_config = None
 
 
-class TaskManager(object):
-    def __init__(self):
-        pass
-
-
+@singleton
 class MessageManager(object):
     class MessagePool(object):
         """
@@ -63,16 +58,13 @@ class MessageManager(object):
             pass
 
         @staticmethod
-        def put_message_serve(message: Message):
-            pass
-
-        @staticmethod
-        def recv_message_serve(message: Message):
-            pass
-
-        @staticmethod
-        def recv_message(message: Message):
-            pass
+        def remove_message(message_id: str):
+            """
+            移除消息
+            :param message_id:
+            :return:
+            """
+            return MessageManager().MessagePool.message_pool.pop(message_id, False)
 
     class MessageQueue(object):
         def __init__(self):
@@ -105,10 +97,16 @@ class MessageManager(object):
     def listen_message_cloud(self):
         while True:
             message = self.mqtt_queue.wait_get()
-            if message.message_type == Message.MESSAGE_TYPE_OP:
+            # 将需要确认的消息加入消息等待池
+            if message.message_type == Message.MESSAGE_TYPE_CONTROL or message.message_type == Message.MESSAGE_TYPE_DATA:
                 self.MessagePool.put_message(message)
             if message.message_to == Message.BASE_CONTEXT_MESSAGE:
-                pass
+                t_m = HardManager().handle_message(message)
+                if isinstance(t_m, dict):  # 如果返回值是字典，说明是需要回复的消息
+                    m = DataMessage(message_data=t_m, message_from=Message.BASE_CONTEXT_MESSAGE,
+                                    message_to=message.message_from)
+                    # TODO 消息中转的思考，需要考虑消息的转发，以及消息的确认
+                self.MessagePool.remove_message(message.message_id)
             else:
                 self.serve_send_queue.put(message)
 
@@ -126,8 +124,11 @@ class MessageManager(object):
 
     def start(self):
         threading.Thread(target=self.listen_message_cloud).start()
+        while True:
+            time.sleep(4)
 
 
+@singleton
 class HardManager(object):
     def __init__(self, _Logger=None, components_config=None):
         self.component_proxy = None
@@ -138,33 +139,54 @@ class HardManager(object):
         # 创建硬件代理
         self.component_proxy = ComponentProxy(self.component_config, logger=logger)
 
+    def handle_message(self, message: Message):
+        """
+        处理硬件消息
+        :param message:
+        :return:
+        """
+        message_id = None
+        if message.message_type == Message.MESSAGE_TYPE_CONTROL:
+            if message.message_to == Message.MESSAGE_OP_LAMP:
+                message_id = self.component_proxy.handle_lamp_light(message.message_target_obj, message.message_data)
+            else:
+                pass
+            return message_id
+        elif message.message_type == Message.MESSAGE_TYPE_REQ_DATA:
+            if message.message_to == Message.MESSAGE_OP_LAMP:
+                data = self.component_proxy.get_data(message.message_target_obj)
+            else:
+                data = self.component_proxy.get_data(message.message_target_obj)
+            return data
+
 
 # 管理器
 message_manager = MessageManager()
-task_manager = TaskManager()
-hard_manager = HardManager()
 
 
-def init_context() -> dict:
-    global message_manager, task_manager, component_config, com_config, hard_manager, logger
-    com_config = ConfigParser.parse_json(file_path=os.path.abspath(COM_CONFIG_FILE_PATH))
+def init_context() -> bool:
+    global message_manager, component_config, logger
     component_config = ConfigParser.parse_json(file_path=os.path.abspath(COMPONENT_CONFIG_FILE_PATH))
-    hard_manager = HardManager(components_config=component_config, _Logger=logger)
-    hard_manager.init()
-    return {
-        MESSAGE_MANAGER: message_manager,
-        TASK_MANAGER: task_manager,
-        HARD_MANAGER: hard_manager
-    }
+    HardManager(components_config=component_config, _Logger=logger).init()
+    return True
 
 
 def start_com_proxy():
-    global com_proxy, com_config, message_manager, logger
+    global com_proxy, message_manager, logger
+    com_config = ConfigParser.parse_json(file_path=os.path.abspath(COM_CONFIG_FILE_PATH))
     com_config['mqtt']['sub_topics'] = str(com_config['mqtt']['sub_topics']).format(id=device_id)
     com_proxy = ComProxy(com_config, mqtt_message_queue=message_manager.mqtt_queue,
                          serial_message_queue=message_manager.serial_queue, logger=logger)
-    com_proxy.start()
-    message_manager.start()
+    message_manager_thread = threading.Thread(target=message_manager.start)
+    com_proxy_thread = threading.Thread(target=com_proxy.start)
+    com_proxy_thread.start()
+    message_manager_thread.start()
+    while True:
+        time.sleep(1)
+        if not com_proxy_thread.is_alive():
+            logger.error("com_proxy_thread is dead")
+        if not message_manager_thread.is_alive():
+            logger.error("message_manager_thread is dead")
 
 
 class BaseContext(BaseServerAbstract):
@@ -183,10 +205,9 @@ class BaseContext(BaseServerAbstract):
         self.base_path = os.path.abspath(".")
         logger = Logger(filename=os.path.abspath(".log.BaseContextLog.log"), level="debug").logger
         logger.info("BaseContext init-ing")
-        managers = init_context()
-        self.message_manager = managers[MESSAGE_MANAGER]
-        self.message_manager.init(self.send_queue, self.recv_queue)
-        self.task_manager = managers[TASK_MANAGER]
+        # 初始化基础环境 启动流程 初始化检查硬件 -> 初始化通讯服务 -> 初始化消息服务 -> 初始化心跳服务
+        init_context()
+        MessageManager().init(self.send_queue, self.recv_queue)
         # 通讯服务启动
         self.com_thread = threading.Thread(target=start_com_proxy)
         # 消息服务启动

@@ -38,7 +38,7 @@
     },
     {
         "id": "LAMP{device_id}F",
-        "name": "SlaveLight",
+        "name": "FrontLight",
         "object": "Lamp",
         "pin": "D3",
         "subscribe": "edge/lamp/Light/{lamp_id}",
@@ -48,7 +48,7 @@
     },
     {
         "id": "LAMP{device_id}B",
-        "name": "BlinkLight",
+        "name": "BackLight",
         "object": "Lamp",
         "pin": "D4",
         "subscribe": "edge/lamp/Light/{lamp_id}",
