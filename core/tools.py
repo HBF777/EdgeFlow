@@ -78,7 +78,7 @@ class Logger(object):
 
     def __new__(cls, *args, **kwargs):
         if cls.__isinstance:  # 如果被实例化了
-            return cls.__isinstance  # 返回实例化对象
+            return cls.__isinstance.logger  # 返回实例化对象
         cls.__isinstance = object.__new__(cls)  # 否则实例化
         return cls.__isinstance  # 返回实例化的对象
 

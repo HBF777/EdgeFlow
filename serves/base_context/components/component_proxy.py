@@ -5,6 +5,7 @@
 # @Author    :李帅兵
 from abc import abstractmethod
 
+from core.constant import Message
 from core.tools import Logger
 from .abc_component import Sensor, Lamp
 
@@ -17,7 +18,7 @@ class ComponentProxy:
         for item in config['sensor']:
             sensor = None
             try:
-                sensor = eval("{component_object}(config = item,logger = logger)".format(
+                sensor = eval("{component_object}(config = item)".format(
                     component_object=item['object']
                 ))
                 sensor.init()
@@ -30,7 +31,7 @@ class ComponentProxy:
         for item in config['lamp']:
             lamp = None
             try:
-                lamp = eval("{component_object}(config = item,logger = logger)".format(
+                lamp = eval("{component_object}(config = item)".format(
                     component_object=item['object']
                 ))
                 lamp.init()
@@ -48,6 +49,19 @@ class ComponentProxy:
         except Exception as e:
             Logger().warning(e)
             raise e
+
+    def get_data_names(self, message)->Message:
+        res = {}
+        if message.target_obj == Message.ALL_SENSOR:
+            for name, sensor in self.sensors.items():
+                res[name] = sensor.get_data()
+        elif message.target_obj == Message.ALL_LAMP:
+            for name, lamp in self.lamps.items():
+                res[name] = lamp.get_data()
+        message.message_data = res
+        message.message_type = Message.TYPE_DATA_HARD
+        message.message_to, message.message_from = message.sender, message.receiver
+        return message
 
     def handle_lamp_light(self, name, data):
         self.lamps[name].set_light(data)

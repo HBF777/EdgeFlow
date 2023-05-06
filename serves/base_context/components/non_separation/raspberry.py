@@ -8,8 +8,8 @@ from ..abc_component import Sensor as SensorBase
 
 
 class Lamp(LampBase):
-    def __init__(self, config, logger):
-        super().__init__(config, logger)
+    def __init__(self, config):
+        super().__init__(config)
 
     def init(self):
         self.logger.info("Lamp" + self.get_name() + " init")
@@ -18,10 +18,15 @@ class Lamp(LampBase):
         self.logger.info("Lamp" + self.get_name() + " set_light:" + light)
         pass
 
+    def get_data(self):
+        data_frame = self.config['data_format']
+        data_frame['brightness'] = 20
+        return data_frame
+
 
 class TempHumSensor(SensorBase):
-    def __init__(self, config, logger):
-        super().__init__(config, logger)
+    def __init__(self, config):
+        super().__init__(config)
 
     def init(self):
         self.logger.info("TempHumSensor" + self.get_name() + " init")
@@ -33,10 +38,9 @@ class TempHumSensor(SensorBase):
         return data_frame
 
 
-
 class LightSensor(SensorBase):
-    def __init__(self, config, logger):
-        super().__init__(config, logger)
+    def __init__(self, config):
+        super().__init__(config)
 
     def init(self):
         pass

@@ -14,7 +14,7 @@ test_op = [
     Message(message_from=Message.GUI_CONTEXT_MESSAGE,
             message_to=Message.BASE_CONTEXT_MESSAGE,
             message_type=Message.TYPE_REQ_DATA_HARD,
-            message_obj=Message.ALL_SENSOR),
+            message_target_obj=Message.ALL_SENSOR),
 ]
 
 

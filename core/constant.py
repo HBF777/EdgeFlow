@@ -46,6 +46,8 @@ class Message:
     SENSOR_MESSAGE = "sensor"
     # ALL 传感器
     ALL_SENSOR = "sensor_all"
+    # ALL 路灯
+    ALL_LAMP = "lamp_all"
     # 服务消息类型
     TYPE_DATA_HARD = 'data'
     TYPE_CONTROL = 'control'
@@ -66,7 +68,7 @@ class Message:
         self.message_type = kwargs.get('message_type')
         self.message_from = kwargs.get('message_from')
         self.message_to = kwargs.get('message_to')
-        self.message_target_obj = kwargs.get('obj')
+        self.message_target_obj = kwargs.get('message_target_obj')
         self.message_op = kwargs.get('message_op')
         self.message_data = kwargs.get('message_data')
         self.message_topic = kwargs.get('message_topic')

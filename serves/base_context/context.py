@@ -111,10 +111,13 @@ class MessageManager(object):
             self.serve_send_queue.put(message)
             return
         self.MessagePool().put_message(message)
+        req_data_type = REQ_TYPE_MQTT if message.sender == message.BASE_CONTEXT_MESSAGE else REQ_TYPE_LOCAL
         if message.message_type == Message.TYPE_CONTROL:  # 控制消息
             pass
         elif message.message_type == Message.TYPE_REQ_DATA_HARD:  # 请求硬件数据
-            HardManager().handle_message(message)
+            message = HardManager().get_data(message, req_data_type)
+            self.serve_send_queue.put(message)
+        self.MessagePool().remove_message(message.message_id)
 
     def start(self):
         threading.Thread(target=self.listen_message_cloud).start()
@@ -132,34 +135,35 @@ class HardManager(object):
         # 创建硬件代理
         self.component_proxy = ComponentProxy(self.component_config)
 
-    def get_data(self, req_type) -> dict:
+    def get_data(self, message, data_type=REQ_TYPE_LOCAL) -> dict:
         """
         处理硬件消息
         消息返回种类有两种
         一种是返回给云端，要携带topic, data
         一种是返回给其他服务，要返回传感器名称：data形式返回
-        :param req_type:
+        :param data_type:
+        :param message:
         :return:
         """
-        if req_type == REQ_TYPE_MQTT:
-            self.component_proxy.get_data()
+        if data_type == REQ_TYPE_MQTT:
+            self.component_proxy.get_data_topic(message)
             pass
-        elif req_type == REQ_TYPE_LOCAL:
-            pass
+        elif data_type == REQ_TYPE_LOCAL:
+            return self.component_proxy.get_data_names(message)
 
 
 def init_context() -> bool:
     global component_config
-    component_config = ConfigParser.parse_json(file_path=os.path.abspath(CONFIG_FILE_PATH))
+    component_config = ConfigParser.parse_json(file_path=os.path.abspath(COMPONENT_CONFIG_FILE_PATH))
     HardManager(components_config=component_config).init()
     return True
 
 
 def start_com_proxy():
-    com_config = ConfigParser.parse_json(file_path=os.path.abspath(CONFIG_FILE_PATH))
+    com_config = ConfigParser.parse_json(file_path=os.path.abspath(COM_CONFIG_FILE_PATH))
     com_config['mqtt']['sub_topics'] = str(com_config['mqtt']['sub_topics']).format(id=device_id)
     ComProxy(com_config, mqtt_message_queue=MessageManager().mqtt_queue,
-             serial_message_queue=MessageManager().serial_queue, Logger=Logger)
+             serial_message_queue=MessageManager().serial_queue)
     message_manager_thread = threading.Thread(target=MessageManager().start)
     com_proxy_thread = threading.Thread(target=ComProxy().start)
     com_proxy_thread.start()
@@ -185,7 +189,7 @@ class BaseContext(BaseServerAbstract):
         global device_id
         device_id = self.device_id
         self.base_path = os.path.abspath(".")
-        Logger(filename=os.path.abspath(".log.BaseContextLog.log"), level="debug")
+        Logger(filename=LOG_FILE_PATH, level="debug")
         Logger().info("BaseContext init-ing")
         # 初始化基础环境 启动流程 初始化检查硬件 -> 初始化通讯服务 -> 初始化消息服务 -> 初始化心跳服务
         init_context()
@@ -217,7 +221,7 @@ class BaseContext(BaseServerAbstract):
         while True:
             if not self.recv_queue.empty():
                 message = self.recv_queue.get()
-                MessageManager().handle_serve_message(message)
+                MessageManager().handle_message(message)
 
     def listen_threads(self):
         com_thread_start_time = time.time()

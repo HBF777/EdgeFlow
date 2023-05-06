@@ -5,8 +5,10 @@
 # @Author    :李帅兵
 from abc import abstractmethod
 
+from core.tools import Logger
 
-class component(object):
+
+class Component(object):
     def __init__(self):
         self._status = None
 
@@ -17,15 +19,15 @@ class component(object):
         self._status = status
 
 
-class Sensor(component):
+class Sensor(Component):
     Normal = 0
     Abnormal = 1
     ShutDown = 2
 
-    def __init__(self, config, logger):
+    def __init__(self, config):
         super().__init__()
         self._name = config['name']
-        self.logger = logger
+        self.logger = Logger()
         self.config = config
         self._status = Sensor.Normal
 
@@ -48,16 +50,16 @@ class Sensor(component):
         return self.config['publish']
 
 
-class Lamp(component):
+class Lamp(Component):
     Normal = 0
     Abnormal = 1
     ShutDown = 2
 
-    def __init__(self, config, logger):
+    def __init__(self, config):
         super().__init__()
         self._name = config['name']
         self._id = config['id']
-        self.logger = logger
+        self.logger = Logger()
         self.config = config
         self._status = Lamp.Normal
 

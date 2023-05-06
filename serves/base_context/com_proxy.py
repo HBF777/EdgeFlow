@@ -151,7 +151,7 @@ class MqttClient(CommunicationClient):
 
 class SerialClient(CommunicationClient):
     def __init__(self, config, logger=None, message_queue=None):
-        super(SerialClient, self).__init__(logger, message_queue)
+        super(SerialClient, self).__init__(message_queue)
         pass
 
     def connect(self):

@@ -6,8 +6,9 @@
 # @Software: PyCharm
 
 # 服务配置文件地址
-COMPONENT_CONFIG_FILE_PATH = '/config/base_context/component_config.json'
-COM_CONFIG_FILE_PATH = '/config/base_context/com_config.json'
+COMPONENT_CONFIG_FILE_PATH = 'config/base_context/component_config.json'
+COM_CONFIG_FILE_PATH = 'config/base_context/com_config.json'
+LOG_FILE_PATH = "serves/base_context/log/BaseContextLog.log"
 
 REQ_TYPE_MQTT = "mqtt"
 REQ_TYPE_LOCAL = "local"
