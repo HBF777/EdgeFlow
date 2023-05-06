@@ -4,7 +4,7 @@
     "port": 1883,
     "account": "admin",
     "passwd": "admin",
-    "client_id": "raspberry_test_1",
+    "client_id": "TN2022051822224321",
     "sub_topics": "server/{id}/#",
     "config_name": "mqtt_config.json"
   },

@@ -4,12 +4,13 @@
 # @Time      :2023/5/4 19:49
 # @Author    :李帅兵
 from abc import abstractmethod
+
+from core.tools import Logger
 from .abc_component import Sensor, Lamp
 
 
 class ComponentProxy:
-    def __init__(self, config, logger):
-        self.logger = logger
+    def __init__(self, config):
         self.sensors = {}
         self.lamps = {}
         exec("from {impl} import *".format(impl=config['impl']))
@@ -21,11 +22,11 @@ class ComponentProxy:
                 ))
                 sensor.init()
                 self.sensors[item['name']] = sensor
-                self.logger.info("sensor {name} init success".format(name=item['name']))
+                Logger().info("sensor {name} init success".format(name=item['name']))
             except Exception as e:
-                self.logger.warning("sensor {name} init failed".format(name=item['name']))
+                Logger().warning("sensor {name} init failed".format(name=item['name']))
                 sensor.set_status(sensor.Abnormal)
-                self.logger.warning(e)
+                Logger().warning(e)
         for item in config['lamp']:
             lamp = None
             try:
@@ -34,15 +35,19 @@ class ComponentProxy:
                 ))
                 lamp.init()
                 self.lamps[item['name']] = lamp
-                self.logger.info("lamp {name} init success".format(name=item['name']))
+                Logger().info("lamp {name} init success".format(name=item['name']))
             except Exception as e:
-                self.logger.warning("lamp {name} init failed".format(name=item['name']))
+                Logger().warning("lamp {name} init failed".format(name=item['name']))
                 lamp.set_status(lamp.Abnormal)
                 self.lamps[item['name']] = lamp
-                self.logger.warning(e)
+                Logger().warning(e)
 
-    def get_data(self, name):
-        return self.sensors[name].get_data()
+    def get_data_topic(self, name):
+        try:
+            return self.sensors[name].get_data(), self.sensors[name].topic
+        except Exception as e:
+            Logger().warning(e)
+            raise e
 
     def handle_lamp_light(self, name, data):
         self.lamps[name].set_light(data)
@@ -54,3 +59,9 @@ class ComponentProxy:
         for name, lamp in self.lamps.items():
             status[name] = lamp.get_status()
         return status
+
+    def living(self):
+        for name, sensor in self.sensors.items():
+            sensor.living()
+        for name, lamp in self.lamps.items():
+            lamp.living()

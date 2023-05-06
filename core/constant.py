@@ -12,6 +12,7 @@ LOGGER_LEVEL = 'debug'
 SERVE_QUEUE_SIZE = 77
 
 
+
 class ServerConstant:
     # 基础服务名称
     DEVICE_ID = None
@@ -39,11 +40,18 @@ class Message:
     CLOUD_CONTEXT_MESSAGE = "cloud"
     # 硬件消息
     HARDWARE_CONTEXT_MESSAGE = "hardware"
+    # 路灯消息
+    LAMP_MESSAGE = "lamp"
+    # 传感器消息
+    SENSOR_MESSAGE = "sensor"
+    # ALL 传感器
+    ALL_SENSOR = "sensor_all"
     # 服务消息类型
-    MESSAGE_TYPE_DATA = 'data'
-    MESSAGE_TYPE_CONTROL = 'control'
-    MESSAGE_TYPE_NOTICE_NOT_SERVE = "NOT_SERVE"
-    MESSAGE_TYPE_REQ_DATA = "req_data"
+    TYPE_DATA_HARD = 'data'
+    TYPE_CONTROL = 'control'
+    TYPE_NOTICE_NOT_SERVE = "NOT_SERVE"
+    TYPE_REQ_DATA_HARD = "req_data_hard"
+    TYPE_REQ_DATA_ = "req_data_"
     # 服务指令内容
     MESSAGE_OP_LAMP = 'lamp'
     MESSAGE_OP_SENSOR = 'sensor'
@@ -61,7 +69,41 @@ class Message:
         self.message_target_obj = kwargs.get('obj')
         self.message_op = kwargs.get('message_op')
         self.message_data = kwargs.get('message_data')
+        self.message_topic = kwargs.get('message_topic')
 
+    @property
+    def topic(self):
+        return self.message_topic
+
+    @property
+    def receiver(self):
+        return self.message_to
+
+    @property
+    def sender(self):
+        return self.message_from
+
+    @property
+    def type(self):
+        return self.message_type
+
+    @property
+    def data(self):
+        return self.message_data
+
+    @property
+    def target_obj(self):
+        return self.message_target_obj
+
+    @property
+    def id(self):
+        return self.message_id
+
+    @property
+    def op(self):
+        return self.message_op
+
+    @property
     def is_to_core_control_self(self) -> bool:
         if self.message_to == Message.CORE_CONTEXT_MESSAGE:
             return True
@@ -83,7 +125,15 @@ def NotFoundMessage(message_id, message_form, message_to) -> Message:
                    message_from=message_form, message_to=message_to)
 
 
-def DataMessage(message_from, message_to, message_data) -> Message:
+def DataMessage(message_data, message_id=None, message_from=None, message_to=None, message_topic=None,
+                message: Message = None, ) -> Message:
+    if message:
+        return Message(message_id=message.message_id,
+                       message_type=Message.MESSAGE_TYPE_DATA,
+                       message_from=message.receiver,
+                       message_to=message.sender,
+                       message_data=message_data,
+                       message_topic=message_topic)
     return Message(message_type=Message.MESSAGE_TYPE_DATA,
                    message_from=message_from,
                    message_to=message_to,

@@ -5,7 +5,8 @@
 # @Author    :李帅兵
 from serves.base_context.components.non_separation.raspberry import *
 from core.tools import ConfigParser
-conf  = ConfigParser.parse_json("component_config.json")
+
+conf = ConfigParser.parse_json("component_config.json")
 sensors = {}
 for item in conf['sensor']:
     try:

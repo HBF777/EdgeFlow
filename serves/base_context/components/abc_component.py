@@ -6,12 +6,24 @@
 from abc import abstractmethod
 
 
-class Sensor:
+class component(object):
+    def __init__(self):
+        self._status = None
+
+    def living(self):
+        pass
+
+    def set_status(self, status):
+        self._status = status
+
+
+class Sensor(component):
     Normal = 0
     Abnormal = 1
     ShutDown = 2
 
     def __init__(self, config, logger):
+        super().__init__()
         self._name = config['name']
         self.logger = logger
         self.config = config
@@ -31,16 +43,18 @@ class Sensor:
     def get_name(self):
         return self._name
 
-    def set_status(self, status):
-        self._status = status
+    @property
+    def topic(self):
+        return self.config['publish']
 
 
-class Lamp:
+class Lamp(component):
     Normal = 0
     Abnormal = 1
     ShutDown = 2
 
     def __init__(self, config, logger):
+        super().__init__()
         self._name = config['name']
         self._id = config['id']
         self.logger = logger
@@ -60,6 +74,3 @@ class Lamp:
     @abstractmethod
     def set_light(self, light):
         pass
-
-    def set_status(self, status):
-        self._status = status

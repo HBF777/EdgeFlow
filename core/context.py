@@ -158,10 +158,10 @@ class App:
                 self.message_handler(serve['recv_queue'].get())
 
     def message_handler(self, message: Message):
-        if message.is_op_self():
+        if message.is_to_core_control_self:  # 检查是否是服务操作自己的消息 如何自我服务重启，自我服务停止
             pass
-        elif message.message_to in self.serves:
-            self.serves.get(message.message_to).get("send_queue").put(DataMessage(message))
+        elif message.receiver in self.serves:
+            self.serves.get(message.receiver).get("send_queue").put(message)
         else:
             self.logger.error("接收消息不存在，消息来源为" + message.message_from + "消息目标为" + message.message_to)
             self.serves.get(message.message_from).get('send_queue').put(NotFoundMessage(

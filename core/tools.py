@@ -13,7 +13,22 @@ import xml.etree.ElementTree as ET
 import yaml
 
 
+def singleton(cls):
+    instance = {}
+
+    def _singleton(*args, **kw):
+        if cls not in instance:
+            instance[cls] = cls(*args, **kw)
+        return instance[cls]
+
+    return _singleton
+
+
 class RedisHelper:
+    """
+    redis操作类    用于操作redis数据库
+    """
+
     def __init__(self, host="121.37.108.178", password="huba20020402", port=6739):
         # 连接redis
         self.__redis = redis.StrictRedis(host=host, password=password, port=port)
@@ -48,6 +63,9 @@ class RedisHelper:
 
 
 class Logger(object):
+    """
+    日志类
+    """
     # 日志级别关系映射
     level_relations = {
         "debug": logging.DEBUG,
@@ -56,6 +74,13 @@ class Logger(object):
         "error": logging.ERROR,
         "critical": logging.CRITICAL
     }
+    __isinstance =False
+
+    def __new__(cls, *args, **kwargs):
+        if cls.__isinstance:  # 如果被实例化了
+            return cls.__isinstance  # 返回实例化对象
+        cls.__isinstance = object.__new__(cls)  # 否则实例化
+        return cls.__isinstance  # 返回实例化的对象
 
     def __init__(self, filename="./log/test.log", level="debug", when="D", backupCount=3,
                  fmt="%(asctime)s - %(pathname)s[line:%(lineno)d] - %"
@@ -80,8 +105,14 @@ class Logger(object):
         self.logger.addHandler(streamHandler)
         self.logger.addHandler(fileHandler)
 
+    def __call__(self, *args, **kwargs):
+        return self.logger
+
 
 class ConfigParser:
+    """
+    配置文件解析类
+    """
 
     @staticmethod
     def parse(file_path, file_format="json", data_format="dict"):
@@ -182,14 +213,3 @@ class ConfigParser:
                 json.dump(data_dict, f)
         else:
             raise ValueError("Unsupported data format")
-
-
-def singleton(cls):
-    instance = {}
-
-    def _singleton(*args, **kw):
-        if cls not in instance:
-            instance[cls] = cls(*args, **kw)
-        return instance[cls]
-
-    return _singleton

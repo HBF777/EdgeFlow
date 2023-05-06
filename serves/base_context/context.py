@@ -14,9 +14,7 @@ from ..serves import BaseServerAbstract
 from core.tools import Logger, ConfigParser, singleton
 from .com_proxy import ComProxy, Message
 
-logger = None
 device_id = str()
-com_proxy = None
 component_config = None
 
 
@@ -35,7 +33,7 @@ class MessageManager(object):
             :param message:
             :return:
             """
-            MessageManager.MessagePool.message_pool[message.message_id] = message
+            MessageManager().MessagePool.message_pool[message.message_id] = message
 
         @staticmethod
         def times_up():
@@ -97,30 +95,26 @@ class MessageManager(object):
     def listen_message_cloud(self):
         while True:
             message = self.mqtt_queue.wait_get()
-            # 将需要确认的消息加入消息等待池
-            if message.message_type == Message.MESSAGE_TYPE_CONTROL or message.message_type == Message.MESSAGE_TYPE_DATA:
-                self.MessagePool.put_message(message)
-            if message.message_to == Message.BASE_CONTEXT_MESSAGE:
-                t_m = HardManager().handle_message(message)
-                if isinstance(t_m, dict):  # 如果返回值是字典，说明是需要回复的消息
-                    m = DataMessage(message_data=t_m, message_from=Message.BASE_CONTEXT_MESSAGE,
-                                    message_to=message.message_from)
-                    # TODO 消息中转的思考，需要考虑消息的转发，以及消息的确认
-                self.MessagePool.remove_message(message.message_id)
-            else:
-                self.serve_send_queue.put(message)
+            threading.Thread(target=self.handle_message, args=(message,)).start()
 
-    # 云端消息
-    def put_message_cloud(self):
-        pass
-
-    # 硬件消息
-    def put_message_hard(self, message: Message):
-        pass
-
-    # 服务间
-    def put_message_serves(self, message: Message):
-        pass
+    def handle_message(self, message: Message):
+        """
+        处理消息
+        步骤如下：
+        1、 先解析消息来源
+        2、 再解析消息类型
+        3、
+        :param message:
+        :return:
+        """
+        if message.receiver != message.BASE_CONTEXT_MESSAGE:
+            self.serve_send_queue.put(message)
+            return
+        self.MessagePool().put_message(message)
+        if message.message_type == Message.TYPE_CONTROL:  # 控制消息
+            pass
+        elif message.message_type == Message.TYPE_REQ_DATA_HARD:  # 请求硬件数据
+            HardManager().handle_message(message)
 
     def start(self):
         threading.Thread(target=self.listen_message_cloud).start()
@@ -130,63 +124,52 @@ class MessageManager(object):
 
 @singleton
 class HardManager(object):
-    def __init__(self, _Logger=None, components_config=None):
+    def __init__(self, components_config=None):
         self.component_proxy = None
         self.component_config = components_config
-        self.logger = _Logger
 
     def init(self):
         # 创建硬件代理
-        self.component_proxy = ComponentProxy(self.component_config, logger=logger)
+        self.component_proxy = ComponentProxy(self.component_config)
 
-    def handle_message(self, message: Message):
+    def get_data(self, req_type) -> dict:
         """
         处理硬件消息
-        :param message:
+        消息返回种类有两种
+        一种是返回给云端，要携带topic, data
+        一种是返回给其他服务，要返回传感器名称：data形式返回
+        :param req_type:
         :return:
         """
-        message_id = None
-        if message.message_type == Message.MESSAGE_TYPE_CONTROL:
-            if message.message_to == Message.MESSAGE_OP_LAMP:
-                message_id = self.component_proxy.handle_lamp_light(message.message_target_obj, message.message_data)
-            else:
-                pass
-            return message_id
-        elif message.message_type == Message.MESSAGE_TYPE_REQ_DATA:
-            if message.message_to == Message.MESSAGE_OP_LAMP:
-                data = self.component_proxy.get_data(message.message_target_obj)
-            else:
-                data = self.component_proxy.get_data(message.message_target_obj)
-            return data
-
-
-# 管理器
-message_manager = MessageManager()
+        if req_type == REQ_TYPE_MQTT:
+            self.component_proxy.get_data()
+            pass
+        elif req_type == REQ_TYPE_LOCAL:
+            pass
 
 
 def init_context() -> bool:
-    global message_manager, component_config, logger
-    component_config = ConfigParser.parse_json(file_path=os.path.abspath(COMPONENT_CONFIG_FILE_PATH))
-    HardManager(components_config=component_config, _Logger=logger).init()
+    global component_config
+    component_config = ConfigParser.parse_json(file_path=os.path.abspath(CONFIG_FILE_PATH))
+    HardManager(components_config=component_config).init()
     return True
 
 
 def start_com_proxy():
-    global com_proxy, message_manager, logger
-    com_config = ConfigParser.parse_json(file_path=os.path.abspath(COM_CONFIG_FILE_PATH))
+    com_config = ConfigParser.parse_json(file_path=os.path.abspath(CONFIG_FILE_PATH))
     com_config['mqtt']['sub_topics'] = str(com_config['mqtt']['sub_topics']).format(id=device_id)
-    com_proxy = ComProxy(com_config, mqtt_message_queue=message_manager.mqtt_queue,
-                         serial_message_queue=message_manager.serial_queue, logger=logger)
-    message_manager_thread = threading.Thread(target=message_manager.start)
-    com_proxy_thread = threading.Thread(target=com_proxy.start)
+    ComProxy(com_config, mqtt_message_queue=MessageManager().mqtt_queue,
+             serial_message_queue=MessageManager().serial_queue, Logger=Logger)
+    message_manager_thread = threading.Thread(target=MessageManager().start)
+    com_proxy_thread = threading.Thread(target=ComProxy().start)
     com_proxy_thread.start()
     message_manager_thread.start()
     while True:
         time.sleep(1)
         if not com_proxy_thread.is_alive():
-            logger.error("com_proxy_thread is dead")
+            Logger().error("com_proxy_thread is dead")
         if not message_manager_thread.is_alive():
-            logger.error("message_manager_thread is dead")
+            Logger().error("message_manager_thread is dead")
 
 
 class BaseContext(BaseServerAbstract):
@@ -196,15 +179,14 @@ class BaseContext(BaseServerAbstract):
         self.message_thread = None
         self.com_thread = None
         self.task_manager = None
-        self.message_manager = None
         self.base_path = None
 
     def run(self):
-        global logger, device_id
+        global device_id
         device_id = self.device_id
         self.base_path = os.path.abspath(".")
-        logger = Logger(filename=os.path.abspath(".log.BaseContextLog.log"), level="debug").logger
-        logger.info("BaseContext init-ing")
+        Logger(filename=os.path.abspath(".log.BaseContextLog.log"), level="debug")
+        Logger().info("BaseContext init-ing")
         # 初始化基础环境 启动流程 初始化检查硬件 -> 初始化通讯服务 -> 初始化消息服务 -> 初始化心跳服务
         init_context()
         MessageManager().init(self.send_queue, self.recv_queue)
@@ -214,11 +196,11 @@ class BaseContext(BaseServerAbstract):
         self.message_thread = threading.Thread(target=self.listen_message)
         # 心跳服务启动
         self.keep_alive_thread = threading.Thread(target=self.keep_alive)
-        logger.info("BaseContext 初始化通讯服务")
+        Logger().info("BaseContext 初始化通讯服务")
         self.com_thread.start()
-        logger.info("BaseContext 初始化消息服务")
+        Logger().info("BaseContext 初始化消息服务")
         self.message_thread.start()
-        logger.info("BaseContext 初始化心跳服务")
+        Logger().info("BaseContext 初始化心跳服务")
         self.keep_alive_thread.start()
         self.listen_threads()
 
@@ -235,7 +217,7 @@ class BaseContext(BaseServerAbstract):
         while True:
             if not self.recv_queue.empty():
                 message = self.recv_queue.get()
-                self.message_manager.put_message_serves(message)
+                MessageManager().handle_serve_message(message)
 
     def listen_threads(self):
         com_thread_start_time = time.time()
