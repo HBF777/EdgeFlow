@@ -564,3 +564,33 @@
 2023-05-07 08:16:57,041 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/base_context/sensor/ExtTempHumSensor,消息: {
   "msg": "hello"
 }
+2023-05-07 13:30:47,121 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:195] - INFO: BaseContext init-ing
+2023-05-07 13:30:47,128 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-07 13:30:47,128 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
+2023-05-07 13:30:47,128 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
+2023-05-07 13:30:47,128 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-07 13:30:47,128 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
+2023-05-07 13:30:47,128 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-07 13:30:47,130 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
+2023-05-07 13:30:47,130 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-07 13:30:47,130 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
+2023-05-07 13:30:47,130 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:205] - INFO: BaseContext 初始化通讯服务
+2023-05-07 13:30:47,130 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:207] - INFO: BaseContext 初始化消息服务
+2023-05-07 13:30:47,131 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:209] - INFO: BaseContext 初始化心跳服务
+2023-05-07 13:30:47,136 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
+2023-05-07 13:30:47,187 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
+2023-05-07 13:32:20,245 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:195] - INFO: BaseContext init-ing
+2023-05-07 13:32:20,271 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-07 13:32:20,276 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
+2023-05-07 13:32:20,277 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
+2023-05-07 13:32:20,277 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-07 13:32:20,278 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
+2023-05-07 13:32:20,279 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-07 13:32:20,281 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
+2023-05-07 13:32:20,282 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-07 13:32:20,282 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
+2023-05-07 13:32:20,283 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:205] - INFO: BaseContext 初始化通讯服务
+2023-05-07 13:32:20,294 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:207] - INFO: BaseContext 初始化消息服务
+2023-05-07 13:32:20,306 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
+2023-05-07 13:32:20,310 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:209] - INFO: BaseContext 初始化心跳服务
+2023-05-07 13:32:20,358 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器

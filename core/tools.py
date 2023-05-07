@@ -29,9 +29,9 @@ class RedisHelper:
     redis操作类    用于操作redis数据库
     """
 
-    def __init__(self, host="121.37.108.178", password="huba20020402", port=6739):
+    def __init__(self, host="121.37.108.178", password="Huba20020402", port=6379):
         # 连接redis
-        self.__redis = redis.StrictRedis(host=host, password=password, port=port)
+        self.__redis = redis.StrictRedis(host=host, port=port)
 
     # 设置key-value
     def set(self, key, value):

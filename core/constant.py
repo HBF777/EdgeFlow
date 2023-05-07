@@ -11,6 +11,8 @@ LOGGER_FILE_PATH = '/core/log/logfile.log'
 LOGGER_LEVEL = 'debug'
 SERVE_QUEUE_SIZE = 77
 
+SENSOR_DATA_REDIS_KEY = "sensor_data_redis"
+LAMP_DATA_REDIS_KEY = "lamp_data_redis"
 
 
 class ServerConstant:

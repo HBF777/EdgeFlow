@@ -115,7 +115,7 @@ class MessageManager(object):
         if message.message_type == Message.TYPE_CONTROL:  # 控制消息
             pass
         elif message.message_type == Message.TYPE_REQ_DATA_HARD:  # 请求硬件数据
-            message = HardManager().get_data(message, req_data_type)
+            message = HardManager().get_data(message, data_type=req_data_type)
             if message.receiver != message.BASE_CONTEXT_MESSAGE:
                 self.serve_send_queue.put(message)
             else:

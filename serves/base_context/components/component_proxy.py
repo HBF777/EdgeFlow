@@ -5,8 +5,8 @@
 # @Author    :李帅兵
 from abc import abstractmethod
 
-from core.constant import Message
-from core.tools import Logger
+from core.constant import Message, SENSOR_DATA_REDIS_KEY
+from core.tools import Logger, RedisHelper
 from .abc_component import Sensor, Lamp
 
 
@@ -62,6 +62,7 @@ class ComponentProxy:
         elif message.target_obj == Message.ALL_LAMP:
             for name, lamp in self.lamps.items():
                 res[name] = lamp.get_data()
+        RedisHelper().set(SENSOR_DATA_REDIS_KEY, str(res))
         message.message_data = res
         message.message_type = Message.TYPE_DATA_HARD
         message.message_to, message.message_from = message.sender, message.receiver
