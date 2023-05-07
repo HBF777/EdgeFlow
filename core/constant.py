@@ -123,7 +123,7 @@ class Message:
 
 
 def NotFoundMessage(message_id, message_form, message_to) -> Message:
-    return Message(message_id=message_id, message_type=Message.MESSAGE_TYPE_NOTICE_NOT_SERVE,
+    return Message(message_id=message_id, message_type=Message.TYPE_NOTICE_NOT_SERVE,
                    message_from=message_form, message_to=message_to)
 
 

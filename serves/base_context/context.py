@@ -116,7 +116,10 @@ class MessageManager(object):
             pass
         elif message.message_type == Message.TYPE_REQ_DATA_HARD:  # 请求硬件数据
             message = HardManager().get_data(message, req_data_type)
-            self.serve_send_queue.put(message)
+            if message.receiver != message.BASE_CONTEXT_MESSAGE:
+                self.serve_send_queue.put(message)
+            else:
+                ComProxy().send_message(message)
         self.MessagePool().remove_message(message.message_id)
 
     def start(self):
@@ -146,8 +149,7 @@ class HardManager(object):
         :return:
         """
         if data_type == REQ_TYPE_MQTT:
-            self.component_proxy.get_data_topic(message)
-            pass
+            return self.component_proxy.get_data_topic(message)
         elif data_type == REQ_TYPE_LOCAL:
             return self.component_proxy.get_data_names(message)
 

@@ -43,14 +43,18 @@ class ComponentProxy:
                 self.lamps[item['name']] = lamp
                 Logger().warning(e)
 
-    def get_data_topic(self, name):
+    def get_data_topic(self, message: Message)->Message:
         try:
-            return self.sensors[name].get_data(), self.sensors[name].topic
+            message.message_data = self.sensors[message.target_obj].get_data()
+            message.message_type = Message.TYPE_DATA_HARD
+            message.message_to, message.message_from = message.sender, message.receiver
+            message.message_topic = self.sensors[message.target_obj].topic
+            return message
         except Exception as e:
             Logger().warning(e)
             raise e
 
-    def get_data_names(self, message)->Message:
+    def get_data_names(self, message) -> Message:
         res = {}
         if message.target_obj == Message.ALL_SENSOR:
             for name, sensor in self.sensors.items():
