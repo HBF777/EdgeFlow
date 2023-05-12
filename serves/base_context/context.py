@@ -19,6 +19,24 @@ component_config = None
 
 
 @singleton
+class TaskManager(object):
+    class Task(object):
+        def __init__(self, func, *args, **kwargs):
+            pass
+
+    def __init__(self):
+        self.task_pool = {}
+
+    def sumit_task(self, task: Task):
+        """
+        提交任务， 执行任务，且不需要返回任何数据
+        :param task:
+        :return:
+        """
+        self.task_pool[task.task_id] = task
+
+
+@singleton
 class MessageManager(object):
     class MessagePool(object):
         """
@@ -107,9 +125,13 @@ class MessageManager(object):
         :param message:
         :return:
         """
-        if message.receiver != message.BASE_CONTEXT_MESSAGE:
+        if message.receiver != message.BASE_CONTEXT_MESSAGE:  # 如果消息的接收者不是BaseContext的服务
             self.serve_send_queue.put(message)
             return
+        task = TaskManager.Task(func=self.deal_localhost_message, args=(message,))
+        TaskManager().sumit_task(task)
+
+    def deal_localhost_message(self, message: Message):
         self.MessagePool().put_message(message)
         req_data_type = REQ_TYPE_MQTT if message.sender == message.BASE_CONTEXT_MESSAGE else REQ_TYPE_LOCAL
         if message.message_type == Message.TYPE_CONTROL:  # 控制消息
