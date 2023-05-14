@@ -13,9 +13,36 @@ from .constant import *
 from ..serves import BaseServerAbstract
 from core.tools import Logger, ConfigParser, singleton
 from .com_proxy import ComProxy, Message
+import concurrent.futures
+from concurrent.futures import ThreadPoolExecutor
 
 device_id = str()
 component_config = None
+task_manager = None
+
+
+@singleton
+class TaskManager(object):
+    futures = []
+
+    class Task(object):
+        def __init__(self, func, *args, **kwargs):
+            self.task_id = kwargs['message_id']
+            self.func = func
+            self.args = args
+
+    def __init__(self):
+        # self.task_pool = {}
+        self.executor = ThreadPoolExecutor(max_workers=10)
+
+    def sumit_task(self, task: Task):
+        """
+        提交任务， 执行任务，且不需要返回任何数据
+        :param task:
+        :return:
+        """
+        # self.task_pool[task.task_id] = task
+        self.futures.append(self.executor.submit(task.func, task.args))
 
 
 @singleton
@@ -107,9 +134,13 @@ class MessageManager(object):
         :param message:
         :return:
         """
-        if message.receiver != message.BASE_CONTEXT_MESSAGE:
+        if message.receiver != message.BASE_CONTEXT_MESSAGE:  # 如果消息的接收者不是BaseContext的服务
             self.serve_send_queue.put(message)
             return
+        task = TaskManager.Task(func=self.deal_localhost_message, args=(message.message_id,))
+        TaskManager().sumit_task(task)
+
+    def deal_localhost_message(self, message: Message):
         self.MessagePool().put_message(message)
         req_data_type = REQ_TYPE_MQTT if message.sender == message.BASE_CONTEXT_MESSAGE else REQ_TYPE_LOCAL
         if message.message_type == Message.TYPE_CONTROL:  # 控制消息
@@ -158,6 +189,8 @@ def init_context() -> bool:
     global component_config
     component_config = ConfigParser.parse_json(file_path=os.path.abspath(COMPONENT_CONFIG_FILE_PATH))
     HardManager(components_config=component_config).init()
+    global task_manager
+    task_manager = TaskManager()
     return True
 
 

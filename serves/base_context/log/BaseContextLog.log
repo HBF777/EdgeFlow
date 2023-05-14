@@ -594,3 +594,776 @@
 2023-05-07 13:32:20,306 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
 2023-05-07 13:32:20,310 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:209] - INFO: BaseContext 初始化心跳服务
 2023-05-07 13:32:20,358 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
+2023-05-12 22:22:53,399 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:218] - INFO: BaseContext init-ing
+2023-05-12 22:22:53,406 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-12 22:22:53,406 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
+2023-05-12 22:22:53,406 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
+2023-05-12 22:22:53,406 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-12 22:22:53,406 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
+2023-05-12 22:22:53,406 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-12 22:22:53,406 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
+2023-05-12 22:22:53,407 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-12 22:22:53,407 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
+2023-05-12 22:22:53,407 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:228] - INFO: BaseContext 初始化通讯服务
+2023-05-12 22:22:53,407 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:230] - INFO: BaseContext 初始化消息服务
+2023-05-12 22:22:53,408 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:232] - INFO: BaseContext 初始化心跳服务
+2023-05-12 22:22:53,408 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
+2023-05-12 22:22:53,465 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
+2023-05-12 22:23:00,225 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:218] - INFO: BaseContext init-ing
+2023-05-12 22:23:00,229 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-12 22:23:00,229 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
+2023-05-12 22:23:00,229 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
+2023-05-12 22:23:00,229 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-12 22:23:00,230 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
+2023-05-12 22:23:00,230 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-12 22:23:00,230 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
+2023-05-12 22:23:00,230 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-12 22:23:00,230 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
+2023-05-12 22:23:00,230 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:228] - INFO: BaseContext 初始化通讯服务
+2023-05-12 22:23:00,231 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:230] - INFO: BaseContext 初始化消息服务
+2023-05-12 22:23:00,231 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:232] - INFO: BaseContext 初始化心跳服务
+2023-05-12 22:23:00,286 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
+2023-05-12 22:23:00,347 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
+2023-05-13 16:58:14,091 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:223] - INFO: BaseContext init-ing
+2023-05-13 16:58:14,094 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-13 16:58:14,094 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
+2023-05-13 16:58:14,094 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
+2023-05-13 16:58:14,094 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-13 16:58:14,094 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
+2023-05-13 16:58:14,095 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-13 16:58:14,095 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
+2023-05-13 16:58:14,095 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-13 16:58:14,095 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
+2023-05-13 16:58:14,095 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:233] - INFO: BaseContext 初始化通讯服务
+2023-05-13 16:58:14,095 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:235] - INFO: BaseContext 初始化消息服务
+2023-05-13 16:58:14,096 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:237] - INFO: BaseContext 初始化心跳服务
+2023-05-13 16:58:14,096 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
+2023-05-13 16:58:14,153 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
+2023-05-13 19:58:48,380 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:225] - INFO: BaseContext init-ing
+2023-05-13 19:58:48,382 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-13 19:58:48,382 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
+2023-05-13 19:58:48,382 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
+2023-05-13 19:58:48,383 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-13 19:58:48,383 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
+2023-05-13 19:58:48,383 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-13 19:58:48,383 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
+2023-05-13 19:58:48,383 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-13 19:58:48,383 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
+2023-05-13 19:58:48,383 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:235] - INFO: BaseContext 初始化通讯服务
+2023-05-13 19:58:48,384 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:237] - INFO: BaseContext 初始化消息服务
+2023-05-13 19:58:48,384 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:239] - INFO: BaseContext 初始化心跳服务
+2023-05-13 19:58:48,385 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
+2023-05-13 19:58:53,414 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:58:54,418 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:58:55,420 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:58:56,421 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:58:57,425 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:58:58,429 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:58:59,436 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:00,442 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:01,449 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:02,453 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:03,454 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:04,456 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:05,461 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:06,465 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:07,467 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:08,468 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:09,472 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:10,480 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:11,483 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:12,487 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:13,492 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:14,493 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:15,495 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:16,500 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:17,507 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:18,512 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:19,517 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:20,524 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:21,527 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:22,531 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:23,536 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:24,540 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:25,542 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:26,558 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:27,561 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:28,576 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:29,578 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:30,584 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:31,586 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:32,591 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:33,593 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:34,596 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:35,610 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:36,617 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:37,623 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:38,638 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:39,653 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:40,657 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:41,659 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:42,666 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:43,672 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:44,674 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:45,689 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:46,694 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:47,699 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:48,705 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:49,717 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:50,718 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:51,733 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:52,747 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:53,752 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:54,759 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:55,764 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:56,767 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:57,768 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:58,771 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 19:59:59,772 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:00,787 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:01,792 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:02,797 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:03,802 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:04,807 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:05,812 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:06,813 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:07,819 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:08,823 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:09,827 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:10,841 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:11,846 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:12,852 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:13,856 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:14,861 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:15,864 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:16,869 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:17,874 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:18,877 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:19,885 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:20,889 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:21,891 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:22,898 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:23,905 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:24,911 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:25,915 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:26,917 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:27,920 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:28,922 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:29,924 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:30,926 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:31,929 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:32,943 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:33,944 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:34,946 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:35,949 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:36,953 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:37,968 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:38,970 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:39,976 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:40,982 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:41,985 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:42,990 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:43,995 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:45,000 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:46,005 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:47,012 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:48,017 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:49,019 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:50,022 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:51,025 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:52,031 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:53,036 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:54,040 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:55,044 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:56,046 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:57,050 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:58,053 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:00:59,056 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:00,062 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:01,064 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:02,077 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:03,082 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:04,085 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:05,088 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:06,091 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:07,106 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:08,107 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:09,111 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:10,125 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:11,128 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:12,129 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:13,143 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:14,145 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:15,148 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:16,158 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:17,172 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:18,176 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:19,179 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:20,184 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:21,190 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:22,194 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:23,198 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:24,204 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:25,208 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:26,223 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:27,227 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:28,235 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:29,248 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:30,260 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:31,273 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:32,288 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:33,288 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:34,303 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:35,319 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:36,322 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:37,326 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:38,331 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:39,347 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:40,350 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:41,352 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:42,356 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:43,371 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:44,386 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:45,388 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:46,391 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:47,394 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:48,399 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:49,400 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:50,403 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:51,409 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:52,413 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:53,415 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:54,416 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:55,431 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:56,434 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:57,449 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:58,452 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:01:59,456 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:00,461 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:01,468 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:02,474 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:03,476 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:04,481 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:05,484 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:06,486 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:07,501 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:08,504 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:09,509 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:10,515 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:11,520 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:12,523 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:13,527 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:14,528 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:15,530 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:16,535 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:17,540 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:18,555 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:19,571 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:20,573 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:21,577 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:22,591 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:23,592 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:24,606 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:25,610 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:26,612 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:27,617 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:28,632 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:29,636 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:30,640 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:31,644 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:32,651 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:33,654 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:34,660 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:35,666 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:36,671 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:37,677 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:38,680 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:39,685 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:40,691 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:41,694 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:42,696 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:43,702 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:44,704 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:45,707 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:46,709 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:47,712 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:48,717 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:49,720 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:50,723 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:51,727 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:52,733 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:53,733 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:54,747 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:55,751 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:56,756 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:57,759 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:58,764 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:02:59,767 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:00,771 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:01,778 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:02,779 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:03,786 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:04,790 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:05,795 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:06,796 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:07,802 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:08,816 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:09,832 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:10,839 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:11,845 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:12,846 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:13,861 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:14,875 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:15,888 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:16,889 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:17,890 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:18,902 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:19,916 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:20,926 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:21,938 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:22,953 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:23,964 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:24,970 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:25,973 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:26,977 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:27,979 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:28,984 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:29,989 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:30,990 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:32,005 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:33,020 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:34,036 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:35,049 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:36,053 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:37,059 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:38,061 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:39,066 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:40,071 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:41,078 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:42,082 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:43,086 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:44,092 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:45,096 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:46,102 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:47,107 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:48,111 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:49,125 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:50,127 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:51,138 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:52,149 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:53,165 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:54,167 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:55,169 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:56,180 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:57,184 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:58,188 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:03:59,201 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:00,216 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:01,228 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:02,236 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:03,237 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:04,243 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:05,245 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:06,251 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:07,255 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:08,259 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:09,265 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:10,271 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:11,275 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:12,277 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:13,284 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:14,299 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:15,304 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:16,308 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:17,323 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:18,328 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:19,335 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:20,339 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:21,341 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:22,343 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:23,346 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:24,352 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:25,354 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:26,369 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:27,372 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:28,373 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:29,379 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:30,382 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:31,386 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:32,391 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:33,392 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:34,396 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:35,398 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:36,400 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:37,405 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:38,408 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:39,412 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:40,414 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:41,420 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:42,427 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:43,428 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:44,433 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:45,446 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:46,458 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:47,470 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:48,475 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:49,490 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:50,504 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:51,520 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:52,531 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:53,533 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:54,539 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:55,544 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:56,548 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:57,562 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:58,575 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:04:59,590 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:00,600 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:01,601 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:02,612 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:03,628 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:04,631 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:05,638 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:06,642 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:07,648 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:08,654 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:09,659 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:10,663 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:11,668 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:12,672 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:13,679 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:14,687 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:15,689 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:16,692 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:17,696 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:18,698 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:19,702 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:20,706 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:21,708 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:22,715 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:23,719 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:24,722 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:25,727 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:26,733 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:27,737 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:28,751 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:29,767 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:30,778 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:31,794 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:32,806 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:33,819 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:34,830 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:35,842 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:36,857 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:37,869 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:38,874 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:39,877 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:40,882 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:41,888 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:42,890 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:43,904 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:44,906 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:45,911 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:46,912 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:47,918 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:48,920 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:49,923 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:50,929 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:51,933 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:52,940 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:53,946 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:54,953 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:55,957 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:56,964 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:57,966 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:58,971 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:05:59,978 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:00,984 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:01,988 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:02,994 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:03,997 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:05,005 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:06,009 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:07,015 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:08,021 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:09,025 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:10,027 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:11,033 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:12,047 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:13,059 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:14,063 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:15,067 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:16,075 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:17,078 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:18,085 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:19,088 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:20,090 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:21,095 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:22,096 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:23,096 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:24,111 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:25,115 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:26,120 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:27,133 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:28,147 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:29,160 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:30,173 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:31,186 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:32,199 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:33,214 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:34,225 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:35,241 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:36,249 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:37,258 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:38,270 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:39,285 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:40,286 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:41,301 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:42,315 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:43,330 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:44,334 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:45,344 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:46,355 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:47,365 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:48,378 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:49,381 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:50,385 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:51,386 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:52,386 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:53,392 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:54,396 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:55,400 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:56,405 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:57,410 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:58,422 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:06:59,428 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:00,432 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:01,435 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:02,440 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:03,441 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:04,446 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:05,451 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:06,457 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:07,462 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:08,467 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:09,482 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:10,488 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:11,492 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:12,497 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:13,502 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:14,517 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:15,521 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:16,528 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:17,530 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:18,535 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:19,542 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:20,548 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:21,555 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:22,560 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:23,575 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:24,580 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:25,594 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:26,599 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:27,603 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:28,607 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:29,611 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:30,626 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:31,631 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:32,635 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:33,638 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:34,644 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:35,650 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:36,656 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:37,657 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:38,664 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:39,667 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:40,672 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:41,674 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:42,680 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:43,684 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:44,688 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:45,693 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:46,699 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:47,702 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:48,707 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:49,710 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:50,714 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:51,717 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:52,722 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:53,728 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:54,732 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:55,733 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:56,738 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:57,739 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:58,744 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:07:59,747 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:00,753 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:01,756 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:02,759 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:03,765 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:04,770 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:05,778 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:06,781 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:07,783 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:08,788 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:09,791 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:10,796 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:11,811 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:12,825 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:13,828 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:14,833 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:15,838 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:16,842 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:17,844 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:18,847 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:19,850 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:20,856 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:21,862 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:22,865 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:23,869 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:24,870 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:25,874 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:26,876 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:27,881 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:28,883 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:29,889 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:30,893 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:31,897 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:32,905 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:33,910 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:34,923 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:35,937 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:36,951 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:37,967 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:38,971 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:39,986 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:40,987 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:41,993 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:42,994 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:43,998 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:45,003 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:46,005 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:47,011 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:48,012 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:49,019 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:50,021 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:51,027 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:52,031 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:53,033 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:54,049 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:55,051 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:56,054 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:57,059 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:58,075 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:08:59,079 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:00,084 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:01,088 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:02,090 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:03,091 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:04,097 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:05,111 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:06,115 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:07,123 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:08,123 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:09,128 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:10,135 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:11,139 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:12,145 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:13,149 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:14,151 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:15,153 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:16,154 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:17,168 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:18,183 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:19,198 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:20,199 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:21,201 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:22,204 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:23,210 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:24,216 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:25,221 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:26,225 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:27,230 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:28,233 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:29,237 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:30,240 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:31,245 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:32,250 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:33,254 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:34,259 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:35,269 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:36,276 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:37,281 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:38,283 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:39,287 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:40,292 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:41,299 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:42,301 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:43,307 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:44,312 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:45,319 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:46,323 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:47,324 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:48,328 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:49,331 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:50,336 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:51,341 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:52,345 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:53,350 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:54,354 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:55,358 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:56,363 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:57,378 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:58,384 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:09:59,388 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:10:00,392 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:10:01,407 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:10:02,407 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:10:03,410 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:10:04,414 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:10:05,414 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:10:06,429 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:10:07,445 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:10:08,446 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:10:09,448 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:10:10,450 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:10:11,455 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:10:12,459 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:10:13,465 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:10:14,466 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:10:15,472 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:10:16,474 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:10:17,489 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:10:18,492 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:10:19,492 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:10:20,497 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:10:21,512 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:10:22,527 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:10:23,527 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:10:24,532 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:10:25,533 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:10:26,536 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:10:27,541 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:10:28,845 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:225] - INFO: BaseContext init-ing
+2023-05-13 20:10:28,847 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-13 20:10:28,847 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
+2023-05-13 20:10:28,847 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
+2023-05-13 20:10:28,847 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-13 20:10:28,847 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
+2023-05-13 20:10:28,847 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-13 20:10:28,847 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
+2023-05-13 20:10:28,847 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-13 20:10:28,847 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
+2023-05-13 20:10:28,848 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:235] - INFO: BaseContext 初始化通讯服务
+2023-05-13 20:10:28,848 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:237] - INFO: BaseContext 初始化消息服务
+2023-05-13 20:10:28,848 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:239] - INFO: BaseContext 初始化心跳服务
+2023-05-13 20:10:28,849 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
+2023-05-13 20:10:33,883 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:10:34,897 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:10:35,911 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:10:36,923 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:10:37,927 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:10:38,941 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:10:39,955 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:10:40,970 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
+2023-05-13 20:10:41,970 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:206] - ERROR: com_proxy_thread is dead
