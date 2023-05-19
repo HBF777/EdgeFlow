@@ -13,9 +13,35 @@ from .constant import *
 from ..serves import BaseServerAbstract
 from core.tools import Logger, ConfigParser, singleton
 from .com_proxy import ComProxy, Message
+import concurrent.futures
 
 device_id = str()
 component_config = None
+
+
+@singleton
+class TaskManager(object):
+    futures = []
+
+    class Task(object):
+        def __init__(self, *args, **kwargs):
+            self.target_func = kwargs['func']
+            self.message = kwargs['message']
+
+
+    def __init__(self):
+        # self.task_pool = {}
+        self.executor = concurrent.futures.ThreadPoolExecutor(max_workers=10)
+
+    def sumit_task(self, task: Task):
+        """
+        提交任务， 执行任务，且不需要返回任何数据
+        :param task:
+        :return:
+        """
+        # self.task_pool[task.task_id] = task
+        self.futures.append(self.executor.submit(task.target_func, task.message))
+        pass
 
 
 @singleton
@@ -107,9 +133,13 @@ class MessageManager(object):
         :param message:
         :return:
         """
-        if message.receiver != message.BASE_CONTEXT_MESSAGE:
+        if message.receiver != message.BASE_CONTEXT_MESSAGE:  # 如果消息的接收者不是BaseContext的服务
             self.serve_send_queue.put(message)
             return
+        task = TaskManager().Task(func=self.deal_localhost_message, message=message)
+        TaskManager().sumit_task(task)
+
+    def deal_localhost_message(self, message: Message):
         self.MessagePool().put_message(message)
         req_data_type = REQ_TYPE_MQTT if message.sender == message.BASE_CONTEXT_MESSAGE else REQ_TYPE_LOCAL
         if message.message_type == Message.TYPE_CONTROL:  # 控制消息
@@ -120,13 +150,15 @@ class MessageManager(object):
                 self.serve_send_queue.put(message)
             else:
                 ComProxy().send_message(message)
+                Logger().info(message)
         self.MessagePool().remove_message(message.message_id)
 
     def start(self):
         threading.Thread(target=self.listen_message_cloud).start()
         while True:
             time.sleep(4)
-
+def test():
+    print(1+1)
 
 @singleton
 class HardManager(object):
@@ -158,6 +190,7 @@ def init_context() -> bool:
     global component_config
     component_config = ConfigParser.parse_json(file_path=os.path.abspath(COMPONENT_CONFIG_FILE_PATH))
     HardManager(components_config=component_config).init()
+    TaskManager()
     return True
 
 
@@ -208,10 +241,12 @@ class BaseContext(BaseServerAbstract):
         self.message_thread.start()
         Logger().info("BaseContext 初始化心跳服务")
         self.keep_alive_thread.start()
+        self.keep_alive_thread.join()
         self.listen_threads()
 
     def keep_alive(self):
-        pass
+        while True:
+            pass
 
     def await_get_message(self):
         pass

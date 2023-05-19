@@ -11,16 +11,16 @@ from core.constant import Message, LAMP_DATA_REDIS_KEY,SENSOR_DATA_REDIS_KEY
 from core.tools import RedisHelper
 from ..serves import BaseServerAbstract
 
-test_op = [
-    Message(message_from=Message.GUI_CONTEXT_MESSAGE,
-            message_to=Message.BASE_CONTEXT_MESSAGE,
-            message_type=Message.TYPE_REQ_DATA_HARD,
-            message_target_obj=Message.ALL_SENSOR),
-    Message(message_from=Message.GUI_CONTEXT_MESSAGE,
-            message_to=Message.BASE_CONTEXT_MESSAGE,
-            message_type=Message.TYPE_REQ_DATA_HARD,
-            message_target_obj=Message.ALL_SENSOR),
-]
+# test_op = [
+#     Message(message_from=Message.GUI_CONTEXT_MESSAGE,
+#             message_to=Message.BASE_CONTEXT_MESSAGE,
+#             message_type=Message.TYPE_REQ_DATA_HARD,
+#             message_target_obj=Message.ALL_SENSOR),
+#     Message(message_from=Message.GUI_CONTEXT_MESSAGE,
+#             message_to=Message.BASE_CONTEXT_MESSAGE,
+#             message_type=Message.TYPE_REQ_DATA_HARD,
+#             message_target_obj=Message.ALL_SENSOR),
+# ]
 
 
 class GuiContext(BaseServerAbstract):
@@ -50,9 +50,9 @@ class GuiContext(BaseServerAbstract):
                 print(self.recv_queue.get())
 
     def loop_serve_send_test(self):
-        for i in test_op:
-            if RedisHelper().is_existsKey(SENSOR_DATA_REDIS_KEY):
-                print(RedisHelper().get(SENSOR_DATA_REDIS_KEY))
-                continue
-            time.sleep(1)
-            self.send_queue.put(i)
+        # for i in test_op:
+        #     if RedisHelper().is_existsKey(SENSOR_DATA_REDIS_KEY):
+        #         print(RedisHelper().get(SENSOR_DATA_REDIS_KEY))
+        #         continue
+        time.sleep(100)
+        #     self.send_queue.put(i)

@@ -22,3 +22,8 @@ HARD_MANAGER = "HARD_MANAGER"
 
 # MQTT
 NOT_CONNECT = 2
+
+# 维修状态消息返回语
+MAINTENANCE_MODE_MESSAGE = {
+    "msg": "设备维修中，请稍后再试"
+}

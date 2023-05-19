@@ -14,6 +14,10 @@ SERVE_QUEUE_SIZE = 77
 SENSOR_DATA_REDIS_KEY = "sensor_data_redis"
 LAMP_DATA_REDIS_KEY = "lamp_data_redis"
 
+# 设备状态
+MAINTENANCE_MODE = 1
+NORMAL_MODE = 0
+DEVICE_STATUS = NORMAL_MODE
 
 class ServerConstant:
     # 基础服务名称
