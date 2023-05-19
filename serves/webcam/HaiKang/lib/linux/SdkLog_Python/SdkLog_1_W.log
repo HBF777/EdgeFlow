@@ -1,0 +1,9 @@
+[2022-05-27 12:58:00.463][DBG] CCoreGlobalCtrlBase::LoadDSo, HPR_LoadDSo Succ, Path[/home/anktech/softbags/yes/envs/pytorch/lib/libz.so.1.2.11], hHandleRet[-1298397520]
+[2022-05-27 12:58:00.463][INF] The COM:HCCoreBase ver is 6.1.4.15, 2020_03_05. Async:1.
+[2022-05-27 12:58:00.463][INF] The COM:Core ver is 6.1.9.4, 2022_04_12. Async:1.
+[2022-05-27 12:58:00.463][INF] This HCNetSDK ver is 6.1.9.4 Ver 2022_04_12.
+[2022-05-27 12:58:00.463][INF] Login dev 192.168.1.122:1000.
+[2022-05-27 12:58:00.464][INF] dwTotalNum[2048]
+[2022-05-27 12:58:00.465][ERR] Private connect 192.168.1.122:1000 sock=134 this=0xb3292c44 cmd=0x10000 sys_err=111, timeout= 3500 port=0
+[2022-05-27 12:58:00.465][ERR] [192.168.1.122:1000]LogonDevice Link_CreateLink fail[7].
+[2022-05-27 12:58:00.465][ERR] CMemberMgrBase::AllocIndex2, MemberStart Failed, iIndex[0]
