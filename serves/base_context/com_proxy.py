@@ -131,7 +131,7 @@ class MqttClient(CommunicationClient):
                 message.message_op = Message.MESSAGE_OP_LAMP
             message.message_target_obj = parts[4]
             return message
-        elif serve_type == "gui":
+        elif serve_type == "gui1":
             message.message_type = Message.TYPE_CONTROL
             message.message_to = Message.GUI_CONTEXT_MESSAGE
             message.message_op = parts[3]

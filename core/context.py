@@ -16,7 +16,7 @@ from core.constant import *
 from core.tools import Logger, ConfigParser
 from serves.base_context.context import BaseContext
 from serves.edge_computing.context import EdgeComputingContext
-from serves.gui.context import GuiContext
+from serves.gui1.context import GuiContext
 from serves.webcam.context import WebCamContext
 
 """
