@@ -27,7 +27,7 @@ def init_context():
     """
     初始化上下文
     """
-    pass
+
 
 
 class WebCamContext(BaseServerAbstract):
@@ -35,7 +35,7 @@ class WebCamContext(BaseServerAbstract):
         """
         心跳机制实现方法
         """
-        pass
+
 
     def await_get_message(self):
         """
@@ -46,8 +46,6 @@ class WebCamContext(BaseServerAbstract):
     def put_message(self):
         pass
 
-    def run(self):
-        pass
 
     def __init__(self, *args, **kwargs):
         super(WebCamContext, self).__init__(*args, **kwargs)
@@ -62,3 +60,7 @@ class WebCamContext(BaseServerAbstract):
         Logger().info("WebCamContext init-ing..")
         # 初始化服务
         init_context()
+        while True:
+            self.keep_alive()
+            self.put_message()
+

@@ -6,3 +6,5 @@
 # @Software: PyCharm
 LOG_FILE_NAME = "serves/webcam/log/WebCamLog.log"
 LOG_LEVEL = "debug"
+BASE_CONFIG_FILE_PATH = 'config/webcam/base_config.json'
+
