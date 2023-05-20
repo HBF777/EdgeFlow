@@ -58,3 +58,4 @@ class GuiContext(BaseServerAbstract):
                 continue
             time.sleep(1)
             self.send_queue.put(i)
+
