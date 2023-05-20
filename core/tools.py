@@ -23,7 +23,7 @@ def singleton(cls):
 
     return _singleton
 
-
+@singleton
 class RedisHelper:
     """
     redis操作类    用于操作redis数据库

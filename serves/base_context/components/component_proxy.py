@@ -5,9 +5,10 @@
 # @Author    :李帅兵
 from abc import abstractmethod
 
-from core.constant import Message, SENSOR_DATA_REDIS_KEY
+from core.constant import Message, SENSOR_DATA_REDIS_KEY, DEVICE_STATUS, NORMAL_MODE
 from core.tools import Logger, RedisHelper
 from .abc_component import Sensor, Lamp
+from ..constant import MAINTENANCE_MODE_MESSAGE
 
 
 class ComponentProxy:
@@ -43,9 +44,18 @@ class ComponentProxy:
                 self.lamps[item['name']] = lamp
                 Logger().warning(e)
 
-    def get_data_topic(self, message: Message)->Message:
+    def get_data_topic(self, message: Message) -> Message:
+        """
+        返回消息给云端
+        消息要附带主题
+        :param message:
+        :return:
+        """
         try:
-            message.message_data = self.sensors[message.target_obj].get_data()
+            if DEVICE_STATUS == NORMAL_MODE:
+                message.message_data = MAINTENANCE_MODE_MESSAGE
+            else:
+                message.message_data = self.sensors[message.target_obj].get_data()
             message.message_type = Message.TYPE_DATA_HARD
             message.message_to, message.message_from = message.sender, message.receiver
             message.message_topic = self.sensors[message.target_obj].topic
@@ -55,6 +65,12 @@ class ComponentProxy:
             raise e
 
     def get_data_names(self, message) -> Message:
+        """
+        返回消息给其他服务
+        消息要带上传感器的name
+        :param message:
+        :return:
+        """
         res = {}
         if message.target_obj == Message.ALL_SENSOR:
             for name, sensor in self.sensors.items():

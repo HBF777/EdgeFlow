@@ -122,7 +122,7 @@ class MqttClient(CommunicationClient):
         serve_type = parts[2]
         message = Message()
         message.message_from = Message.BASE_CONTEXT_MESSAGE
-        if serve_type == "base_context":
+        if serve_type == "basecontext":
             message.message_type = Message.TYPE_REQ_DATA_HARD
             message.message_to = Message.BASE_CONTEXT_MESSAGE
             message.message_op = Message.MESSAGE_OP_SENSOR
