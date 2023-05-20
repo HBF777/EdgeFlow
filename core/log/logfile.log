@@ -178,3 +178,12 @@
 2023-05-17 22:38:57,538 - D:\project\python\EdgeFlow\core\context.py[line:126] - INFO: 启动Gui服务
 2023-05-17 22:38:57,543 - D:\project\python\EdgeFlow\core\context.py[line:128] - INFO: 服务启动完成
 2023-05-17 22:38:58,547 - D:\project\python\EdgeFlow\core\context.py[line:130] - INFO: 启动服务监听
+2023-05-20 12:37:17,683 - D:\Python\EdgeFlow\core\context.py[line:107] - INFO: 初始化配置文件
+2023-05-20 12:37:17,683 - D:\Python\EdgeFlow\core\context.py[line:111] - INFO: 检查系统环境
+2023-05-20 12:37:17,684 - D:\Python\EdgeFlow\core\context.py[line:126] - INFO: 正在激活BaseContext服务---->
+2023-05-20 12:37:17,695 - D:\Python\EdgeFlow\core\context.py[line:126] - INFO: 正在激活Gui服务---->
+2023-05-20 12:37:17,695 - D:\Python\EdgeFlow\core\context.py[line:144] - INFO: 启动服务
+2023-05-20 12:37:17,696 - D:\Python\EdgeFlow\core\context.py[line:146] - INFO: 启动BaseContext服务
+2023-05-20 12:37:17,701 - D:\Python\EdgeFlow\core\context.py[line:146] - INFO: 启动Gui服务
+2023-05-20 12:37:17,703 - D:\Python\EdgeFlow\core\context.py[line:148] - INFO: 服务启动完成
+2023-05-20 12:37:18,710 - D:\Python\EdgeFlow\core\context.py[line:150] - INFO: 启动服务监听
