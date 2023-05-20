@@ -17,6 +17,7 @@ from core.tools import Logger, ConfigParser
 from serves.base_context.context import BaseContext
 from serves.edge_computing.context import EdgeComputingContext
 from serves.gui.context import GuiContext
+from serves.webcam.context import WebCamContext
 
 """
 ⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄
@@ -96,6 +97,7 @@ class App:
 
     class WebCam(ProcessBaseServe):
         def __init__(self, *args, **kwargs):
+            kwargs['service_impl'] = WebCamContext
             super().__init__(*args, **kwargs)
 
     def __init__(self, *args, **kwargs):
