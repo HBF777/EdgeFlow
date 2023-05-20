@@ -5,4 +5,4 @@
 # @FileName: constant.py
 # @Software: PyCharm
 LOG_FILE_NAME = "serves/webcam/log/WebCamLog.log"
-LOG_LEVEL = "DEBUG"
+LOG_LEVEL = "debug"

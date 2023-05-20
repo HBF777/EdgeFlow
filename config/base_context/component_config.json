@@ -17,12 +17,26 @@
     {
       "name": "ExtLightSensor",
       "object": "LightSensor",
-      "pin": "A2",
+      "pin": {
+        "light": "A2"
+      },
       "publish": "edge/sensor/ExtLightSensor/{device_id}",
       "data_format": {
         "brightness": "float"
       }
-
+    },
+    {
+      "name": "InnerTempHumSensor",
+      "object": "TempHumSensor",
+       "pin": {
+        "temp": "A3",
+        "hum": "A4"
+      },
+      "publish": "edge/sensor/InnerTempHumSensor/{device_id}",
+        "data_format": {
+            "temperature": "float",
+            "humidity": "float"
+        }
     }
   ],
   "lamp": [

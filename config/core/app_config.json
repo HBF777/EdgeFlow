@@ -14,6 +14,13 @@
       "serve_config_name": "gui_context_config.json",
       "serve_log_name": "gui_context_log.txt",
       "serve_queue_size": 500
+    },
+    {
+      "serve_name": "WebCam",
+      "serve_queue": null,
+      "serve_config_name": "webcam_context_config.json",
+      "serve_log_name": "webcam_context_log.txt",
+      "serve_queue_size": 500
     }
   ]
 }
