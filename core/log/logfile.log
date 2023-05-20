@@ -13455,3 +13455,21 @@
 2023-05-07 13:32:19,239 - F:\PythonWorkPlace\EdgeFlow\core\context.py[line:126] - INFO: 启动Gui服务
 2023-05-07 13:32:19,250 - F:\PythonWorkPlace\EdgeFlow\core\context.py[line:128] - INFO: 服务启动完成
 2023-05-07 13:32:20,256 - F:\PythonWorkPlace\EdgeFlow\core\context.py[line:130] - INFO: 启动服务监听
+2023-05-19 21:57:10,629 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\core\context.py[line:87] - INFO: 初始化配置文件
+2023-05-19 21:57:10,629 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\core\context.py[line:91] - INFO: 检查系统环境
+2023-05-19 21:57:10,630 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\core\context.py[line:106] - INFO: 正在激活BaseContext服务---->
+2023-05-19 21:57:10,633 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\core\context.py[line:106] - INFO: 正在激活Gui服务---->
+2023-05-19 21:57:10,634 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\core\context.py[line:124] - INFO: 启动服务
+2023-05-19 21:57:10,634 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\core\context.py[line:126] - INFO: 启动BaseContext服务
+2023-05-19 21:57:10,639 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\core\context.py[line:126] - INFO: 启动Gui服务
+2023-05-19 21:57:10,643 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\core\context.py[line:128] - INFO: 服务启动完成
+2023-05-19 21:57:11,648 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\core\context.py[line:130] - INFO: 启动服务监听
+2023-05-19 21:59:09,932 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\core\context.py[line:87] - INFO: 初始化配置文件
+2023-05-19 21:59:09,932 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\core\context.py[line:91] - INFO: 检查系统环境
+2023-05-19 21:59:09,932 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\core\context.py[line:106] - INFO: 正在激活BaseContext服务---->
+2023-05-19 21:59:09,935 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\core\context.py[line:106] - INFO: 正在激活Gui服务---->
+2023-05-19 21:59:09,936 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\core\context.py[line:124] - INFO: 启动服务
+2023-05-19 21:59:09,936 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\core\context.py[line:126] - INFO: 启动BaseContext服务
+2023-05-19 21:59:09,941 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\core\context.py[line:126] - INFO: 启动Gui服务
+2023-05-19 21:59:09,944 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\core\context.py[line:128] - INFO: 服务启动完成
+2023-05-19 21:59:10,955 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\core\context.py[line:130] - INFO: 启动服务监听

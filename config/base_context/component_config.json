@@ -22,7 +22,51 @@
       "data_format": {
         "brightness": "float"
       }
-
+    },
+    {
+      "name": "传感器name",
+      "object": "传感器类",
+      "pin": "引脚",
+      "publish": "edge/sensor/ExtLightSensor/{device_id}发布主题",
+      "data_format": {
+        "brightness": "float返回格式"
+      }
+    },
+    {
+      "name": "传感器name",
+      "object": "传感器类",
+      "pin": "引脚",
+      "publish": "edge/sensor/ExtLightSensor/{device_id}发布主题",
+      "data_format": {
+        "brightness": "float返回格式"
+      }
+    },
+    {
+      "name": "传感器name",
+      "object": "传感器类",
+      "pin": "引脚",
+      "publish": "edge/sensor/ExtLightSensor/{device_id}发布主题",
+      "data_format": {
+        "brightness": "float返回格式"
+      }
+    },
+    {
+      "name": "传感器name",
+      "object": "传感器类",
+      "pin": "引脚",
+      "publish": "edge/sensor/ExtLightSensor/{device_id}发布主题",
+      "data_format": {
+        "brightness": "float返回格式"
+      }
+    },
+    {
+      "name": "传感器name",
+      "object": "传感器类",
+      "pin": "引脚",
+      "publish": "edge/sensor/ExtLightSensor/{device_id}发布主题",
+      "data_format": {
+        "brightness": "float返回格式"
+      }
     }
   ],
   "lamp": [
