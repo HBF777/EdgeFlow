@@ -9,7 +9,7 @@
 这里对路灯进行控制
 """
 from flask import jsonify
-from ..main import redis_helper
+# from ..main import redis_helper
 from . import lamp_bp
 
 """
@@ -185,16 +185,16 @@ def set_light_down_002():
 #############################
 #一下是带参数的请求
 ############################
-
-#开关调节
-@lamp_bp.route('/server/lamp/turnOn')
-def turn_on_lamp(lamp_number):
-    ##开启第 lamp_number 个灯
-    status = "success"
-    return_json = {
-        "status": status
-    }
-    return jsonify(return_json)
+#
+# #开关调节
+# @lamp_bp.route('/server/lamp/turnOn')
+# def turn_on_lamp(lamp_number):
+#     ##开启第 lamp_number 个灯
+#     status = "success"
+#     return_json = {
+#         "status": status
+#     }
+#     return jsonify(return_json)
 
 @lamp_bp.route('/server/lamp/turnOff')
 def turn_on_lamp(lamp_number):

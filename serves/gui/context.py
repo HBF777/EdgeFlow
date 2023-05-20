@@ -10,7 +10,7 @@ from threading import Thread
 from core.constant import Message, LAMP_DATA_REDIS_KEY,SENSOR_DATA_REDIS_KEY
 from core.tools import RedisHelper
 from ..serves import BaseServerAbstract
-from _flask.main import run
+from .gui_flask.main import run
 
 test_op = [
     Message(message_from=Message.GUI_CONTEXT_MESSAGE,

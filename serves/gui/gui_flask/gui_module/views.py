@@ -6,8 +6,8 @@
 # @File    : views
 # @Software: PyCharm
 from flask import jsonify
-from ..main import redis_helper
-from ..gui_module import gui_m_bp
+# from ..main import redis_helper
+from . import gui_m_bp
 """
 这里书写的是gui界面的其他模块
 灯的控制与传感器之外的模块

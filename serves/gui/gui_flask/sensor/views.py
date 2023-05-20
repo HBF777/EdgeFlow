@@ -10,7 +10,7 @@
 """
 from flask import jsonify
 from . import sensor_bp
-from ..main import redis_helper
+# from ..main import redis_helper
 #保存传感器数据的字典
 data_sensor = {
     "e_temperature":None,
