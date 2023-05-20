@@ -7,12 +7,12 @@
 """
 import os
 import platform
-from HCNetSDK import *
-from PlayCtrl import *
+from serves.webcam.haiKang.HCNetSDK import *
+from serves.webcam.haiKang.PlayCtrl import *
 import numpy as np
 import time
 import cv2
-from time import  sleep
+from time import sleep
 
 
 class HKCam(object):
@@ -29,13 +29,11 @@ class HKCam(object):
         self.last_stamp = None  # 上次时间戳
         # 加载库，先加载依赖库
         if self.WINDOWS_FLAG:
-            os.chdir(r'./lib/win')
-            self.Objdll = ctypes.CDLL(r'./HCNetSDK.dll')  # 加载网络库
-            self.Playctrldll = ctypes.CDLL(r'./PlayCtrl.dll')  # 加载播放库
+            self.Objdll = ctypes.CDLL(os.path.abspath(r'serves/webcam/haiKang/lib/win/HCNetSDK.dll'))  # 加载网络库
+            self.Playctrldll = ctypes.CDLL(os.path.abspath(r'serves/webcam/haiKang/lib/win/PlayCtrl.dll'))  # 加载播放库
         else:
-            os.chdir(r'./lib/linux')
-            self.Objdll = cdll.LoadLibrary(r'./libhcnetsdk.so')
-            self.Playctrldll = cdll.LoadLibrary(r'./libPlayCtrl.so')
+            self.Objdll = cdll.LoadLibrary(os.path.abspath(r'serves/webcam/haiKang/lib/linux/libhcnetsdk.so'))
+            self.Playctrldll = cdll.LoadLibrary(os.path.abspath(r'serves/webcam/haiKang/lib/linux/libPlayCtrl.so'))
         # 设置组件库和SSL库加载路径
         self.SetSDKInitCfg()
         # 初始化DLL
@@ -50,7 +48,7 @@ class HKCam(object):
             print('Login device fail, error code is: %d' % self.Objdll.NET_DVR_GetLastError())
             # 释放资源
             self.Objdll.NET_DVR_Cleanup()
-            exit()
+           # exit()
         else:
             print(f'摄像头[{camIP}]登录成功!!')
         self.start_play()
@@ -109,7 +107,7 @@ class HKCam(object):
             self.Objdll.NET_DVR_Logout(self.lUserId)
             # 释放资源
             self.Objdll.NET_DVR_Cleanup()
-            exit()
+           # exit()
 
     def DecCBFun(self, nPort, pBuf, nSize, pFrameInfo, nUser, nReserved2):
         if pFrameInfo.contents.nType == 3:
@@ -118,9 +116,7 @@ class HKCam(object):
             # 如果有耗时处理，需要将解码数据拷贝到回调函数外面的其他线程里面处理，避免阻塞回调导致解码丢帧
             nWidth = pFrameInfo.contents.nWidth
             nHeight = pFrameInfo.contents.nHeight
-
             nStamp = pFrameInfo.contents.nStamp
-
             YUV = np.frombuffer(pBuf[:nSize], dtype=np.uint8)
             YUV = np.reshape(YUV, [nHeight + nHeight // 2, nWidth])
             img_rgb = cv2.cvtColor(YUV, cv2.COLOR_YUV2BGR_YV12)
@@ -161,10 +157,8 @@ class HKCam(object):
             print('Start ptz control fail, error code is: %d' % self.Objdll.NET_DVR_GetLastError())
         else:
             print('Start ptz control success')
-
         # 转动一秒
         sleep(0.5)
-
         # 停止云台控制
         lRet = self.Objdll.NET_DVR_PTZControl(self.lRealPlayHandle, instruct, 1)
         if lRet == 0:
@@ -183,7 +177,8 @@ class HKCam(object):
             self.Objdll.NET_DVR_Cleanup()
         print('释放资源结束')
 
-if __name__ == '__main__':
+
+def HKgo():
     camIP = '192.168.100.45'
     DEV_PORT = 8000
     username = 'admin'
@@ -198,6 +193,5 @@ if __name__ == '__main__':
         kkk = cv2.waitKey(1)
         if kkk ==ord('q'):
             break
-
-    hkclass.PTZ_control(21)
+    #hkclass.PTZ_control(21)
     hkclass.release()
