@@ -4,10 +4,15 @@
 # @Author  : 李帅兵
 # @FileName: context.py
 # @Software: PyCharm
-from core.tools import Logger
-from .constant import LOG_FILE_NAME, LOG_LEVEL
-from ..serves import BaseServerAbstract
+import os.path
 
+from core.tools import Logger, ConfigParser
+from .constant import *
+from ..serves import BaseServerAbstract
+from .haiKang.main import *
+from .communicate_gui import *
+
+webcam_config = None
 
 def get_webcam_local_stream():
     """
@@ -27,7 +32,10 @@ def init_context():
     """
     初始化上下文
     """
-    pass
+    global webcam_config
+    webcam_config = ConfigParser.parse_json(file_path=os.path.abspath(WEBCAM_CONFIG_FILE_PATH))
+    HKCam(webcam_config['haikang']['host'], webcam_config['haikang']['user'], webcam_config['haikang']['passwd'])
+    #print(webcam_config)
 
 
 class WebCamContext(BaseServerAbstract):
@@ -35,7 +43,8 @@ class WebCamContext(BaseServerAbstract):
         """
         心跳机制实现方法
         """
-        pass
+        while True:
+            pass
 
     def await_get_message(self):
         """
@@ -46,8 +55,6 @@ class WebCamContext(BaseServerAbstract):
     def put_message(self):
         pass
 
-    def run(self):
-        pass
 
     def __init__(self, *args, **kwargs):
         super(WebCamContext, self).__init__(*args, **kwargs)
@@ -62,3 +69,6 @@ class WebCamContext(BaseServerAbstract):
         Logger().info("WebCamContext init-ing..")
         # 初始化服务
         init_context()
+        #启动
+        web_go()
+        #self.keep_alive()
