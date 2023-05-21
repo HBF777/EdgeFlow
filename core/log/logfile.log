@@ -1034,3 +1034,14 @@
 2023-05-21 14:00:33,571 - D:\Python\EdgeFlow\core\context.py[line:148] - INFO: 启动WebCam服务
 2023-05-21 14:00:33,574 - D:\Python\EdgeFlow\core\context.py[line:150] - INFO: 服务启动完成
 2023-05-21 14:00:34,587 - D:\Python\EdgeFlow\core\context.py[line:152] - INFO: 启动服务监听
+2023-05-21 15:00:07,976 - D:\Python\EdgeFlow\core\context.py[line:109] - INFO: 初始化配置文件
+2023-05-21 15:00:07,976 - D:\Python\EdgeFlow\core\context.py[line:113] - INFO: 检查系统环境
+2023-05-21 15:00:07,977 - D:\Python\EdgeFlow\core\context.py[line:128] - INFO: 正在激活BaseContext服务---->
+2023-05-21 15:00:07,982 - D:\Python\EdgeFlow\core\context.py[line:128] - INFO: 正在激活Gui服务---->
+2023-05-21 15:00:07,982 - D:\Python\EdgeFlow\core\context.py[line:128] - INFO: 正在激活WebCam服务---->
+2023-05-21 15:00:07,983 - D:\Python\EdgeFlow\core\context.py[line:146] - INFO: 启动服务
+2023-05-21 15:00:07,983 - D:\Python\EdgeFlow\core\context.py[line:148] - INFO: 启动BaseContext服务
+2023-05-21 15:00:07,988 - D:\Python\EdgeFlow\core\context.py[line:148] - INFO: 启动Gui服务
+2023-05-21 15:00:07,989 - D:\Python\EdgeFlow\core\context.py[line:148] - INFO: 启动WebCam服务
+2023-05-21 15:00:07,991 - D:\Python\EdgeFlow\core\context.py[line:150] - INFO: 服务启动完成
+2023-05-21 15:00:09,006 - D:\Python\EdgeFlow\core\context.py[line:152] - INFO: 启动服务监听
