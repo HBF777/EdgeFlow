@@ -17,26 +17,56 @@
     {
       "name": "ExtLightSensor",
       "object": "LightSensor",
-      "pin": {
-        "light": "A2"
-      },
+      "pin": "A2",
       "publish": "edge/sensor/ExtLightSensor/{device_id}",
       "data_format": {
         "brightness": "float"
       }
     },
     {
-      "name": "InnerTempHumSensor",
-      "object": "TempHumSensor",
-       "pin": {
-        "temp": "A3",
-        "hum": "A4"
-      },
-      "publish": "edge/sensor/InnerTempHumSensor/{device_id}",
-        "data_format": {
-            "temperature": "float",
-            "humidity": "float"
-        }
+      "name": "传感器name",
+      "object": "传感器类",
+      "pin": "引脚",
+      "publish": "edge/sensor/ExtLightSensor/{device_id}发布主题",
+      "data_format": {
+        "brightness": "float返回格式"
+      }
+    },
+    {
+      "name": "传感器name",
+      "object": "传感器类",
+      "pin": "引脚",
+      "publish": "edge/sensor/ExtLightSensor/{device_id}发布主题",
+      "data_format": {
+        "brightness": "float返回格式"
+      }
+    },
+    {
+      "name": "传感器name",
+      "object": "传感器类",
+      "pin": "引脚",
+      "publish": "edge/sensor/ExtLightSensor/{device_id}发布主题",
+      "data_format": {
+        "brightness": "float返回格式"
+      }
+    },
+    {
+      "name": "传感器name",
+      "object": "传感器类",
+      "pin": "引脚",
+      "publish": "edge/sensor/ExtLightSensor/{device_id}发布主题",
+      "data_format": {
+        "brightness": "float返回格式"
+      }
+    },
+    {
+      "name": "传感器name",
+      "object": "传感器类",
+      "pin": "引脚",
+      "publish": "edge/sensor/ExtLightSensor/{device_id}发布主题",
+      "data_format": {
+        "brightness": "float返回格式"
+      }
     }
   ],
   "lamp": [
