@@ -9,7 +9,8 @@ import os.path
 from core.tools import Logger, ConfigParser
 from .constant import *
 from ..serves import BaseServerAbstract
-from .haiKang.main import HKgo
+from .haiKang.main import *
+from .communicate_gui import *
 
 webcam_config = None
 
@@ -33,7 +34,9 @@ def init_context():
     """
     global webcam_config
     webcam_config = ConfigParser.parse_json(file_path=os.path.abspath(WEBCAM_CONFIG_FILE_PATH))
+    HKCam(webcam_config['haikang']['host'], webcam_config['haikang']['user'], webcam_config['haikang']['passwd'])
     #print(webcam_config)
+
 
 class WebCamContext(BaseServerAbstract):
     def keep_alive(self):
@@ -67,5 +70,5 @@ class WebCamContext(BaseServerAbstract):
         # 初始化服务
         init_context()
         #启动
-        HKgo()
+        web_go()
         #self.keep_alive()

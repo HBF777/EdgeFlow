@@ -2,7 +2,7 @@
   "haikang": {
     "host": "192.168.100.45",
     "port": 8000,
-    "account": "admin",
+    "user": "admin",
     "passwd": "zsc123321"
   }
 }

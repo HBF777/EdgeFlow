@@ -13,8 +13,9 @@ import numpy as np
 import time
 import cv2
 from time import sleep
+from core.tools import Logger, singleton
 
-
+@singleton
 class HKCam(object):
     def __init__(self, camIP, username, password, devport=8000, recorder=False):
         # 登陆设备信息
@@ -176,22 +177,3 @@ class HKCam(object):
             self.Objdll.NET_DVR_Logout(self.lUserId)
             self.Objdll.NET_DVR_Cleanup()
         print('释放资源结束')
-
-
-def HKgo():
-    camIP = '192.168.100.45'
-    DEV_PORT = 8000
-    username = 'admin'
-    password = 'zsc123321'
-    hkclass = HKCam(camIP, username, password)
-    last_stamp = 0
-    while True:
-        t0 =time.time()
-        n_stamp,img = hkclass.read()
-        last_stamp=n_stamp
-        cv2.imshow('1',cv2.resize(img,(800,600)))
-        kkk = cv2.waitKey(1)
-        if kkk ==ord('q'):
-            break
-    #hkclass.PTZ_control(21)
-    hkclass.release()
