@@ -1,1308 +1,626 @@
-2023-05-17 12:45:27,046 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:226] - INFO: BaseContext init-ing
-2023-05-17 12:45:27,051 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
-2023-05-17 12:45:27,051 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
-2023-05-17 12:45:27,051 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
-2023-05-17 12:45:27,051 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
-2023-05-17 12:45:27,051 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
-2023-05-17 12:45:27,051 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
-2023-05-17 12:45:27,051 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
-2023-05-17 12:45:27,051 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
-2023-05-17 12:45:27,051 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
-2023-05-17 12:45:27,053 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:236] - INFO: BaseContext 初始化通讯服务
-2023-05-17 12:45:27,053 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:238] - INFO: BaseContext 初始化消息服务
-2023-05-17 12:45:27,054 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:240] - INFO: BaseContext 初始化心跳服务
-2023-05-17 12:45:27,074 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
-2023-05-17 12:45:27,982 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
-2023-05-17 13:22:25,784 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:226] - INFO: BaseContext init-ing
-2023-05-17 13:22:25,787 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
-2023-05-17 13:22:25,787 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
-2023-05-17 13:22:25,787 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
-2023-05-17 13:22:25,787 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
-2023-05-17 13:22:25,787 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
-2023-05-17 13:22:25,787 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
-2023-05-17 13:22:25,788 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
-2023-05-17 13:22:25,788 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
-2023-05-17 13:22:25,788 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
-2023-05-17 13:22:25,788 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:236] - INFO: BaseContext 初始化通讯服务
-2023-05-17 13:22:25,789 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:238] - INFO: BaseContext 初始化消息服务
-2023-05-17 13:22:25,789 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:240] - INFO: BaseContext 初始化心跳服务
-2023-05-17 13:22:25,790 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
-2023-05-17 13:22:26,670 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
-2023-05-17 13:24:16,139 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: {
-    "data":{
-        "rain": 100,
-        "time": 1668844280
-    }
-}
-2023-05-17 13:24:21,115 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8884
-2023-05-17 13:33:02,911 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/temperature_humidity,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 13:33:02,943 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:83] - ERROR: 消息格式错误: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 13:33:04,785 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/temperature_humidity,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 13:33:04,833 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:83] - ERROR: 消息格式错误: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 13:33:17,603 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/temperature_humidity,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 13:33:17,634 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:83] - ERROR: 消息格式错误: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 13:33:27,045 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/temperature_humidity,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 13:33:27,077 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:83] - ERROR: 消息格式错误: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 13:33:44,290 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/temperature_humidity,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 13:33:44,322 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:83] - ERROR: 消息格式错误: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 13:33:46,473 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/temperature_humidity,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 13:33:46,504 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:83] - ERROR: 消息格式错误: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 14:18:18,504 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:226] - INFO: BaseContext init-ing
-2023-05-17 14:18:18,515 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
-2023-05-17 14:18:18,515 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
-2023-05-17 14:18:18,515 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
-2023-05-17 14:18:18,516 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
-2023-05-17 14:18:18,516 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
-2023-05-17 14:18:18,516 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
-2023-05-17 14:18:18,517 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
-2023-05-17 14:18:18,517 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
-2023-05-17 14:18:18,518 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
-2023-05-17 14:18:18,523 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:236] - INFO: BaseContext 初始化通讯服务
-2023-05-17 14:18:18,524 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:238] - INFO: BaseContext 初始化消息服务
-2023-05-17 14:18:18,526 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:240] - INFO: BaseContext 初始化心跳服务
-2023-05-17 14:18:18,871 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
-2023-05-17 14:18:20,473 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
-2023-05-17 14:18:46,641 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/temperature_humidity,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 14:18:46,753 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:83] - ERROR: 消息格式错误: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 14:18:56,508 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/temperature_humidity,消息: 888
-2023-05-17 14:18:56,588 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:83] - ERROR: 消息格式错误: 888
-2023-05-17 14:19:08,326 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/temperature_humidity,消息: 888
-2023-05-17 14:19:08,389 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:83] - ERROR: 消息格式错误: 888
-2023-05-17 14:20:44,574 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/2,消息: 888
-2023-05-17 14:20:44,606 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:83] - ERROR: 消息格式错误: 888
-2023-05-17 14:20:52,343 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/2,消息: 8882
-2023-05-17 14:20:52,359 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:83] - ERROR: 消息格式错误: 8882
-2023-05-17 14:21:18,464 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
-2023-05-17 14:21:50,473 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
-2023-05-17 14:22:02,834 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:226] - INFO: BaseContext init-ing
-2023-05-17 14:22:02,844 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
-2023-05-17 14:22:02,844 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
-2023-05-17 14:22:02,845 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
-2023-05-17 14:22:02,845 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
-2023-05-17 14:22:02,845 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
-2023-05-17 14:22:02,845 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
-2023-05-17 14:22:02,846 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
-2023-05-17 14:22:02,846 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
-2023-05-17 14:22:02,846 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
-2023-05-17 14:22:02,850 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:236] - INFO: BaseContext 初始化通讯服务
-2023-05-17 14:22:02,851 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:238] - INFO: BaseContext 初始化消息服务
-2023-05-17 14:22:02,852 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:240] - INFO: BaseContext 初始化心跳服务
-2023-05-17 14:22:03,033 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
-2023-05-17 14:22:04,312 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
-2023-05-17 14:22:07,394 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
-2023-05-17 14:22:54,493 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/gui/sensor/ExtTempHumSenso,消息: 8882
-2023-05-17 14:23:53,694 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/temperature_humidity,消息: 8882
-2023-05-17 14:23:53,726 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:83] - ERROR: 消息格式错误: 8882
-2023-05-17 14:24:18,844 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/temperature_humidity,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 14:24:18,908 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:83] - ERROR: 消息格式错误: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 14:24:55,033 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/temperature_humidity,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 14:24:55,095 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:83] - ERROR: 消息格式错误: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 14:25:15,686 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/temperature_humidity,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 14:27:15,555 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:226] - INFO: BaseContext init-ing
-2023-05-17 14:27:15,565 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
-2023-05-17 14:27:15,566 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
-2023-05-17 14:27:15,566 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
-2023-05-17 14:27:15,567 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
-2023-05-17 14:27:15,567 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
-2023-05-17 14:27:15,567 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
-2023-05-17 14:27:15,568 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
-2023-05-17 14:27:15,568 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
-2023-05-17 14:27:15,568 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
-2023-05-17 14:27:15,572 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:236] - INFO: BaseContext 初始化通讯服务
-2023-05-17 14:27:15,573 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:238] - INFO: BaseContext 初始化消息服务
-2023-05-17 14:27:15,574 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:240] - INFO: BaseContext 初始化心跳服务
-2023-05-17 14:27:15,939 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
-2023-05-17 14:27:17,392 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
-2023-05-17 14:27:22,920 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/temperature_humidity,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 14:29:03,444 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/temperature_humidity,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 14:30:42,774 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/temperature_humidity,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 14:31:15,676 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/temperature_humidity,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 14:56:33,390 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:226] - INFO: BaseContext init-ing
-2023-05-17 14:56:33,403 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
-2023-05-17 14:56:33,403 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
-2023-05-17 14:56:33,404 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
-2023-05-17 14:56:33,405 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
-2023-05-17 14:56:33,405 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
-2023-05-17 14:56:33,406 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
-2023-05-17 14:56:33,406 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
-2023-05-17 14:56:33,407 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
-2023-05-17 14:56:33,408 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
-2023-05-17 14:56:33,414 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:236] - INFO: BaseContext 初始化通讯服务
-2023-05-17 14:56:33,421 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:238] - INFO: BaseContext 初始化消息服务
-2023-05-17 14:56:33,422 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:240] - INFO: BaseContext 初始化心跳服务
-2023-05-17 14:56:33,823 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
-2023-05-17 14:56:35,355 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
-2023-05-17 14:56:36,565 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/temperature_humidity,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 14:57:32,775 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/temperature_humidity,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 15:34:17,140 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/temperature_humidity,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 15:34:47,194 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:226] - INFO: BaseContext init-ing
-2023-05-17 15:34:47,203 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
-2023-05-17 15:34:47,204 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
-2023-05-17 15:34:47,204 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
-2023-05-17 15:34:47,205 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
-2023-05-17 15:34:47,205 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
-2023-05-17 15:34:47,206 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
-2023-05-17 15:34:47,206 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
-2023-05-17 15:34:47,207 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
-2023-05-17 15:34:47,207 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
-2023-05-17 15:34:47,212 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:236] - INFO: BaseContext 初始化通讯服务
-2023-05-17 15:34:47,213 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:238] - INFO: BaseContext 初始化消息服务
-2023-05-17 15:34:47,215 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:240] - INFO: BaseContext 初始化心跳服务
-2023-05-17 15:34:47,564 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
-2023-05-17 15:34:48,759 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
-2023-05-17 15:34:52,090 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/temperature_humidity,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 15:36:10,264 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:226] - INFO: BaseContext init-ing
-2023-05-17 15:36:10,274 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
-2023-05-17 15:36:10,274 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
-2023-05-17 15:36:10,274 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
-2023-05-17 15:36:10,275 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
-2023-05-17 15:36:10,276 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
-2023-05-17 15:36:10,276 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
-2023-05-17 15:36:10,276 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
-2023-05-17 15:36:10,277 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
-2023-05-17 15:36:10,277 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
-2023-05-17 15:36:10,282 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:236] - INFO: BaseContext 初始化通讯服务
-2023-05-17 15:36:10,283 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:238] - INFO: BaseContext 初始化消息服务
-2023-05-17 15:36:10,284 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:240] - INFO: BaseContext 初始化心跳服务
-2023-05-17 15:36:10,648 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
-2023-05-17 15:36:12,006 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
-2023-05-17 15:36:14,001 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/temperature_humidity,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 15:37:49,054 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:226] - INFO: BaseContext init-ing
-2023-05-17 15:37:49,063 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
-2023-05-17 15:37:49,063 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
-2023-05-17 15:37:49,063 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
-2023-05-17 15:37:49,064 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
-2023-05-17 15:37:49,064 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
-2023-05-17 15:37:49,065 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
-2023-05-17 15:37:49,065 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
-2023-05-17 15:37:49,066 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
-2023-05-17 15:37:49,066 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
-2023-05-17 15:37:49,069 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:236] - INFO: BaseContext 初始化通讯服务
-2023-05-17 15:37:49,071 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:238] - INFO: BaseContext 初始化消息服务
-2023-05-17 15:37:49,072 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:240] - INFO: BaseContext 初始化心跳服务
-2023-05-17 15:37:49,273 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
-2023-05-17 15:37:50,764 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
-2023-05-17 15:37:54,199 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/temperature_humidity,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 15:39:31,173 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:54] - WARNING: 'temperature_humidity'
-2023-05-17 15:52:01,528 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/temperature_humidity,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 15:52:43,042 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:226] - INFO: BaseContext init-ing
-2023-05-17 15:52:43,051 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
-2023-05-17 15:52:43,051 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
-2023-05-17 15:52:43,051 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
-2023-05-17 15:52:43,052 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
-2023-05-17 15:52:43,052 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
-2023-05-17 15:52:43,052 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
-2023-05-17 15:52:43,052 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
-2023-05-17 15:52:43,053 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
-2023-05-17 15:52:43,053 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
-2023-05-17 15:52:43,058 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:236] - INFO: BaseContext 初始化通讯服务
-2023-05-17 15:52:43,059 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:238] - INFO: BaseContext 初始化消息服务
-2023-05-17 15:52:43,061 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:240] - INFO: BaseContext 初始化心跳服务
-2023-05-17 15:52:43,313 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
-2023-05-17 15:52:44,942 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
-2023-05-17 15:52:50,734 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/temperature_humidity,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 15:59:41,423 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:226] - INFO: BaseContext init-ing
-2023-05-17 15:59:41,431 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
-2023-05-17 15:59:41,431 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
-2023-05-17 15:59:41,432 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
-2023-05-17 15:59:41,432 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
-2023-05-17 15:59:41,432 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
-2023-05-17 15:59:41,433 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
-2023-05-17 15:59:41,433 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
-2023-05-17 15:59:41,433 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
-2023-05-17 15:59:41,433 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
-2023-05-17 15:59:41,437 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:236] - INFO: BaseContext 初始化通讯服务
-2023-05-17 15:59:41,438 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:238] - INFO: BaseContext 初始化消息服务
-2023-05-17 15:59:41,440 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:240] - INFO: BaseContext 初始化心跳服务
-2023-05-17 15:59:41,818 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
-2023-05-17 15:59:43,191 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
-2023-05-17 15:59:43,989 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/temperature_humidity,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 21:14:14,078 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:226] - INFO: BaseContext init-ing
-2023-05-17 21:14:14,083 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
-2023-05-17 21:14:14,083 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
-2023-05-17 21:14:14,084 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
-2023-05-17 21:14:14,084 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
-2023-05-17 21:14:14,084 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
-2023-05-17 21:14:14,084 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
-2023-05-17 21:14:14,084 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
-2023-05-17 21:14:14,084 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
-2023-05-17 21:14:14,084 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
-2023-05-17 21:14:14,086 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:236] - INFO: BaseContext 初始化通讯服务
-2023-05-17 21:14:14,087 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:238] - INFO: BaseContext 初始化消息服务
-2023-05-17 21:14:14,088 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:240] - INFO: BaseContext 初始化心跳服务
-2023-05-17 21:14:14,318 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
-2023-05-17 21:14:15,598 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
-2023-05-17 21:14:20,979 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/temperature_humidity,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:07:39,790 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:226] - INFO: BaseContext init-ing
-2023-05-17 22:07:39,793 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
-2023-05-17 22:07:39,793 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
-2023-05-17 22:07:39,793 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
-2023-05-17 22:07:39,794 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
-2023-05-17 22:07:39,794 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
-2023-05-17 22:07:39,794 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
-2023-05-17 22:07:39,794 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
-2023-05-17 22:07:39,794 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
-2023-05-17 22:07:39,794 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
-2023-05-17 22:07:39,796 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:236] - INFO: BaseContext 初始化通讯服务
-2023-05-17 22:07:39,796 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:238] - INFO: BaseContext 初始化消息服务
-2023-05-17 22:07:39,797 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:240] - INFO: BaseContext 初始化心跳服务
-2023-05-17 22:07:40,029 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
-2023-05-17 22:07:41,261 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
-2023-05-17 22:07:42,393 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/temperature_humidity,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:13:47,370 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:54] - WARNING: 'temperature_humidity'
-2023-05-17 22:13:51,512 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/temperature_humidity,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:16:23,083 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:54] - WARNING: 'temperature_humidity'
-2023-05-17 22:17:25,925 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:230] - INFO: BaseContext init-ing
-2023-05-17 22:17:25,931 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
-2023-05-17 22:17:25,931 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
-2023-05-17 22:17:25,931 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
-2023-05-17 22:17:25,931 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
-2023-05-17 22:17:25,931 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
-2023-05-17 22:17:25,931 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
-2023-05-17 22:17:25,932 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
-2023-05-17 22:17:25,932 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
-2023-05-17 22:17:25,932 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
-2023-05-17 22:17:25,934 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:240] - INFO: BaseContext 初始化通讯服务
-2023-05-17 22:17:25,935 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:242] - INFO: BaseContext 初始化消息服务
-2023-05-17 22:17:25,935 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:244] - INFO: BaseContext 初始化心跳服务
-2023-05-17 22:17:26,106 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
-2023-05-17 22:17:27,480 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
-2023-05-17 22:17:31,617 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/temperature_humidity,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:19:26,585 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:54] - WARNING: 'temperature_humidity'
-2023-05-17 22:19:39,958 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:231] - INFO: BaseContext init-ing
-2023-05-17 22:19:39,962 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
-2023-05-17 22:19:39,962 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
-2023-05-17 22:19:39,962 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
-2023-05-17 22:19:39,963 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
-2023-05-17 22:19:39,963 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
-2023-05-17 22:19:39,963 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
-2023-05-17 22:19:39,963 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
-2023-05-17 22:19:39,963 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
-2023-05-17 22:19:39,963 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
-2023-05-17 22:19:39,965 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:241] - INFO: BaseContext 初始化通讯服务
-2023-05-17 22:19:39,966 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:243] - INFO: BaseContext 初始化消息服务
-2023-05-17 22:19:39,966 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:245] - INFO: BaseContext 初始化心跳服务
-2023-05-17 22:19:40,172 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
-2023-05-17 22:19:41,414 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
-2023-05-17 22:19:45,082 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/temperature_humidity,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:27:48,495 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:231] - INFO: BaseContext init-ing
-2023-05-17 22:27:48,500 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
-2023-05-17 22:27:48,500 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
-2023-05-17 22:27:48,500 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
-2023-05-17 22:27:48,500 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
-2023-05-17 22:27:48,501 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
-2023-05-17 22:27:48,501 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
-2023-05-17 22:27:48,501 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
-2023-05-17 22:27:48,501 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
-2023-05-17 22:27:48,501 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
-2023-05-17 22:27:48,503 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:241] - INFO: BaseContext 初始化通讯服务
-2023-05-17 22:27:48,504 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:243] - INFO: BaseContext 初始化消息服务
-2023-05-17 22:27:48,504 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:245] - INFO: BaseContext 初始化心跳服务
-2023-05-17 22:27:48,740 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
-2023-05-17 22:27:51,070 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
-2023-05-17 22:27:59,202 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/temperature_humidity,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:29:32,169 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:229] - INFO: BaseContext init-ing
-2023-05-17 22:29:32,173 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
-2023-05-17 22:29:32,174 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
-2023-05-17 22:29:32,174 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
-2023-05-17 22:29:32,174 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
-2023-05-17 22:29:32,174 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
-2023-05-17 22:29:32,174 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
-2023-05-17 22:29:32,174 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
-2023-05-17 22:29:32,174 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
-2023-05-17 22:29:32,174 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
-2023-05-17 22:29:32,176 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:239] - INFO: BaseContext 初始化通讯服务
-2023-05-17 22:29:32,177 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:241] - INFO: BaseContext 初始化消息服务
-2023-05-17 22:29:32,178 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:243] - INFO: BaseContext 初始化心跳服务
-2023-05-17 22:29:32,256 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
-2023-05-17 22:29:33,564 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
-2023-05-17 22:29:43,543 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/temperature_humidity,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:30:16,054 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:228] - INFO: BaseContext init-ing
-2023-05-17 22:30:16,059 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
-2023-05-17 22:30:16,060 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
-2023-05-17 22:30:16,060 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
-2023-05-17 22:30:16,060 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
-2023-05-17 22:30:16,060 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
-2023-05-17 22:30:16,061 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
-2023-05-17 22:30:16,061 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
-2023-05-17 22:30:16,061 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
-2023-05-17 22:30:16,061 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
-2023-05-17 22:30:16,063 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:238] - INFO: BaseContext 初始化通讯服务
-2023-05-17 22:30:16,064 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:240] - INFO: BaseContext 初始化消息服务
-2023-05-17 22:30:16,064 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:242] - INFO: BaseContext 初始化心跳服务
-2023-05-17 22:30:16,326 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
-2023-05-17 22:30:17,566 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
-2023-05-17 22:30:28,272 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/temperature_humidity,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:30:33,859 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:54] - WARNING: 'temperature_humidity'
-2023-05-17 22:30:54,038 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/temperature_humidity,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:31:46,543 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:54] - WARNING: 'temperature_humidity'
-2023-05-17 22:33:37,638 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/temperature_humidity,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:37:12,604 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:228] - INFO: BaseContext init-ing
-2023-05-17 22:37:12,608 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
-2023-05-17 22:37:12,608 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
-2023-05-17 22:37:12,608 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
-2023-05-17 22:37:12,608 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
-2023-05-17 22:37:12,608 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
-2023-05-17 22:37:12,609 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
-2023-05-17 22:37:12,609 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
-2023-05-17 22:37:12,609 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
-2023-05-17 22:37:12,609 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
-2023-05-17 22:37:12,611 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:238] - INFO: BaseContext 初始化通讯服务
-2023-05-17 22:37:12,611 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:240] - INFO: BaseContext 初始化消息服务
-2023-05-17 22:37:12,612 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:242] - INFO: BaseContext 初始化心跳服务
-2023-05-17 22:37:12,769 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
-2023-05-17 22:37:13,964 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
-2023-05-17 22:37:15,944 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/TempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:38:58,340 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:228] - INFO: BaseContext init-ing
-2023-05-17 22:38:58,345 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
-2023-05-17 22:38:58,345 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
-2023-05-17 22:38:58,345 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
-2023-05-17 22:38:58,345 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
-2023-05-17 22:38:58,345 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
-2023-05-17 22:38:58,345 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
-2023-05-17 22:38:58,345 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
-2023-05-17 22:38:58,345 - D:\project\python\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
-2023-05-17 22:38:58,346 - D:\project\python\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
-2023-05-17 22:38:58,347 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:238] - INFO: BaseContext 初始化通讯服务
-2023-05-17 22:38:58,348 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:240] - INFO: BaseContext 初始化消息服务
-2023-05-17 22:38:58,348 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:242] - INFO: BaseContext 初始化心跳服务
-2023-05-17 22:38:58,546 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
-2023-05-17 22:38:59,918 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
-2023-05-17 22:39:01,524 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:01,810 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '909c3526-f4c0-11ed-9070-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:13,791 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:13,935 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '97f0e8f2-f4c0-11ed-be5f-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:13,982 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:14,159 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '980b9e70-f4c0-11ed-aba8-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:14,175 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:14,287 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '982b5d46-f4c0-11ed-a4cb-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:14,367 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:14,543 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '9848aae9-f4c0-11ed-8a90-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:14,543 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:14,687 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '986adae4-f4c0-11ed-9071-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:14,767 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:14,847 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '98834a59-f4c0-11ed-bd7c-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:14,911 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:15,103 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '98994495-f4c0-11ed-afd7-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:15,135 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:15,199 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:15,295 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '98bde5b7-f4c0-11ed-9189-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:15,311 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '98c5391d-f4c0-11ed-9bce-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:15,358 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:15,484 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '98dd6a04-f4c0-11ed-ba8d-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:15,548 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:15,644 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '98f81f7c-f4c0-11ed-891e-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:15,756 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:15,933 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:15,948 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '991a51a7-f4c0-11ed-ac29-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:16,092 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:16,108 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '99350723-f4c0-11ed-8e5e-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:16,236 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:16,284 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '994d6e16-f4c0-11ed-9b86-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:16,300 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '9960f733-f4c0-11ed-873c-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:16,395 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:16,585 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:16,585 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '997dcfb5-f4c0-11ed-b7a0-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:16,681 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:16,712 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '99988533-f4c0-11ed-ab46-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:16,855 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '99a99d29-f4c0-11ed-a444-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:16,935 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:16,998 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '99cb911f-f4c0-11ed-b488-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:17,030 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:17,156 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '99da37fa-f4c0-11ed-bae7-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:17,172 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:17,300 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '99f4c65f-f4c0-11ed-8f64-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:17,362 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:17,568 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:17,583 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '9a119ef9-f4c0-11ed-a6c3-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:17,677 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:17,789 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '9a2e9e8d-f4c0-11ed-9a8f-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:17,804 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '9a3f6088-f4c0-11ed-ae46-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:17,916 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:18,012 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:18,060 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '9a6181d4-f4c0-11ed-a894-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:18,076 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '9a7272b5-f4c0-11ed-b40a-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:18,235 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:18,315 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:18,316 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '9a947ba2-f4c0-11ed-a4f5-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:18,473 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:18,489 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '9aa32273-f4c0-11ed-93f0-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:18,664 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '9abd89c9-f4c0-11ed-916c-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:18,696 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:18,824 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '9ad86654-f4c0-11ed-b5e7-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:18,968 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:19,144 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '9b06cca3-f4c0-11ed-86ae-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:19,256 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:19,400 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:19,480 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '9b32c137-f4c0-11ed-bd28-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:19,512 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '9b464a5b-f4c0-11ed-8ec2-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:19,513 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:19,688 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '9b5c4499-f4c0-11ed-93df-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:19,720 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:19,848 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '9b74affd-f4c0-11ed-8333-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:19,864 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:20,040 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:20,104 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '9b91fdaa-f4c0-11ed-b7a2-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:20,215 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '9ba586ca-f4c0-11ed-b408-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:20,247 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:20,419 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '9bc9b2ae-f4c0-11ed-8de2-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:20,466 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:20,594 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '9be8fc4f-f4c0-11ed-8545-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:20,642 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:20,770 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '9c03d8ea-f4c0-11ed-a63f-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:20,834 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:21,026 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:21,042 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '9c2378e6-f4c0-11ed-bf0d-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:21,074 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:21,218 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '9c3e557a-f4c0-11ed-99f8-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:21,282 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '9c4a8fa5-f4c0-11ed-aae8-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:21,346 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:21,490 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:21,570 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '9c741309-f4c0-11ed-a2bb-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:21,602 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '9c82b9da-f4c0-11ed-bb2c-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:21,633 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:21,840 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '9c9d4844-f4c0-11ed-ac5c-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:21,903 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:22,046 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:22,094 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '9cc8f217-f4c0-11ed-8ae9-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:22,156 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '9cd9dde6-f4c0-11ed-b073-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:22,172 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:22,349 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:22,364 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '9cf49360-f4c0-11ed-a3c7-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:22,524 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '9d081c7f-f4c0-11ed-988c-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:22,525 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:22,682 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:22,698 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '9d2087f3-f4c0-11ed-a703-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:22,875 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:22,875 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '9d3b21cd-f4c0-11ed-a468-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:23,033 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '9d5ab536-f4c0-11ed-a90b-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:23,496 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:23,687 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': '9db70b51-f4c0-11ed-a683-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:55,438 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:55,582 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': 'b0bed3cf-f4c0-11ed-baaf-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:55,662 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:55,820 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:55,868 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': 'b0e5bef1-f4c0-11ed-8c55-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:55,884 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': 'b0f92103-f4c0-11ed-aa35-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:55,980 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:56,125 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': 'b118e360-f4c0-11ed-9964-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:56,141 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:56,253 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:56,348 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': 'b12c6c78-f4c0-11ed-81bc-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:56,380 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': 'b13ff597-f4c0-11ed-afc6-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:56,540 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:56,604 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:56,668 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': 'b16951e7-f4c0-11ed-a9ae-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:56,716 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:56,732 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': 'b170a55c-f4c0-11ed-8b8d-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:56,972 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': 'b1869f98-f4c0-11ed-819e-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:56,972 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:57,146 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': 'b1b271b1-f4c0-11ed-9417-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:57,146 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:57,306 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:57,322 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': 'b1cab610-f4c0-11ed-9c87-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:57,481 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:57,529 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': 'b1de3f27-f4c0-11ed-af11-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:57,640 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': 'b1fb65c0-f4c0-11ed-beb3-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:57,687 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:57,799 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': 'b2186557-f4c0-11ed-b1b6-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:57,927 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:58,102 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': 'b23d0674-f4c0-11ed-be49-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:58,118 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:58,246 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': 'b257c04f-f4c0-11ed-b152-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:58,309 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:58,485 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:58,485 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': 'b279c93e-f4c0-11ed-a1b2-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:58,628 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': 'b294a5c5-f4c0-11ed-87c7-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:58,964 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:59,157 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': 'b2db4fc8-f4c0-11ed-862e-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:59,317 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:59,428 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': 'b310e65e-f4c0-11ed-8aec-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:59,540 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:59,667 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:39:59,683 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': 'b335878a-f4c0-11ed-aaf1-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:59,905 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': 'b348e989-f4c0-11ed-bd0c-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:39:59,905 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:40:00,064 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': 'b371f7b7-f4c0-11ed-a727-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:40:00,080 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:40:00,239 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': 'b3855d6e-f4c0-11ed-8c46-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:40:00,287 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:40:00,447 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': 'b3a2ab12-f4c0-11ed-adc9-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:40:00,750 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:40:00,894 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:40:00,910 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': 'b3e95518-f4c0-11ed-95b0-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:40:01,084 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': 'b401c07f-f4c0-11ed-95ee-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:40:01,179 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:40:01,339 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:40:01,339 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': 'b42ad9cd-f4c0-11ed-ba40-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:40:01,498 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': 'b4482782-f4c0-11ed-aa52-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
-2023-05-17 22:40:01,578 - D:\project\python\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/basecontext/sensor/ExtTempHumSensor,消息: {
-    "data":{
-        "humidity":50,
-        "temperature":23,
-        "time":123123123
-    }
-}
-2023-05-17 22:40:01,690 - D:\project\python\EdgeFlow\serves\base_context\context.py[line:153] - INFO: {'id': 'b46a305e-f4c0-11ed-8fef-2811a89e1edd', 'type': 'data', 'from': 'BaseContext', 'to': 'BaseContext', 'op': 'sensor', 'data': {'temperature': 20, 'humidity': 30}}
+2023-05-06 22:47:55,693 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:189] - INFO: BaseContext init-ing
+2023-05-06 22:47:56,222 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:189] - INFO: BaseContext init-ing
+2023-05-06 22:48:20,397 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:189] - INFO: BaseContext init-ing
+2023-05-06 22:48:21,406 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:189] - INFO: BaseContext init-ing
+2023-05-06 22:48:48,439 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:189] - INFO: BaseContext init-ing
+2023-05-06 22:48:49,053 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:189] - INFO: BaseContext init-ing
+2023-05-06 22:49:26,993 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:189] - INFO: BaseContext init-ing
+2023-05-06 22:49:26,997 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:27] - WARNING: sensor ExtTempHumSensor init failed
+2023-05-06 22:49:28,052 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:189] - INFO: BaseContext init-ing
+2023-05-06 22:49:28,054 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:27] - WARNING: sensor ExtTempHumSensor init failed
+2023-05-06 22:50:05,992 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:189] - INFO: BaseContext init-ing
+2023-05-06 22:50:05,995 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:27] - WARNING: sensor ExtTempHumSensor init failed
+2023-05-06 22:50:07,188 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:189] - INFO: BaseContext init-ing
+2023-05-06 22:50:07,190 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:27] - WARNING: sensor ExtTempHumSensor init failed
+2023-05-06 22:50:56,878 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:189] - INFO: BaseContext init-ing
+2023-05-06 22:50:56,880 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:27] - WARNING: sensor ExtTempHumSensor init failed
+2023-05-06 22:50:57,798 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:189] - INFO: BaseContext init-ing
+2023-05-06 22:50:57,800 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:27] - WARNING: sensor ExtTempHumSensor init failed
+2023-05-06 22:52:08,513 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:189] - INFO: BaseContext init-ing
+2023-05-06 22:52:08,515 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:27] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-06 22:52:08,515 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:25] - INFO: sensor ExtTempHumSensor init success
+2023-05-06 22:52:08,515 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:25] - INFO: sensor ExtLightSensor init success
+2023-05-06 22:52:08,517 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:40] - WARNING: lamp MasterLight init failed
+2023-05-06 22:52:09,387 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:189] - INFO: BaseContext init-ing
+2023-05-06 22:52:09,392 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:27] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-06 22:52:09,392 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:25] - INFO: sensor ExtTempHumSensor init success
+2023-05-06 22:52:09,393 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:25] - INFO: sensor ExtLightSensor init success
+2023-05-06 22:52:09,393 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:40] - WARNING: lamp MasterLight init failed
+2023-05-06 22:53:06,211 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:189] - INFO: BaseContext init-ing
+2023-05-06 22:53:06,213 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:27] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-06 22:53:06,214 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:25] - INFO: sensor ExtTempHumSensor init success
+2023-05-06 22:53:06,214 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:25] - INFO: sensor ExtLightSensor init success
+2023-05-06 22:53:06,214 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-06 22:53:06,215 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:38] - INFO: lamp MasterLight init success
+2023-05-06 22:53:06,215 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-06 22:53:06,215 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:38] - INFO: lamp FrontLight init success
+2023-05-06 22:53:06,215 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-06 22:53:06,215 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:38] - INFO: lamp BackLight init success
+2023-05-06 22:53:06,215 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:199] - INFO: BaseContext 初始化通讯服务
+2023-05-06 22:53:06,217 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:201] - INFO: BaseContext 初始化消息服务
+2023-05-06 22:53:06,218 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:203] - INFO: BaseContext 初始化心跳服务
+2023-05-06 22:53:07,617 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:189] - INFO: BaseContext init-ing
+2023-05-06 22:53:07,618 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:27] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-06 22:53:07,618 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:25] - INFO: sensor ExtTempHumSensor init success
+2023-05-06 22:53:07,619 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:25] - INFO: sensor ExtLightSensor init success
+2023-05-06 22:53:07,619 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-06 22:53:07,619 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:38] - INFO: lamp MasterLight init success
+2023-05-06 22:53:07,619 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-06 22:53:07,619 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:38] - INFO: lamp FrontLight init success
+2023-05-06 22:53:07,620 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-06 22:53:07,620 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:38] - INFO: lamp BackLight init success
+2023-05-06 22:53:07,620 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:199] - INFO: BaseContext 初始化通讯服务
+2023-05-06 22:53:07,622 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:201] - INFO: BaseContext 初始化消息服务
+2023-05-06 22:53:07,623 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:203] - INFO: BaseContext 初始化心跳服务
+2023-05-06 22:54:10,720 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:189] - INFO: BaseContext init-ing
+2023-05-06 22:54:10,722 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:27] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-06 22:54:10,722 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:25] - INFO: sensor ExtTempHumSensor init success
+2023-05-06 22:54:10,722 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:25] - INFO: sensor ExtLightSensor init success
+2023-05-06 22:54:10,722 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-06 22:54:10,722 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:38] - INFO: lamp MasterLight init success
+2023-05-06 22:54:10,723 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-06 22:54:10,723 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:38] - INFO: lamp FrontLight init success
+2023-05-06 22:54:10,723 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-06 22:54:10,723 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:38] - INFO: lamp BackLight init success
+2023-05-06 22:54:10,723 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:199] - INFO: BaseContext 初始化通讯服务
+2023-05-06 22:54:10,724 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:201] - INFO: BaseContext 初始化消息服务
+2023-05-06 22:54:10,724 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:203] - INFO: BaseContext 初始化心跳服务
+2023-05-06 22:54:12,185 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:189] - INFO: BaseContext init-ing
+2023-05-06 22:54:12,188 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:27] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-06 22:54:12,188 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:25] - INFO: sensor ExtTempHumSensor init success
+2023-05-06 22:54:12,188 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:25] - INFO: sensor ExtLightSensor init success
+2023-05-06 22:54:12,189 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-06 22:54:12,189 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:38] - INFO: lamp MasterLight init success
+2023-05-06 22:54:12,189 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-06 22:54:12,189 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:38] - INFO: lamp FrontLight init success
+2023-05-06 22:54:12,189 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-06 22:54:12,189 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:38] - INFO: lamp BackLight init success
+2023-05-06 22:54:12,191 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:199] - INFO: BaseContext 初始化通讯服务
+2023-05-06 22:54:12,192 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:201] - INFO: BaseContext 初始化消息服务
+2023-05-06 22:54:12,193 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:203] - INFO: BaseContext 初始化心跳服务
+2023-05-06 22:54:25,332 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:189] - INFO: BaseContext init-ing
+2023-05-06 22:54:25,333 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:27] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-06 22:54:25,334 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:25] - INFO: sensor ExtTempHumSensor init success
+2023-05-06 22:54:25,334 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:25] - INFO: sensor ExtLightSensor init success
+2023-05-06 22:54:25,335 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-06 22:54:25,335 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:38] - INFO: lamp MasterLight init success
+2023-05-06 22:54:25,335 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-06 22:54:25,336 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:38] - INFO: lamp FrontLight init success
+2023-05-06 22:54:25,336 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-06 22:54:25,336 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:38] - INFO: lamp BackLight init success
+2023-05-06 22:54:25,336 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:199] - INFO: BaseContext 初始化通讯服务
+2023-05-06 22:54:25,337 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:201] - INFO: BaseContext 初始化消息服务
+2023-05-06 22:54:25,338 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:203] - INFO: BaseContext 初始化心跳服务
+2023-05-06 22:54:26,776 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:189] - INFO: BaseContext init-ing
+2023-05-06 22:54:26,778 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:27] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-06 22:54:26,778 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:25] - INFO: sensor ExtTempHumSensor init success
+2023-05-06 22:54:26,779 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:25] - INFO: sensor ExtLightSensor init success
+2023-05-06 22:54:26,779 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-06 22:54:26,779 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:38] - INFO: lamp MasterLight init success
+2023-05-06 22:54:26,779 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-06 22:54:26,779 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:38] - INFO: lamp FrontLight init success
+2023-05-06 22:54:26,779 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-06 22:54:26,781 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:38] - INFO: lamp BackLight init success
+2023-05-06 22:54:26,781 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:199] - INFO: BaseContext 初始化通讯服务
+2023-05-06 22:54:26,782 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:201] - INFO: BaseContext 初始化消息服务
+2023-05-06 22:54:26,782 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:203] - INFO: BaseContext 初始化心跳服务
+2023-05-06 22:54:44,718 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:189] - INFO: BaseContext init-ing
+2023-05-06 22:54:44,752 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:27] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-06 22:54:44,752 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:25] - INFO: sensor ExtTempHumSensor init success
+2023-05-06 22:54:44,752 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:25] - INFO: sensor ExtLightSensor init success
+2023-05-06 22:54:44,753 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-06 22:54:44,753 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:38] - INFO: lamp MasterLight init success
+2023-05-06 22:54:44,753 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-06 22:54:44,753 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:38] - INFO: lamp FrontLight init success
+2023-05-06 22:54:44,753 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-06 22:54:44,753 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:38] - INFO: lamp BackLight init success
+2023-05-06 22:54:44,754 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:199] - INFO: BaseContext 初始化通讯服务
+2023-05-06 22:54:44,755 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:201] - INFO: BaseContext 初始化消息服务
+2023-05-06 22:54:44,756 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
+2023-05-06 22:54:44,756 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:203] - INFO: BaseContext 初始化心跳服务
+2023-05-06 22:54:44,813 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
+2023-05-06 22:55:40,281 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:189] - INFO: BaseContext init-ing
+2023-05-06 22:55:40,284 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:27] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-06 22:55:40,284 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:25] - INFO: sensor ExtTempHumSensor init success
+2023-05-06 22:55:40,284 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:25] - INFO: sensor ExtLightSensor init success
+2023-05-06 22:55:40,284 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-06 22:55:40,285 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:38] - INFO: lamp MasterLight init success
+2023-05-06 22:55:40,285 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-06 22:55:40,285 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:38] - INFO: lamp FrontLight init success
+2023-05-06 22:55:40,285 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-06 22:55:40,285 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:38] - INFO: lamp BackLight init success
+2023-05-06 22:55:40,286 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:199] - INFO: BaseContext 初始化通讯服务
+2023-05-06 22:55:40,286 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:201] - INFO: BaseContext 初始化消息服务
+2023-05-06 22:55:40,287 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
+2023-05-06 22:55:40,287 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:203] - INFO: BaseContext 初始化心跳服务
+2023-05-06 22:55:40,346 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
+2023-05-06 23:20:42,910 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:189] - INFO: BaseContext init-ing
+2023-05-06 23:20:42,913 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:27] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-06 23:20:42,913 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:25] - INFO: sensor ExtTempHumSensor init success
+2023-05-06 23:20:42,914 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:25] - INFO: sensor ExtLightSensor init success
+2023-05-06 23:20:42,914 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-06 23:20:42,914 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:38] - INFO: lamp MasterLight init success
+2023-05-06 23:20:42,914 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-06 23:20:42,915 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:38] - INFO: lamp FrontLight init success
+2023-05-06 23:20:42,915 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-06 23:20:42,915 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:38] - INFO: lamp BackLight init success
+2023-05-06 23:20:42,915 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:199] - INFO: BaseContext 初始化通讯服务
+2023-05-06 23:20:42,917 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:201] - INFO: BaseContext 初始化消息服务
+2023-05-06 23:20:42,918 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:203] - INFO: BaseContext 初始化心跳服务
+2023-05-06 23:20:42,968 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
+2023-05-06 23:20:43,030 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
+2023-05-06 23:33:12,677 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:190] - INFO: BaseContext init-ing
+2023-05-06 23:33:12,679 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:27] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-06 23:33:12,679 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
+2023-05-06 23:33:12,679 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
+2023-05-06 23:33:12,679 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-06 23:33:12,679 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
+2023-05-06 23:33:12,680 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-06 23:33:12,680 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
+2023-05-06 23:33:12,680 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-06 23:33:12,680 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
+2023-05-06 23:33:12,680 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:200] - INFO: BaseContext 初始化通讯服务
+2023-05-06 23:33:12,681 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:202] - INFO: BaseContext 初始化消息服务
+2023-05-06 23:33:12,681 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:204] - INFO: BaseContext 初始化心跳服务
+2023-05-06 23:33:12,681 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
+2023-05-06 23:33:12,739 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
+2023-05-06 23:33:33,804 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:190] - INFO: BaseContext init-ing
+2023-05-06 23:33:33,805 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:27] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-06 23:33:33,806 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
+2023-05-06 23:33:33,806 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
+2023-05-06 23:33:33,806 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-06 23:33:33,807 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
+2023-05-06 23:33:33,807 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-06 23:33:33,807 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
+2023-05-06 23:33:33,807 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-06 23:33:33,807 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
+2023-05-06 23:33:33,807 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:200] - INFO: BaseContext 初始化通讯服务
+2023-05-06 23:33:33,808 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:202] - INFO: BaseContext 初始化消息服务
+2023-05-06 23:33:33,808 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
+2023-05-06 23:33:33,809 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:204] - INFO: BaseContext 初始化心跳服务
+2023-05-06 23:33:33,872 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
+2023-05-06 23:33:48,462 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:190] - INFO: BaseContext init-ing
+2023-05-06 23:33:48,465 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:27] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-06 23:33:48,466 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
+2023-05-06 23:33:48,466 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
+2023-05-06 23:33:48,466 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-06 23:33:48,466 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
+2023-05-06 23:33:48,466 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-06 23:33:48,467 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
+2023-05-06 23:33:48,467 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-06 23:33:48,467 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
+2023-05-06 23:33:48,467 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:200] - INFO: BaseContext 初始化通讯服务
+2023-05-06 23:33:48,468 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:202] - INFO: BaseContext 初始化消息服务
+2023-05-06 23:33:48,468 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
+2023-05-06 23:33:48,468 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:204] - INFO: BaseContext 初始化心跳服务
+2023-05-06 23:33:48,529 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
+2023-05-06 23:51:23,287 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:190] - INFO: BaseContext init-ing
+2023-05-06 23:51:23,291 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-06 23:51:23,292 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
+2023-05-06 23:51:23,292 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
+2023-05-06 23:51:23,292 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-06 23:51:23,292 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
+2023-05-06 23:51:23,293 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-06 23:51:23,293 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
+2023-05-06 23:51:23,294 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-06 23:51:23,294 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
+2023-05-06 23:51:23,294 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:200] - INFO: BaseContext 初始化通讯服务
+2023-05-06 23:51:23,296 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:202] - INFO: BaseContext 初始化消息服务
+2023-05-06 23:51:23,297 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:204] - INFO: BaseContext 初始化心跳服务
+2023-05-06 23:51:23,297 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
+2023-05-06 23:51:23,363 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
+2023-05-06 23:52:16,718 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:190] - INFO: BaseContext init-ing
+2023-05-06 23:52:16,721 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-06 23:52:16,722 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
+2023-05-06 23:52:16,722 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
+2023-05-06 23:52:16,722 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-06 23:52:16,722 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
+2023-05-06 23:52:16,723 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-06 23:52:16,723 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
+2023-05-06 23:52:16,723 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-06 23:52:16,723 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
+2023-05-06 23:52:16,724 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:200] - INFO: BaseContext 初始化通讯服务
+2023-05-06 23:52:16,724 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:202] - INFO: BaseContext 初始化消息服务
+2023-05-06 23:52:16,725 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:204] - INFO: BaseContext 初始化心跳服务
+2023-05-06 23:52:16,775 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
+2023-05-06 23:52:16,843 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
+2023-05-07 00:10:30,588 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:191] - INFO: BaseContext init-ing
+2023-05-07 00:10:30,589 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-07 00:10:30,591 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
+2023-05-07 00:10:30,592 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
+2023-05-07 00:10:30,592 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-07 00:10:30,593 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
+2023-05-07 00:10:30,593 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-07 00:10:30,593 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
+2023-05-07 00:10:30,593 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-07 00:10:30,593 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
+2023-05-07 00:10:30,594 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:201] - INFO: BaseContext 初始化通讯服务
+2023-05-07 00:10:30,595 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:203] - INFO: BaseContext 初始化消息服务
+2023-05-07 00:10:30,596 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
+2023-05-07 00:10:30,596 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:205] - INFO: BaseContext 初始化心跳服务
+2023-05-07 00:10:30,656 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
+2023-05-07 00:10:51,128 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:191] - INFO: BaseContext init-ing
+2023-05-07 00:10:51,131 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-07 00:10:51,132 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
+2023-05-07 00:10:51,132 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
+2023-05-07 00:10:51,132 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-07 00:10:51,133 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
+2023-05-07 00:10:51,133 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-07 00:10:51,134 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
+2023-05-07 00:10:51,134 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-07 00:10:51,135 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
+2023-05-07 00:10:51,135 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:201] - INFO: BaseContext 初始化通讯服务
+2023-05-07 00:10:51,135 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:203] - INFO: BaseContext 初始化消息服务
+2023-05-07 00:10:51,137 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
+2023-05-07 00:10:51,137 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:205] - INFO: BaseContext 初始化心跳服务
+2023-05-07 00:10:51,205 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
+2023-05-07 00:12:29,425 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:191] - INFO: BaseContext init-ing
+2023-05-07 00:12:29,428 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-07 00:12:29,429 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
+2023-05-07 00:12:29,429 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
+2023-05-07 00:12:29,429 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-07 00:12:29,429 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
+2023-05-07 00:12:29,430 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-07 00:12:29,430 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
+2023-05-07 00:12:29,430 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-07 00:12:29,430 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
+2023-05-07 00:12:29,431 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:201] - INFO: BaseContext 初始化通讯服务
+2023-05-07 00:12:29,431 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:203] - INFO: BaseContext 初始化消息服务
+2023-05-07 00:12:29,432 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:205] - INFO: BaseContext 初始化心跳服务
+2023-05-07 00:12:29,479 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
+2023-05-07 00:12:29,540 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
+2023-05-07 00:13:23,229 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:191] - INFO: BaseContext init-ing
+2023-05-07 00:13:23,231 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-07 00:13:23,232 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
+2023-05-07 00:13:23,232 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
+2023-05-07 00:13:23,233 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-07 00:13:23,233 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
+2023-05-07 00:13:23,233 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-07 00:13:23,233 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
+2023-05-07 00:13:23,233 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-07 00:13:23,233 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
+2023-05-07 00:13:23,234 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:201] - INFO: BaseContext 初始化通讯服务
+2023-05-07 00:13:23,234 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:203] - INFO: BaseContext 初始化消息服务
+2023-05-07 00:13:23,235 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
+2023-05-07 00:13:23,235 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:205] - INFO: BaseContext 初始化心跳服务
+2023-05-07 00:13:23,292 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
+2023-05-07 00:13:46,578 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:191] - INFO: BaseContext init-ing
+2023-05-07 00:13:46,581 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-07 00:13:46,582 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
+2023-05-07 00:13:46,582 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
+2023-05-07 00:13:46,583 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-07 00:13:46,583 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
+2023-05-07 00:13:46,584 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-07 00:13:46,584 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
+2023-05-07 00:13:46,585 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-07 00:13:46,586 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
+2023-05-07 00:13:46,586 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:201] - INFO: BaseContext 初始化通讯服务
+2023-05-07 00:13:46,587 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:203] - INFO: BaseContext 初始化消息服务
+2023-05-07 00:13:46,588 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:205] - INFO: BaseContext 初始化心跳服务
+2023-05-07 00:13:46,635 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
+2023-05-07 00:13:46,705 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
+2023-05-07 00:15:07,849 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:191] - INFO: BaseContext init-ing
+2023-05-07 00:15:07,853 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-07 00:15:07,853 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
+2023-05-07 00:15:07,854 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
+2023-05-07 00:15:07,854 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-07 00:15:07,854 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
+2023-05-07 00:15:07,855 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-07 00:15:07,855 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
+2023-05-07 00:15:07,855 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-07 00:15:07,855 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
+2023-05-07 00:15:07,855 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:201] - INFO: BaseContext 初始化通讯服务
+2023-05-07 00:15:07,857 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:203] - INFO: BaseContext 初始化消息服务
+2023-05-07 00:15:07,858 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:205] - INFO: BaseContext 初始化心跳服务
+2023-05-07 00:15:07,908 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
+2023-05-07 00:15:07,970 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
+2023-05-07 00:18:10,198 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:192] - INFO: BaseContext init-ing
+2023-05-07 00:18:10,200 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-07 00:18:10,200 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
+2023-05-07 00:18:10,202 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
+2023-05-07 00:18:10,202 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-07 00:18:10,202 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
+2023-05-07 00:18:10,203 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-07 00:18:10,203 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
+2023-05-07 00:18:10,203 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-07 00:18:10,203 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
+2023-05-07 00:18:10,203 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:202] - INFO: BaseContext 初始化通讯服务
+2023-05-07 00:18:10,204 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:204] - INFO: BaseContext 初始化消息服务
+2023-05-07 00:18:10,205 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
+2023-05-07 00:18:10,205 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:206] - INFO: BaseContext 初始化心跳服务
+2023-05-07 00:18:10,271 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
+2023-05-07 00:18:32,785 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:192] - INFO: BaseContext init-ing
+2023-05-07 00:18:32,786 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-07 00:18:32,787 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
+2023-05-07 00:18:32,787 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
+2023-05-07 00:18:32,787 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-07 00:18:32,787 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
+2023-05-07 00:18:32,787 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-07 00:18:32,787 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
+2023-05-07 00:18:32,788 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-07 00:18:32,788 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
+2023-05-07 00:18:32,788 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:202] - INFO: BaseContext 初始化通讯服务
+2023-05-07 00:18:32,788 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:204] - INFO: BaseContext 初始化消息服务
+2023-05-07 00:18:32,789 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
+2023-05-07 00:18:32,789 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:206] - INFO: BaseContext 初始化心跳服务
+2023-05-07 00:18:32,854 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
+2023-05-07 00:19:25,988 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:192] - INFO: BaseContext init-ing
+2023-05-07 00:19:25,992 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-07 00:19:25,993 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
+2023-05-07 00:19:25,993 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
+2023-05-07 00:19:25,993 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-07 00:19:25,993 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
+2023-05-07 00:19:25,994 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-07 00:19:25,994 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
+2023-05-07 00:19:25,994 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-07 00:19:25,995 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
+2023-05-07 00:19:25,995 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:202] - INFO: BaseContext 初始化通讯服务
+2023-05-07 00:19:25,996 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:204] - INFO: BaseContext 初始化消息服务
+2023-05-07 00:19:25,996 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:206] - INFO: BaseContext 初始化心跳服务
+2023-05-07 00:19:26,045 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
+2023-05-07 00:19:26,107 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
+2023-05-07 00:20:43,185 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:192] - INFO: BaseContext init-ing
+2023-05-07 00:20:43,190 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-07 00:20:43,190 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
+2023-05-07 00:20:43,191 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
+2023-05-07 00:20:43,191 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-07 00:20:43,191 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
+2023-05-07 00:20:43,192 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-07 00:20:43,192 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
+2023-05-07 00:20:43,192 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-07 00:20:43,193 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
+2023-05-07 00:20:43,193 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:202] - INFO: BaseContext 初始化通讯服务
+2023-05-07 00:20:43,194 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:204] - INFO: BaseContext 初始化消息服务
+2023-05-07 00:20:43,195 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:206] - INFO: BaseContext 初始化心跳服务
+2023-05-07 00:20:43,246 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
+2023-05-07 00:20:43,309 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
+2023-05-07 00:21:16,425 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:192] - INFO: BaseContext init-ing
+2023-05-07 00:21:16,431 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-07 00:21:16,431 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
+2023-05-07 00:21:16,432 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
+2023-05-07 00:21:16,433 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-07 00:21:16,433 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
+2023-05-07 00:21:16,434 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-07 00:21:16,434 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
+2023-05-07 00:21:16,434 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-07 00:21:16,436 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
+2023-05-07 00:21:16,437 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:202] - INFO: BaseContext 初始化通讯服务
+2023-05-07 00:21:16,437 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:204] - INFO: BaseContext 初始化消息服务
+2023-05-07 00:21:16,438 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:206] - INFO: BaseContext 初始化心跳服务
+2023-05-07 00:21:16,490 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
+2023-05-07 00:21:16,559 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
+2023-05-07 00:22:17,108 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:192] - INFO: BaseContext init-ing
+2023-05-07 00:22:17,110 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-07 00:22:17,110 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
+2023-05-07 00:22:17,111 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
+2023-05-07 00:22:17,111 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-07 00:22:17,111 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
+2023-05-07 00:22:17,112 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-07 00:22:17,112 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
+2023-05-07 00:22:17,112 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-07 00:22:17,112 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
+2023-05-07 00:22:17,113 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:202] - INFO: BaseContext 初始化通讯服务
+2023-05-07 00:22:17,114 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:204] - INFO: BaseContext 初始化消息服务
+2023-05-07 00:22:17,114 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
+2023-05-07 00:22:17,114 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:206] - INFO: BaseContext 初始化心跳服务
+2023-05-07 00:22:17,173 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
+2023-05-07 00:24:17,450 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:193] - INFO: BaseContext init-ing
+2023-05-07 00:24:17,453 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-07 00:24:17,453 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
+2023-05-07 00:24:17,454 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
+2023-05-07 00:24:17,454 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-07 00:24:17,454 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
+2023-05-07 00:24:17,454 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-07 00:24:17,454 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
+2023-05-07 00:24:17,455 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-07 00:24:17,455 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
+2023-05-07 00:24:17,455 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:203] - INFO: BaseContext 初始化通讯服务
+2023-05-07 00:24:17,457 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:205] - INFO: BaseContext 初始化消息服务
+2023-05-07 00:24:17,458 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
+2023-05-07 00:24:17,458 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:207] - INFO: BaseContext 初始化心跳服务
+2023-05-07 00:24:17,527 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
+2023-05-07 00:24:36,162 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:193] - INFO: BaseContext init-ing
+2023-05-07 00:24:36,165 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-07 00:24:36,165 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
+2023-05-07 00:24:36,165 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
+2023-05-07 00:24:36,165 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-07 00:24:36,165 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
+2023-05-07 00:24:36,166 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-07 00:24:36,166 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
+2023-05-07 00:24:36,166 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-07 00:24:36,166 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
+2023-05-07 00:24:36,167 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:203] - INFO: BaseContext 初始化通讯服务
+2023-05-07 00:24:36,167 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:205] - INFO: BaseContext 初始化消息服务
+2023-05-07 00:24:36,168 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
+2023-05-07 00:24:36,168 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:207] - INFO: BaseContext 初始化心跳服务
+2023-05-07 00:24:36,229 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
+2023-05-07 00:24:54,954 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/base_context/sensor/ExtTempHumSensor,消息: {
+  "msg": "hello"
+}
+2023-05-07 08:06:19,136 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:193] - INFO: BaseContext init-ing
+2023-05-07 08:06:19,142 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-07 08:06:19,143 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
+2023-05-07 08:06:19,143 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
+2023-05-07 08:06:19,143 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-07 08:06:19,143 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
+2023-05-07 08:06:19,144 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-07 08:06:19,144 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
+2023-05-07 08:06:19,144 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-07 08:06:19,144 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
+2023-05-07 08:06:19,144 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:203] - INFO: BaseContext 初始化通讯服务
+2023-05-07 08:06:19,145 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:205] - INFO: BaseContext 初始化消息服务
+2023-05-07 08:06:19,146 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:207] - INFO: BaseContext 初始化心跳服务
+2023-05-07 08:06:19,150 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
+2023-05-07 08:06:19,214 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
+2023-05-07 08:06:34,985 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/base_context/sensor/ExtTempHumSensor,消息: {
+  "msg": "hello"
+}
+2023-05-07 08:07:01,810 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:193] - INFO: BaseContext init-ing
+2023-05-07 08:07:01,811 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-07 08:07:01,811 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
+2023-05-07 08:07:01,811 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
+2023-05-07 08:07:01,811 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-07 08:07:01,813 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
+2023-05-07 08:07:01,813 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-07 08:07:01,813 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
+2023-05-07 08:07:01,813 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-07 08:07:01,813 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
+2023-05-07 08:07:01,813 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:203] - INFO: BaseContext 初始化通讯服务
+2023-05-07 08:07:01,814 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:205] - INFO: BaseContext 初始化消息服务
+2023-05-07 08:07:01,814 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
+2023-05-07 08:07:01,815 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:207] - INFO: BaseContext 初始化心跳服务
+2023-05-07 08:07:01,861 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
+2023-05-07 08:07:05,918 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/base_context/sensor/ExtTempHumSensor,消息: {
+  "msg": "hello"
+}
+2023-05-07 08:08:49,312 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:193] - INFO: BaseContext init-ing
+2023-05-07 08:08:49,315 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-07 08:08:49,315 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
+2023-05-07 08:08:49,315 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
+2023-05-07 08:08:49,315 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-07 08:08:49,316 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
+2023-05-07 08:08:49,316 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-07 08:08:49,316 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
+2023-05-07 08:08:49,317 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-07 08:08:49,318 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
+2023-05-07 08:08:49,318 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:203] - INFO: BaseContext 初始化通讯服务
+2023-05-07 08:08:49,319 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:205] - INFO: BaseContext 初始化消息服务
+2023-05-07 08:08:49,320 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
+2023-05-07 08:08:49,320 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:207] - INFO: BaseContext 初始化心跳服务
+2023-05-07 08:08:49,369 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
+2023-05-07 08:08:52,150 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/base_context/sensor/ExtTempHumSensor,消息: {
+  "msg": "hello"
+}
+2023-05-07 08:08:52,162 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:50] - WARNING: <core.constant.Message object at 0x0000018387234340>
+2023-05-07 08:09:10,949 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:193] - INFO: BaseContext init-ing
+2023-05-07 08:09:10,954 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-07 08:09:10,955 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
+2023-05-07 08:09:10,955 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
+2023-05-07 08:09:10,956 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-07 08:09:10,956 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
+2023-05-07 08:09:10,956 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-07 08:09:10,957 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
+2023-05-07 08:09:10,957 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-07 08:09:10,958 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
+2023-05-07 08:09:10,958 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:203] - INFO: BaseContext 初始化通讯服务
+2023-05-07 08:09:10,960 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:205] - INFO: BaseContext 初始化消息服务
+2023-05-07 08:09:10,960 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:207] - INFO: BaseContext 初始化心跳服务
+2023-05-07 08:09:11,012 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
+2023-05-07 08:09:11,066 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
+2023-05-07 08:09:15,551 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/base_context/sensor/ExtTempHumSensor,消息: {
+  "msg": "hello"
+}
+2023-05-07 08:13:31,636 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:192] - INFO: BaseContext init-ing
+2023-05-07 08:13:31,637 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-07 08:13:31,638 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
+2023-05-07 08:13:31,638 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
+2023-05-07 08:13:31,638 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-07 08:13:31,638 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
+2023-05-07 08:13:31,638 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-07 08:13:31,638 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
+2023-05-07 08:13:31,639 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-07 08:13:31,639 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
+2023-05-07 08:13:31,639 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:202] - INFO: BaseContext 初始化通讯服务
+2023-05-07 08:13:31,640 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:204] - INFO: BaseContext 初始化消息服务
+2023-05-07 08:13:31,640 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
+2023-05-07 08:13:31,640 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:206] - INFO: BaseContext 初始化心跳服务
+2023-05-07 08:13:31,802 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
+2023-05-07 08:13:38,905 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:192] - INFO: BaseContext init-ing
+2023-05-07 08:13:38,906 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-07 08:13:38,906 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
+2023-05-07 08:13:38,907 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
+2023-05-07 08:13:38,907 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-07 08:13:38,907 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
+2023-05-07 08:13:38,907 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-07 08:13:38,907 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
+2023-05-07 08:13:38,907 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-07 08:13:38,907 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
+2023-05-07 08:13:38,907 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:202] - INFO: BaseContext 初始化通讯服务
+2023-05-07 08:13:38,908 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:204] - INFO: BaseContext 初始化消息服务
+2023-05-07 08:13:38,908 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:206] - INFO: BaseContext 初始化心跳服务
+2023-05-07 08:13:38,908 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
+2023-05-07 08:13:38,955 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
+2023-05-07 08:13:44,772 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/base_context/sensor/ExtTempHumSensor,消息: {
+  "msg": "hello"
+}
+2023-05-07 08:14:32,711 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/base_context/sensor/ExtTempHumSensor,消息: {
+  "msg": "hello"
+}
+2023-05-07 08:16:54,057 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:195] - INFO: BaseContext init-ing
+2023-05-07 08:16:54,059 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-07 08:16:54,060 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
+2023-05-07 08:16:54,060 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
+2023-05-07 08:16:54,060 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-07 08:16:54,060 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
+2023-05-07 08:16:54,060 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-07 08:16:54,061 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
+2023-05-07 08:16:54,061 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-07 08:16:54,061 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
+2023-05-07 08:16:54,061 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:205] - INFO: BaseContext 初始化通讯服务
+2023-05-07 08:16:54,061 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:207] - INFO: BaseContext 初始化消息服务
+2023-05-07 08:16:54,063 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
+2023-05-07 08:16:54,063 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:209] - INFO: BaseContext 初始化心跳服务
+2023-05-07 08:16:54,106 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
+2023-05-07 08:16:57,041 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:77] - INFO: 收到消息: 主题: server/TN2022051822224321/base_context/sensor/ExtTempHumSensor,消息: {
+  "msg": "hello"
+}
+2023-05-07 13:30:47,121 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:195] - INFO: BaseContext init-ing
+2023-05-07 13:30:47,128 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-07 13:30:47,128 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
+2023-05-07 13:30:47,128 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
+2023-05-07 13:30:47,128 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-07 13:30:47,128 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
+2023-05-07 13:30:47,128 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-07 13:30:47,130 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
+2023-05-07 13:30:47,130 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-07 13:30:47,130 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
+2023-05-07 13:30:47,130 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:205] - INFO: BaseContext 初始化通讯服务
+2023-05-07 13:30:47,130 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:207] - INFO: BaseContext 初始化消息服务
+2023-05-07 13:30:47,131 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:209] - INFO: BaseContext 初始化心跳服务
+2023-05-07 13:30:47,136 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
+2023-05-07 13:30:47,187 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
+2023-05-07 13:32:20,245 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:195] - INFO: BaseContext init-ing
+2023-05-07 13:32:20,271 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-07 13:32:20,276 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
+2023-05-07 13:32:20,277 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
+2023-05-07 13:32:20,277 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-07 13:32:20,278 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
+2023-05-07 13:32:20,279 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-07 13:32:20,281 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
+2023-05-07 13:32:20,282 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-07 13:32:20,282 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
+2023-05-07 13:32:20,283 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:205] - INFO: BaseContext 初始化通讯服务
+2023-05-07 13:32:20,294 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:207] - INFO: BaseContext 初始化消息服务
+2023-05-07 13:32:20,306 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
+2023-05-07 13:32:20,310 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\context.py[line:209] - INFO: BaseContext 初始化心跳服务
+2023-05-07 13:32:20,358 - F:\PythonWorkPlace\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
+2023-05-19 21:57:11,155 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\serves\base_context\context.py[line:195] - INFO: BaseContext init-ing
+2023-05-19 21:57:11,158 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-19 21:57:11,158 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
+2023-05-19 21:57:11,158 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
+2023-05-19 21:57:11,159 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-19 21:57:11,159 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
+2023-05-19 21:57:11,159 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-19 21:57:11,159 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
+2023-05-19 21:57:11,159 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-19 21:57:11,159 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
+2023-05-19 21:57:11,159 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\serves\base_context\context.py[line:205] - INFO: BaseContext 初始化通讯服务
+2023-05-19 21:57:11,160 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\serves\base_context\context.py[line:207] - INFO: BaseContext 初始化消息服务
+2023-05-19 21:57:11,160 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\serves\base_context\context.py[line:209] - INFO: BaseContext 初始化心跳服务
+2023-05-19 21:57:11,160 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
+2023-05-19 21:57:11,212 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器
+2023-05-19 21:59:10,376 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\serves\base_context\context.py[line:195] - INFO: BaseContext init-ing
+2023-05-19 21:59:10,378 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:32] - INFO: TempHumSensorExtTempHumSensor init
+2023-05-19 21:59:10,378 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtTempHumSensor init success
+2023-05-19 21:59:10,378 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\serves\base_context\components\component_proxy.py[line:26] - INFO: sensor ExtLightSensor init success
+2023-05-19 21:59:10,378 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampMasterLight init
+2023-05-19 21:59:10,378 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp MasterLight init success
+2023-05-19 21:59:10,378 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampFrontLight init
+2023-05-19 21:59:10,378 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp FrontLight init success
+2023-05-19 21:59:10,378 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\serves\base_context\components\non_separation\raspberry.py[line:15] - INFO: LampBackLight init
+2023-05-19 21:59:10,378 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\serves\base_context\components\component_proxy.py[line:39] - INFO: lamp BackLight init success
+2023-05-19 21:59:10,378 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\serves\base_context\context.py[line:205] - INFO: BaseContext 初始化通讯服务
+2023-05-19 21:59:10,379 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\serves\base_context\context.py[line:207] - INFO: BaseContext 初始化消息服务
+2023-05-19 21:59:10,379 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\serves\base_context\context.py[line:209] - INFO: BaseContext 初始化心跳服务
+2023-05-19 21:59:10,379 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\serves\base_context\com_proxy.py[line:177] - INFO: 启动通信代理
+2023-05-19 21:59:10,433 - D:\灯项目\新框架\新建文件夹 (4)\EdgeFlow\serves\base_context\com_proxy.py[line:91] - INFO: 成功连接MQTT服务器

@@ -49,3 +49,103 @@ class LightSensor(SensorBase):
         data_frame = self.config['data_format']
         data_frame['brightness'] = 20
         return data_frame
+
+# 光敏传感器
+# 外部
+class Brightness_Ext(SensorBase):
+    def __init__(self, config):
+        super().__init__(config)
+
+    def init(self):
+        pass
+
+    def get_data(self):
+        data_frame = self.config['data_format']
+        data_frame['brightness'] = 20
+        return data_frame
+
+# 光敏
+# 内部
+class Brightness_In(SensorBase):
+    def __init__(self, config):
+        super().__init__(config)
+
+    def init(self):
+        pass
+
+    def get_data(self):
+        data_frame = self.config['data_format']
+        data_frame['brightness'] = 20
+        return data_frame
+
+# 二氧化碳
+class Co2(SensorBase):
+    def __init__(self, config):
+        super().__init__(config)
+
+    def init(self):
+        pass
+
+    def get_data(self):
+        data_frame = self.config['data_format']
+        data_frame['brightness'] = 20
+        return data_frame
+
+
+# gps
+
+# 温湿度
+
+# 雨滴
+
+
+
+# 光敏传感器
+# 外部
+class Brightness_Ext(SensorBase):
+    def __init__(self, config):
+        super().__init__(config)
+
+    def init(self):
+        pass
+
+    def get_data(self):
+        data_frame = self.config['data_format']
+        data_frame['brightness'] = 20
+        return data_frame
+
+# 光敏
+# 内部
+class Brightness_In(SensorBase):
+    def __init__(self, config):
+        super().__init__(config)
+
+    def init(self):
+        pass
+
+    def get_data(self):
+        data_frame = self.config['data_format']
+        data_frame['brightness'] = 20
+        return data_frame
+
+# 二氧化碳
+class Co2(SensorBase):
+    def __init__(self, config):
+        super().__init__(config)
+
+    def init(self):
+        pass
+
+    def get_data(self):
+        data_frame = self.config['data_format']
+        data_frame['brightness'] = 20
+        return data_frame
+
+
+# gps
+
+# 温湿度
+
+# 雨滴
+
+
